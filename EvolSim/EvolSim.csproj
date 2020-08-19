@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Map\CellularAutomataGenerator.cs" />
+    <Compile Include="Map\Coordinate.cs" />
+    <Compile Include="Map\Features\Desert.cs" />
+    <Compile Include="Map\Features\Feature.cs" />
+    <Compile Include="Map\Features\Glacier.cs" />
+    <Compile Include="Map\Features\Lake.cs" />
+    <Compile Include="Map\Features\Mountain.cs" />
+    <Compile Include="Map\Features\River.cs" />
+    <Compile Include="Map\Features\Swamp.cs" />
+    <Compile Include="Map\Features\Tundra.cs" />
+    <Compile Include="Map\Features\Volcano.cs" />
+    <Compile Include="Map\Field.cs" />
+    <Compile Include="Map\HeightMapGenerator.cs" />
+    <Compile Include="Map\IMapFeature.cs" />
+    <Compile Include="Map\IMapGenerator.cs" />
+    <Compile Include="Map\Renderer.cs" />
+    <Compile Include="Map\World.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
