@@ -19,6 +19,8 @@ namespace EvolSim.Map
         public int Width { get; private set; }
         public int Height { get; private set; }
         public Field SelectedField { get; private set; }
+        public int SelectedFieldX { get; private set; }
+        public int SelectedFieldY { get; private set; }
 
         public World(int width, int height)
         {
@@ -73,7 +75,14 @@ namespace EvolSim.Map
             {
                 throw new ArgumentOutOfRangeException("y is out of range");
             }
-            this.SelectedField = this.Fields[x][y];
+            SelectedField = Fields[x][y];
+            SelectedFieldX = x;
+            SelectedFieldY = y;
+        }
+
+        public void Update(long timeElapsed)
+        {            
+
         }
     }
 }

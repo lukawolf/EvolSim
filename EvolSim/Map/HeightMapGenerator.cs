@@ -91,29 +91,6 @@ namespace EvolSim.Map
                 }
             } while (didAgitate);
 
-            //Here we go through the targets in random order, discarding invalid ones, and agitate one by one
-            //List<Coordinate> leftToAgitate;
-            //var nextAgitated = new List<Coordinate>(agitationTargets);
-            //while (nextAgitated.Count > 0)
-            //{
-            //    leftToAgitate = new List<Coordinate>(nextAgitated);
-            //    leftToAgitate.Shuffle(random);
-            //    nextAgitated.Clear();                
-            //    foreach (var agitationTarget in leftToAgitate)
-            //    {
-            //        var dropHeight = 0;
-            //        if (world.Fields[x][y].Height - AgitationDelta > world.Fields[agitationTarget.x][agitationTarget.y].Height) dropHeight = 1;
-            //        var dropTemp = 0;
-            //        if (world.Fields[x][y].Temperature - AgitationDelta > world.Fields[agitationTarget.x][agitationTarget.y].Temperature) dropTemp = 1;
-            //        if (dropHeight > 0 || dropTemp > 0)
-            //        {
-            //            world.Fields[x][y].Drop(-dropHeight, -dropTemp);
-            //            world.Fields[agitationTarget.x][agitationTarget.y].Drop(dropHeight, dropTemp);
-            //            nextAgitated.Add(agitationTarget);
-            //        }
-            //    }
-            //}
-
             //In the end we agitate the targets, as their heights and temperatures have changed
             foreach (var agitationTarget in agitationTargets)
             {
