@@ -12,7 +12,7 @@ namespace EvolSim.Map.Features
         {
         }
 
-        public Lake(Random random, World world) : base(random, world)
+        protected Lake(World world) : base(world)
         {
             canMoveMinusX = true;
             canMoveMinusY = true;
@@ -20,19 +20,19 @@ namespace EvolSim.Map.Features
             canMovePlusY = true;
         }
 
-        protected Lake(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
+        protected Lake(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
         {
 
         }
 
-        public override IMapFeature CreateSelf(Random random, World world)
+        public override IMapFeature CreateSelf(World world)
         {
-            return new Lake(random, world);
+            return new Lake(world);
         }
 
-        public override IMapFeature CreateSelf(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
+        public override IMapFeature CreateSelf(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
-            return new Lake(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
+            return new Lake(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
         }
 
         protected override void EffectInternal()

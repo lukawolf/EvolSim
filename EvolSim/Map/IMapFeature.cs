@@ -8,7 +8,7 @@ namespace EvolSim.Map
 {
     interface IMapFeature
     {
-        IMapFeature CreateSelf(Random random, World world);
+        IMapFeature CreateSelf(World world);
         void Effect();
     }
 }

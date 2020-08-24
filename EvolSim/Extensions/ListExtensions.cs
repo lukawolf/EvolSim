@@ -8,13 +8,18 @@ namespace EvolSim.Extensions
 {
     public static class ListExtensions
     {
-        public static void Shuffle<T>(this IList<T> list, Random random)
+        /// <summary>
+        /// An in-place shuffling method for any list
+        /// </summary>
+        /// <typeparam name="T">The type contained within our list</typeparam>
+        /// <param name="list">The list to be shuffled</param>
+        public static void Shuffle<T>(this IList<T> list)
         {
             int n = list.Count;
             while (n > 1)
             {
                 n--;
-                int k = random.Next(n + 1);
+                int k = RandomThreadSafe.Next(n + 1);
                 T value = list[k];
                 list[k] = list[n];
                 list[n] = value;

@@ -57,7 +57,7 @@ namespace EvolSim
                 var timeElapsed = simulationStopwatch.ElapsedMilliseconds;
                 simulationStopwatch.Restart();
                 Weather.DoWeatherStep();
-                World.Update(timeElapsed);                
+                World.Update((double)timeElapsed / Delay);
                 await Task.Delay((int)Math.Max(Delay - timeElapsed, 0)); //The delay is lowered if the simulation rate lags behind
             }
         }

@@ -51,7 +51,7 @@ namespace EvolSim.Map
             {
                 for (int y = 0; y < world.Fields[x].Length; y++)
                 {
-                    brush.Color = Color.FromArgb(world.Fields[x][y].Temperature, world.Fields[x][y].Calories, 255 - world.Fields[x][y].Height);
+                    brush.Color = Color.FromArgb(world.Fields[x][y].Temperature, (int)world.Fields[x][y].Calories, 255 - world.Fields[x][y].Height);
                     paintEventArgs.Graphics.FillRectangle(brush, tileWidth * x, tileHeight * y, tileWidth, tileHeight);
                     if(bordered) paintEventArgs.Graphics.DrawRectangle(pen, tileWidth * x, tileHeight * y, tileWidth, tileHeight);
                     if(world.Fields[x][y] == world.SelectedField)
@@ -63,6 +63,16 @@ namespace EvolSim.Map
             if (finalRectangle != null)
             {
                 paintEventArgs.Graphics.DrawRectangle(pen, (Rectangle)finalRectangle);
+            }
+            brush.Color = Color.FromArgb(126, 255, 255, 255);
+            foreach (var creature in world.Creatures)
+            {
+                //Creature size makes sense between half tile and whole tile size
+                var convertedWidth = (float)creature.SizeInTiles * tileWidth;
+                var convertedHeight = (float)creature.SizeInTiles * tileHeight;
+                //We can accept the double to float truncate here, we still operate in pixels after all and are confined to 0-500, which both cover easily
+                paintEventArgs.Graphics.FillEllipse(brush, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
+                paintEventArgs.Graphics.DrawEllipse(pen, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
             }
         }
     }

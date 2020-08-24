@@ -46,8 +46,8 @@ namespace EvolSim.Map
                 _initialTemperature = value;
             }
         }
-        private int _calories;
-        public int Calories {
+        private double _calories;
+        public double Calories {
             get => _calories;
             set {
                 if (value < 0 || value > 255)
@@ -89,6 +89,30 @@ namespace EvolSim.Map
         public override string ToString()
         {
             return "Field: \n Temperature: " + Temperature + "\n Height" + Height + "\n Calories:" + Calories;
+        }
+
+        public void GrowCalories(double fractionElapsed)
+        {
+            var calories = Calories;
+            var allowedDivergence = MaxCalories / 10;
+            //If we have too much calories, decay half of the difference plus one
+            if (calories > MaxCalories + allowedDivergence)
+            {
+                calories -= ((calories - MaxCalories) / 2) * fractionElapsed;
+            }
+            //If we have too little calories, spread exponentially at first and linearly later
+            else if (calories * 2 <= MaxCalories / 2)
+            {
+                calories += (calories + 1) * fractionElapsed;                
+            }
+            else if (calories < MaxCalories - allowedDivergence)
+            {
+                calories += (MaxCalories / 10 + 1) * fractionElapsed;
+            }
+            
+            if (calories < 0) calories = 0;
+            if (calories > 255) calories = 255;
+            Calories = calories;
         }
     }
 }

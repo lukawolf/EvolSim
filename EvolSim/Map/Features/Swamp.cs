@@ -12,7 +12,7 @@ namespace EvolSim.Map.Features
         {
         }
 
-        public Swamp(Random random, World world) : base(random, world)
+        protected Swamp(World world) : base(world)
         {
             canMoveMinusX = true;
             canMoveMinusY = true;
@@ -20,19 +20,19 @@ namespace EvolSim.Map.Features
             canMovePlusY = true;
         }
 
-        protected Swamp(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
+        protected Swamp(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
         {
 
         }
 
-        public override IMapFeature CreateSelf(Random random, World world)
+        public override IMapFeature CreateSelf(World world)
         {
-            return new Swamp(random, world);
+            return new Swamp(world);
         }
 
-        public override IMapFeature CreateSelf(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
+        public override IMapFeature CreateSelf(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
-            return new Swamp(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
+            return new Swamp(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
         }
 
         protected override void EffectInternal()

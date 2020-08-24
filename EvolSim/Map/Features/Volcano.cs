@@ -12,7 +12,7 @@ namespace EvolSim.Map.Features
         {
         }
 
-        public Volcano(Random random, World world) : base(random, world)
+        protected Volcano(World world) : base(world)
         {
             canMoveMinusX = true;
             canMoveMinusY = true;
@@ -20,19 +20,19 @@ namespace EvolSim.Map.Features
             canMovePlusY = true;
         }
 
-        protected Volcano(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
+        protected Volcano(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
         {
 
         }
 
-        public override IMapFeature CreateSelf(Random random, World world)
+        public override IMapFeature CreateSelf(World world)
         {
-            return new Volcano(random, world);
+            return new Volcano(world);
         }
 
-        public override IMapFeature CreateSelf(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
+        public override IMapFeature CreateSelf(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
-            return new Volcano(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
+            return new Volcano(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
         }
 
         protected override void EffectInternal()

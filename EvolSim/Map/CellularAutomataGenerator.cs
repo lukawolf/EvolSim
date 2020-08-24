@@ -10,7 +10,6 @@ namespace EvolSim.Map
 {
     class CellularAutomataGenerator: IMapGenerator
     {
-        private Random random = new Random();
         private List<IMapFeature> availableFeatures = new List<IMapFeature>();
 
         public CellularAutomataGenerator()
@@ -19,22 +18,26 @@ namespace EvolSim.Map
             availableFeatures.Add(new Glacier());
             availableFeatures.Add(new Lake());
             availableFeatures.Add(new Mountain());
-            //availableFeatures.Add(new River());
+            availableFeatures.Add(new River());
             availableFeatures.Add(new Swamp());
             availableFeatures.Add(new Tundra());
             availableFeatures.Add(new Volcano());
         }
 
-        public void Generate(World world, ProgressBar progressBar, int? seed)
+        public void RegisterNewFeature(IMapFeature feature)
+        {
+            availableFeatures.Add(feature);
+        }
+
+        public void Generate(World world, ProgressBar progressBar)
         {
             progressBar.Value = 0;
-            if (seed != null) random = new Random((int)seed);
             world.BlankMap(126, 126);
-            var featureCount = random.Next((world.Width + world.Height) / 4, (world.Width + world.Height) * 2);
+            var featureCount = RandomThreadSafe.Next((world.Width + world.Height) / 4, (world.Width + world.Height) * 2);
             var features = new List<IMapFeature>();
             for (int i = 0; i < featureCount; i++)
             {
-                features.Add(availableFeatures[random.Next(0, availableFeatures.Count)].CreateSelf(random, world));
+                features.Add(availableFeatures[RandomThreadSafe.Next(0, availableFeatures.Count)].CreateSelf(world));
             }
 
             for (int i = 0; i < featureCount; i++)

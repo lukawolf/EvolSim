@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// Suported weather generation types for the Weather class
+    /// </summary>
     enum WeatherType
     {
         Static,
         Sinusoidal,
         Random
     }
+    /// <summary>
+    /// A class to provide weather for a World instance
+    /// </summary>
     class Weather
     {
-        private Random random;
         private WeatherType _currentWeather;
         protected int weatherIterator = 0;
         protected int sinusoidalShift = 0;
@@ -33,9 +38,8 @@ namespace EvolSim.Map
                         SetStaticWeather();
                         break;
                     case WeatherType.Sinusoidal:
-                        break;
                     case WeatherType.Random:
-                        SetRandomWeather();
+                        //Will be generated upon next step
                         break;
                     default:
                         throw new ArgumentException("Not a supported WeatherType");
@@ -53,6 +57,11 @@ namespace EvolSim.Map
                     throw new ArgumentException("Amplitude can be only between 0 and 255");
                 }
                 _amplitude = value;
+                //Static weather needs setting
+                if (CurrentWeather == WeatherType.Static)
+                {
+                    SetStaticWeather();
+                }
             }
         }
         private int _changeInterval;
@@ -69,11 +78,18 @@ namespace EvolSim.Map
             }
         }
 
-        public Weather(World world, int amplitude, WeatherType weatherType)
+        /// <summary>
+        /// Weather constructor
+        /// </summary>
+        /// <param name="world">The World instance to be affected by this weather instance</param>
+        /// <param name="amplitude">The amplitude of the weather (if static, this is the temperature increase)</param>
+        /// <param name="interval">The cycles upon which to change the weather </param>
+        /// <param name="weatherType">The WeatherType to be calculated</param>
+        public Weather(World world, int amplitude, int interval, WeatherType weatherType)
         {
             World = world;
             Amplitude = amplitude;
-            random = new Random();
+            ChangeInterval = interval;
             CurrentWeather = weatherType;            
         }
 
@@ -82,6 +98,7 @@ namespace EvolSim.Map
         /// </summary>
         private void SetStaticWeather()
         {
+            //There is no computation done here, therefore I do not see the need to parallelise
             foreach (var fields in World.Fields)
             {
                 foreach (var field in fields)
@@ -91,10 +108,13 @@ namespace EvolSim.Map
             }
         }
 
+        /// <summary>
+        /// Sets weather as sinusoidal, iterating its lateral movement through the world
+        /// </summary>
         private void SetSinusoidalWeather()
         {
-            for (int i = 0; i < World.Width; i++)
-            {
+            //We can safely parallelise the weather change as our columns do not affect each other
+            Parallel.For(0, World.Width, i => {
                 var fields = World.Fields[i];
                 //We use the world coordinate shifted by the weather constant and then moduloed back into range, double for later operations
                 double shift = (sinusoidalShift + i) % World.Width;
@@ -106,21 +126,27 @@ namespace EvolSim.Map
                 {
                     field.TemperatureOffset = weather;
                 }
-            }
+            });
             sinusoidalShift++;
         }
 
+        /// <summary>
+        /// Sets random weather for each tile
+        /// </summary>
         private void SetRandomWeather()
         {
-            foreach (var fields in World.Fields)
-            {
+            //We can safely parallelise the weather change as our columns do not affect each other
+            Parallel.ForEach<Field[]>(World.Fields, fields => {
                 foreach (var field in fields)
                 {
-                    field.TemperatureOffset = random.Next(-Amplitude, Amplitude);
+                    field.TemperatureOffset = RandomThreadSafe.Next(-Amplitude, Amplitude);
                 }
-            }
+            });
         }
 
+        /// <summary>
+        /// Increases the inner cycle iterator. When it reaches its interval, calls for a weather change.
+        /// </summary>
         public void DoWeatherStep()
         {
             weatherIterator++;

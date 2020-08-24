@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.SimulationPanel = new System.Windows.Forms.Panel();
             this.SimulationControlPanel = new System.Windows.Forms.Panel();
+            this.WeatherAmplitude = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
             this.StatusIndicator = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.StatusSwitchButton = new System.Windows.Forms.Button();
@@ -55,37 +57,37 @@
             this.BtnWorldGenCA = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.FieldControlPanel = new System.Windows.Forms.Panel();
-            this.GraphicTimer = new System.Windows.Forms.Timer(this.components);
-            this.WeatherAmplitude = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.TileCoordinates = new System.Windows.Forms.Label();
-            this.TileInitialTemperature = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
-            this.TileHeight = new System.Windows.Forms.NumericUpDown();
-            this.label14 = new System.Windows.Forms.Label();
-            this.TileTemperatureOffset = new System.Windows.Forms.NumericUpDown();
-            this.label15 = new System.Windows.Forms.Label();
-            this.TileCalories = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
-            this.TileTemperature = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.TileMaxCalories = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.TileTemperature = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.TileCalories = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
+            this.TileInitialTemperature = new System.Windows.Forms.NumericUpDown();
+            this.TileCoordinates = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.TileHeight = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TileTemperatureOffset = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
+            this.GraphicTimer = new System.Windows.Forms.Timer(this.components);
             this.CreatureControlPanel = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.SimulationControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WeatherAmplitude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CycleSleep)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WeatherChangePeriod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimalCreatureAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WorldHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WorldWidth)).BeginInit();
             this.FieldControlPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.WeatherAmplitude)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TileCalories)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileInitialTemperature)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileTemperatureOffset)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TileCalories)).BeginInit();
+            this.CreatureControlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // SimulationPanel
@@ -131,6 +133,35 @@
             this.SimulationControlPanel.Name = "SimulationControlPanel";
             this.SimulationControlPanel.Size = new System.Drawing.Size(329, 300);
             this.SimulationControlPanel.TabIndex = 3;
+            // 
+            // WeatherAmplitude
+            // 
+            this.WeatherAmplitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.WeatherAmplitude.Location = new System.Drawing.Point(176, 185);
+            this.WeatherAmplitude.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.WeatherAmplitude.Name = "WeatherAmplitude";
+            this.WeatherAmplitude.Size = new System.Drawing.Size(148, 22);
+            this.WeatherAmplitude.TabIndex = 19;
+            this.WeatherAmplitude.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.WeatherAmplitude.ValueChanged += new System.EventHandler(this.WeatherAmplitude_ValueChanged);
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(4, 184);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(166, 23);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Weather amplitude";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // StatusIndicator
             // 
@@ -259,10 +290,12 @@
             // WeatherSin
             // 
             this.WeatherSin.AutoSize = true;
+            this.WeatherSin.Checked = true;
             this.WeatherSin.Location = new System.Drawing.Point(180, 163);
             this.WeatherSin.Name = "WeatherSin";
             this.WeatherSin.Size = new System.Drawing.Size(73, 17);
             this.WeatherSin.TabIndex = 8;
+            this.WeatherSin.TabStop = true;
             this.WeatherSin.Text = "Sinusoidal";
             this.WeatherSin.UseVisualStyleBackColor = true;
             this.WeatherSin.CheckedChanged += new System.EventHandler(this.WeatherChanged);
@@ -270,12 +303,10 @@
             // WeatherStatic
             // 
             this.WeatherStatic.AutoSize = true;
-            this.WeatherStatic.Checked = true;
             this.WeatherStatic.Location = new System.Drawing.Point(122, 163);
             this.WeatherStatic.Name = "WeatherStatic";
             this.WeatherStatic.Size = new System.Drawing.Size(52, 17);
             this.WeatherStatic.TabIndex = 7;
-            this.WeatherStatic.TabStop = true;
             this.WeatherStatic.Text = "Static";
             this.WeatherStatic.UseVisualStyleBackColor = true;
             this.WeatherStatic.CheckedChanged += new System.EventHandler(this.WeatherChanged);
@@ -307,6 +338,7 @@
             0,
             0,
             0});
+            this.MinimalCreatureAmount.ValueChanged += new System.EventHandler(this.MinimalCreatureAmount_ValueChanged);
             // 
             // label5
             // 
@@ -446,69 +478,70 @@
             this.FieldControlPanel.Size = new System.Drawing.Size(329, 194);
             this.FieldControlPanel.TabIndex = 4;
             // 
-            // GraphicTimer
+            // TileMaxCalories
             // 
-            this.GraphicTimer.Interval = 8;
-            this.GraphicTimer.Tick += new System.EventHandler(this.GraphicTimer_Tick);
+            this.TileMaxCalories.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TileMaxCalories.Location = new System.Drawing.Point(175, 59);
+            this.TileMaxCalories.Name = "TileMaxCalories";
+            this.TileMaxCalories.Size = new System.Drawing.Size(148, 23);
+            this.TileMaxCalories.TabIndex = 32;
+            this.TileMaxCalories.Text = "N/A";
+            this.TileMaxCalories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // WeatherAmplitude
+            // label20
             // 
-            this.WeatherAmplitude.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.WeatherAmplitude.Location = new System.Drawing.Point(176, 185);
-            this.WeatherAmplitude.Maximum = new decimal(new int[] {
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label20.Location = new System.Drawing.Point(4, 59);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(99, 23);
+            this.label20.TabIndex = 31;
+            this.label20.Text = "Max. calories:";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TileTemperature
+            // 
+            this.TileTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TileTemperature.Location = new System.Drawing.Point(175, 40);
+            this.TileTemperature.Name = "TileTemperature";
+            this.TileTemperature.Size = new System.Drawing.Size(148, 23);
+            this.TileTemperature.TabIndex = 30;
+            this.TileTemperature.Text = "N/A";
+            this.TileTemperature.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.Location = new System.Drawing.Point(3, 40);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(99, 23);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Temperature:";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TileCalories
+            // 
+            this.TileCalories.Enabled = false;
+            this.TileCalories.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TileCalories.Location = new System.Drawing.Point(176, 167);
+            this.TileCalories.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.WeatherAmplitude.Name = "WeatherAmplitude";
-            this.WeatherAmplitude.Size = new System.Drawing.Size(148, 22);
-            this.WeatherAmplitude.TabIndex = 19;
-            this.WeatherAmplitude.Value = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.WeatherAmplitude.ValueChanged += new System.EventHandler(this.WeatherAmplitude_ValueChanged);
+            this.TileCalories.Name = "TileCalories";
+            this.TileCalories.Size = new System.Drawing.Size(148, 22);
+            this.TileCalories.TabIndex = 27;
+            this.TileCalories.ValueChanged += new System.EventHandler(this.TileCalories_ValueChanged);
             // 
-            // label10
+            // label17
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.Location = new System.Drawing.Point(4, 184);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(166, 23);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Weather amplitude";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label11.Location = new System.Drawing.Point(3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(321, 23);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "Selected field controls";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label12.Location = new System.Drawing.Point(4, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 23);
-            this.label12.TabIndex = 21;
-            this.label12.Text = "Coordinates:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TileCoordinates
-            // 
-            this.TileCoordinates.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TileCoordinates.Location = new System.Drawing.Point(175, 21);
-            this.TileCoordinates.Name = "TileCoordinates";
-            this.TileCoordinates.Size = new System.Drawing.Size(148, 23);
-            this.TileCoordinates.TabIndex = 22;
-            this.TileCoordinates.Text = "N/A";
-            this.TileCoordinates.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label17.Location = new System.Drawing.Point(3, 166);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(166, 23);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "Calories";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TileInitialTemperature
             // 
@@ -524,6 +557,16 @@
             this.TileInitialTemperature.Size = new System.Drawing.Size(148, 22);
             this.TileInitialTemperature.TabIndex = 25;
             this.TileInitialTemperature.ValueChanged += new System.EventHandler(this.TileInitialTemperature_ValueChanged);
+            // 
+            // TileCoordinates
+            // 
+            this.TileCoordinates.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TileCoordinates.Location = new System.Drawing.Point(175, 21);
+            this.TileCoordinates.Name = "TileCoordinates";
+            this.TileCoordinates.Size = new System.Drawing.Size(148, 23);
+            this.TileCoordinates.TabIndex = 22;
+            this.TileCoordinates.Text = "N/A";
+            this.TileCoordinates.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
@@ -550,6 +593,16 @@
             this.TileHeight.TabIndex = 24;
             this.TileHeight.ValueChanged += new System.EventHandler(this.TileHeight_ValueChanged);
             // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(4, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(99, 23);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Coordinates:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -559,6 +612,16 @@
             this.label14.TabIndex = 23;
             this.label14.Text = "Height";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(321, 23);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "Selected field controls";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TileTemperatureOffset
             // 
@@ -590,79 +653,30 @@
             this.label15.Text = "Temperature offset";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TileCalories
+            // GraphicTimer
             // 
-            this.TileCalories.Enabled = false;
-            this.TileCalories.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TileCalories.Location = new System.Drawing.Point(176, 167);
-            this.TileCalories.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.TileCalories.Name = "TileCalories";
-            this.TileCalories.Size = new System.Drawing.Size(148, 22);
-            this.TileCalories.TabIndex = 27;
-            this.TileCalories.ValueChanged += new System.EventHandler(this.TileCalories_ValueChanged);
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label17.Location = new System.Drawing.Point(3, 166);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(166, 23);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "Calories";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TileTemperature
-            // 
-            this.TileTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TileTemperature.Location = new System.Drawing.Point(175, 40);
-            this.TileTemperature.Name = "TileTemperature";
-            this.TileTemperature.Size = new System.Drawing.Size(148, 23);
-            this.TileTemperature.TabIndex = 30;
-            this.TileTemperature.Text = "N/A";
-            this.TileTemperature.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.Location = new System.Drawing.Point(3, 40);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 23);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Temperature:";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TileMaxCalories
-            // 
-            this.TileMaxCalories.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TileMaxCalories.Location = new System.Drawing.Point(175, 59);
-            this.TileMaxCalories.Name = "TileMaxCalories";
-            this.TileMaxCalories.Size = new System.Drawing.Size(148, 23);
-            this.TileMaxCalories.TabIndex = 32;
-            this.TileMaxCalories.Text = "N/A";
-            this.TileMaxCalories.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label20
-            // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label20.Location = new System.Drawing.Point(4, 59);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(99, 23);
-            this.label20.TabIndex = 31;
-            this.label20.Text = "Max. calories:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.GraphicTimer.Interval = 8;
+            this.GraphicTimer.Tick += new System.EventHandler(this.GraphicTimer_Tick);
             // 
             // CreatureControlPanel
             // 
             this.CreatureControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CreatureControlPanel.Controls.Add(this.label16);
             this.CreatureControlPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CreatureControlPanel.Location = new System.Drawing.Point(12, 518);
             this.CreatureControlPanel.Name = "CreatureControlPanel";
             this.CreatureControlPanel.Size = new System.Drawing.Size(835, 81);
             this.CreatureControlPanel.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label16.Location = new System.Drawing.Point(3, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(321, 23);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Selected creature controls";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -679,17 +693,18 @@
             this.Text = "Evol Sim";
             this.SimulationControlPanel.ResumeLayout(false);
             this.SimulationControlPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.WeatherAmplitude)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CycleSleep)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WeatherChangePeriod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimalCreatureAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WorldHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WorldWidth)).EndInit();
             this.FieldControlPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.WeatherAmplitude)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TileCalories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileInitialTemperature)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileTemperatureOffset)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TileCalories)).EndInit();
+            this.CreatureControlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -741,6 +756,7 @@
         private System.Windows.Forms.Label TileTemperature;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel CreatureControlPanel;
+        private System.Windows.Forms.Label label16;
     }
 }
 

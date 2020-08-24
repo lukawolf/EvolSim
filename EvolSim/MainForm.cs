@@ -32,30 +32,34 @@ namespace EvolSim
             var worldX = mouseEvent.X / (SimulationPanel.Width / world.Width);
             var worldY = mouseEvent.Y / (SimulationPanel.Height / world.Height);
             world.SelectField(worldX, worldY);
+            world.SelectCreature(worldX, worldY);
             GraphicTimer_Tick(sender, e);
             TileInitialTemperature.Enabled = true;
             TileTemperatureOffset.Enabled = true;
             TileHeight.Enabled = true;
-            TileCalories.Enabled = true;
+            TileCalories.Enabled = true;            
         }
 
         //World generation starter buttons
         private void BtnWorldGenCA_Click(object sender, EventArgs e)
         {
-            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value);
+            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value, (int)MinimalCreatureAmount.Value);
             world.Generate(World.GenerationType.CellularAutomata, MapGenProgress);
+            GraphicTimer_Tick(sender, e);
         }
 
         private void BtnWorldGenHM_Click(object sender, EventArgs e)
         {
-            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value);
+            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value, (int)MinimalCreatureAmount.Value);
             world.Generate(World.GenerationType.HeightMap, MapGenProgress);
+            GraphicTimer_Tick(sender, e);
         }
 
         private void BtnWorldGenGaia_Click(object sender, EventArgs e)
         {
-            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value);
+            world = new World((int)WorldWidth.Value, (int)WorldHeight.Value, (int)MinimalCreatureAmount.Value);
             world.Generate(World.GenerationType.Gaia, MapGenProgress);
+            GraphicTimer_Tick(sender, e);
         }
 
         private void WeatherChanged(object sender, EventArgs e)
@@ -85,7 +89,7 @@ namespace EvolSim
             }
             if (simulationLoop == null)
             {
-                weather = new Weather(world, (int)WeatherAmplitude.Value, GetSelectedWeather());
+                weather = new Weather(world, (int)WeatherAmplitude.Value, (int)WeatherChangePeriod.Value, GetSelectedWeather());
                 simulationLoop = new SimulationLoop((int)CycleSleep.Value, weather);
                 simulationLoop.LoadWorld(world);
             }
@@ -113,7 +117,7 @@ namespace EvolSim
             Renderer.RenderBuffered(world, e, false, false);
         }
 
-        //TODO: Think about moving rendering from graphic timer to game loop and render each n-th simulation step
+        //TODO: Think about moving rendering from graphic timer to game loop and render each n-th simulation step in the buffer, using graphic timer to only render that
         /// <summary>
         /// Handler for graphic timer ticks, starts drawing of our map (via triggering the map paint method)
         /// and also sets unfocused inputs to current values
@@ -143,7 +147,7 @@ namespace EvolSim
                 }
                 if (!TileCalories.Focused)
                 {
-                    TileCalories.Value = world.SelectedField.Calories;
+                    TileCalories.Value = (int)world.SelectedField.Calories;
                 }
             }
         }
@@ -186,6 +190,12 @@ namespace EvolSim
         {
             if (weather == null) return;
             weather.ChangeInterval = (int)WeatherChangePeriod.Value;
+        }
+
+        private void MinimalCreatureAmount_ValueChanged(object sender, EventArgs e)
+        {
+            if (world == null) return;
+            world.MinCreatures = (int)MinimalCreatureAmount.Value;
         }
     }
 }

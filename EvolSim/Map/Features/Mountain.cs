@@ -12,7 +12,7 @@ namespace EvolSim.Map.Features
         {
         }
 
-        public Mountain(Random random, World world) : base(random, world)
+        protected Mountain(World world) : base(world)
         {
             canMoveMinusX = true;
             canMoveMinusY = true;
@@ -20,19 +20,19 @@ namespace EvolSim.Map.Features
             canMovePlusY = true;
         }
 
-        protected Mountain(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
+        protected Mountain(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY) : base(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY)
         {
 
         }
 
-        public override IMapFeature CreateSelf(Random random, World world)
+        public override IMapFeature CreateSelf(World world)
         {
-            return new Mountain(random, world);
+            return new Mountain(world);
         }
 
-        public override IMapFeature CreateSelf(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
+        public override IMapFeature CreateSelf(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
-            return new Mountain(world, random, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
+            return new Mountain(world, x, y, intensity, distance, canMovePlusX, canMoveMinusX, canMovePlusY, canMoveMinusY);
         }
 
         protected override void EffectInternal()

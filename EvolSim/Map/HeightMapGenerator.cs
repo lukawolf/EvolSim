@@ -12,39 +12,37 @@ namespace EvolSim.Map
     {
         public const int AgitationRadius = 1;
         public const int AgitationDelta = 10;
-        private Random random = new Random();
-        public void Generate(World world, ProgressBar progressBar, int? seed)
+        public void Generate(World world, ProgressBar progressBar)
         {
             world.BlankMap(0, 0);
-            if (seed != null) random = new Random((int)seed);
-            var passes = random.Next((world.Width + world.Height) / 2, (world.Width + world.Height));
+            var passes = RandomThreadSafe.Next((world.Width + world.Height) / 2, (world.Width + world.Height));
             var toAgitate = new List<Coordinate>();
             //For a random ammount of passes
             for (int i = 0; i < passes; i++)
             {
-                var drops = random.Next(1, (world.Width + world.Height));
+                var drops = RandomThreadSafe.Next(1, (world.Width + world.Height));
                 toAgitate.Clear();
                 //Do a random ammount of drops based on the field size
                 for (int j = 0; j < drops; j++)
                 {
-                    var x = random.Next(0, world.Width);
-                    var y = random.Next(0, world.Height);
+                    var x = RandomThreadSafe.Next(0, world.Width);
+                    var y = RandomThreadSafe.Next(0, world.Height);
                     //Drop a random ammount of height and / or temperature particles on a given field
-                    var doHeight = random.Next(0, 2);
-                    var doTemp = random.Next(0, 2);
-                    world.Fields[x][y].Drop(random.Next(64, 255) * doHeight, random.Next(64, 255) * doTemp);
+                    var doHeight = RandomThreadSafe.Next(0, 2);
+                    var doTemp = RandomThreadSafe.Next(0, 2);
+                    world.Fields[x][y].Drop(RandomThreadSafe.Next(64, 255) * doHeight, RandomThreadSafe.Next(64, 255) * doTemp);
                     toAgitate.Add(new Coordinate(x, y));
                 }
                 foreach (var item in toAgitate)
                 {
-                    AgitateDrop(world, item.x, item.y, random);
+                    AgitateDrop(world, item.x, item.y);
                 }
                 progressBar.Value = (i + 1) * 100 / passes;
             }
             progressBar.Value = 100;
         }
 
-        private static void AgitateDrop(World world, int x, int y, Random random)
+        private static void AgitateDrop(World world, int x, int y)
         {
             //We calculate the bounds around the agitated cell and trim them to fit the map
             var leftBound = x - AgitationRadius;
@@ -94,7 +92,7 @@ namespace EvolSim.Map
             //In the end we agitate the targets, as their heights and temperatures have changed
             foreach (var agitationTarget in agitationTargets)
             {
-                AgitateDrop(world, agitationTarget.x, agitationTarget.y, random);
+                AgitateDrop(world, agitationTarget.x, agitationTarget.y);
             }
         }
     }

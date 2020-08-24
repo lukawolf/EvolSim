@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace EvolSim.Map.Features
 {
+    /// <summary>
+    /// An abstract parent of all map features handling common functionality
+    /// </summary>
     abstract class Feature: IMapFeature
     {
         protected bool canMovePlusX;
         protected bool canMoveMinusX;
         protected bool canMovePlusY;
         protected bool canMoveMinusY;
-        protected Random random;
         protected World world;
         protected int intensity;
         protected int distance;
@@ -24,21 +26,19 @@ namespace EvolSim.Map.Features
 
         }
 
-        public Feature(Random random, World world)
+        protected Feature(World world)
         {
-            this.random = random;
             this.world = world;
-            this.x = this.random.Next(0, world.Width);
-            this.y = this.random.Next(0, world.Height);
-            this.intensity = this.random.Next(0, 126);
-            this.distance = this.random.Next(0, (this.world.Height + this.world.Width) / 4);
+            this.x = RandomThreadSafe.Next(0, world.Width);
+            this.y = RandomThreadSafe.Next(0, world.Height);
+            this.intensity = RandomThreadSafe.Next(1, 126);
+            this.distance = RandomThreadSafe.Next(1, (this.world.Height + this.world.Width) / 4);
         }
 
-        protected Feature(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
+        protected Feature(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
             this.isChild = true;
-            this.world = world;
-            this.random = random;            
+            this.world = world;         
             this.x = x;
             this.y = y;
             this.intensity = intensity;
@@ -49,16 +49,33 @@ namespace EvolSim.Map.Features
             this.canMoveMinusY = canMoveMinusY;
         }
 
-        public abstract IMapFeature CreateSelf(Random random, World world);
+        /// <summary>
+        /// Creates a new instance of the feature's own type. Generates random starting position, intensity and distance
+        /// </summary>
+        /// <param name="world">The world to be affected by this feature</param>
+        /// <returns></returns>
+        public abstract IMapFeature CreateSelf(World world);
 
-        public abstract IMapFeature CreateSelf(World world, Random random, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY);
+        /// <summary>
+        /// Creates a new instance of the feature's own type using given starting parameters.
+        /// </summary>
+        /// <param name="world">The world to be affected by this feature</param>
+        /// <param name="x">The X coordinate within the world</param>
+        /// <param name="y">The Y coordinate within the world</param>
+        /// <param name="intensity">The feature effect's intensity</param>
+        /// <param name="distance">The remaining spread distance</param>
+        /// <param name="canMovePlusX">Whether the effect can spread +x</param>
+        /// <param name="canMoveMinusX">Whether the effect can spread -x</param>
+        /// <param name="canMovePlusY">Whether the effect can spread +y</param>
+        /// <param name="canMoveMinusY">Whether the effect can spread -y</param>
+        /// <returns></returns>
+        public abstract IMapFeature CreateSelf(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY);
 
+        /// <summary>
+        /// Effects the instance's tile.
+        /// </summary>
         public void Effect()
         {
-            if (random == null)
-            {
-                throw new MethodAccessException("Can not run Effect method on a feature construted without random");
-            }
             if (world == null)
             {
                 throw new ArgumentNullException("world can not be null");
@@ -75,40 +92,44 @@ namespace EvolSim.Map.Features
             EffectSpread();            
         }
 
-        protected void EffectSpread()
+        /// <summary>
+        /// Handles the spread of the Feature instance's effect based on the allowed directions it can take
+        /// </summary>
+        protected virtual void EffectSpread()
         {
-            var children = new List<IMapFeature>();
+            //List of 8 possible ways is prepared, but filled only as needed
+            var children = new List<IMapFeature>(8);
             if (canMoveMinusX)
             {
-                children.Add(CreateSelf(world, random, x - 1, y, intensity - random.Next(0, intensity), distance - random.Next(0, distance), false, true, false, false));
+                children.Add(CreateSelf(world, x - 1, y, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), false, true, false, false));
                 if (canMoveMinusY)
                 {
-                    children.Add(CreateSelf(world, random, x - 1, y - 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), false, true, false, true));
+                    children.Add(CreateSelf(world, x - 1, y - 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), false, true, false, true));
                 }
                 if (canMovePlusY)
                 {
-                    children.Add(CreateSelf(world, random, x - 1, y + 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), false, true, false, true));
+                    children.Add(CreateSelf(world, x - 1, y + 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), false, true, false, true));
                 }
             }
             if (canMovePlusX)
             {
-                children.Add(CreateSelf(world, random, x + 1, y, intensity - random.Next(0, intensity), distance - random.Next(0, distance), true, false, false, false));
+                children.Add(CreateSelf(world, x + 1, y, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), true, false, false, false));
                 if (canMoveMinusY)
                 {
-                    children.Add(CreateSelf(world, random, x + 1, y - 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), true, false, false, true));
+                    children.Add(CreateSelf(world, x + 1, y - 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), true, false, false, true));
                 }
                 if (canMovePlusY)
                 {
-                    children.Add(CreateSelf(world, random, x + 1, y + 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), true, false, true, false));
+                    children.Add(CreateSelf(world, x + 1, y + 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), true, false, true, false));
                 }
             }
             if (canMoveMinusY)
             {
-                children.Add(CreateSelf(world, random, x, y - 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), false, false, false, true));
+                children.Add(CreateSelf(world, x, y - 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), false, false, false, true));
             }
             if (canMovePlusY)
             {
-                children.Add(CreateSelf(world, random, x, y + 1, intensity - random.Next(0, intensity), distance - random.Next(0, distance), false, false, true, false));
+                children.Add(CreateSelf(world, x, y + 1, intensity - RandomThreadSafe.Next(1, intensity / 2 + 1), distance - RandomThreadSafe.Next(0, distance / 2 + 1), false, false, true, false));
             }
 
             foreach (var child in children)
