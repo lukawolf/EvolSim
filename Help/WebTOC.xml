@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="e7628dbe-f6e4-49f7-9f50-36a10aef3d34" Title="EvolSim Namespaces" Url="html/545a9306-650c-d7eb-772a-3ebf48b4dc24.htm">
-    <HelpTOCNode Id="9f1d213f-933c-47ff-8e40-495490c83a49" Title="EvolSim" Url="html/8a439968-967d-9159-a6fe-bedf9caf2503.htm">
-      <HelpTOCNode Id="3b51efa0-97c9-4f0d-b866-09db2ca9ad49" Title="MainForm Class" Url="html/b0289f13-3d5c-51b7-8aad-0b9a3c72a279.htm">
+  <HelpTOCNode Id="e3dc591e-f3f8-4309-ae21-287ad2c0fa40" Title="EvolSim Namespaces" Url="html/545a9306-650c-d7eb-772a-3ebf48b4dc24.htm">
+    <HelpTOCNode Id="19097785-3561-40b0-b911-39cdf7c16fe5" Title="EvolSim" Url="html/8a439968-967d-9159-a6fe-bedf9caf2503.htm">
+      <HelpTOCNode Id="3ca19114-6061-4b8e-9b88-618715bc06a3" Title="MainForm Class" Url="html/b0289f13-3d5c-51b7-8aad-0b9a3c72a279.htm">
         <HelpTOCNode Title="MainForm Constructor " Url="html/d66d4b04-8165-1363-95ce-e7dc3a5b2336.htm" />
         <HelpTOCNode Title="MainForm Properties" Url="html/d102ef3c-88e5-4f91-24a2-c0853d7e9f20.htm" />
-        <HelpTOCNode Id="0512affa-a266-405d-ac47-1575c1ac7a03" Title="MainForm Methods" Url="html/a6a714bc-239c-30eb-5c3b-91e8f971dc64.htm">
+        <HelpTOCNode Id="dbbff965-419d-420a-86a1-93643cbad98a" Title="MainForm Methods" Url="html/a6a714bc-239c-30eb-5c3b-91e8f971dc64.htm">
           <HelpTOCNode Title="BtnWorldGenCA_Click Method " Url="html/13650769-a450-a94b-a51a-174789813ffa.htm" />
           <HelpTOCNode Title="BtnWorldGenGaia_Click Method " Url="html/3fd8a534-b51c-5720-4abd-06e01a4b1a58.htm" />
           <HelpTOCNode Title="BtnWorldGenHM_Click Method " Url="html/71d038ad-656d-46bd-2e00-7e4c88e29712.htm" />
@@ -23,7 +23,7 @@
           <HelpTOCNode Title="CreatureX_ValueChanged Method " Url="html/8ee682d0-c05f-082f-d68b-a299e7f85418.htm" />
           <HelpTOCNode Title="CreatureY_ValueChanged Method " Url="html/8cea4224-31db-2142-8e33-45b87250eef8.htm" />
           <HelpTOCNode Title="CycleSleep_ValueChanged Method " Url="html/16ff913a-9e4f-0cc4-dd6e-728b94358946.htm" />
-          <HelpTOCNode Id="06dc1163-1fe3-4cf2-a705-a3dda8fc038c" Title="Dispose Method " Url="html/57832404-6d14-21ac-fe71-b6ad3b80d615.htm">
+          <HelpTOCNode Id="90fe07ff-c717-4d47-a3a6-0157eb77b84b" Title="Dispose Method " Url="html/57832404-6d14-21ac-fe71-b6ad3b80d615.htm">
             <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/7461a289-3d70-fe23-4279-c8ac0dc72ecf.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="GetSelectedWeather Method " Url="html/db956e3c-ccdb-8418-0eb0-264529ad0207.htm" />
@@ -43,7 +43,7 @@
           <HelpTOCNode Title="WeatherChangePeriod_ValueChanged Method " Url="html/1c15c3c6-e08c-9b12-ff9e-ab25a9cdcd13.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="MainForm Events" Url="html/28f23a1a-321d-8823-5378-df77bff2b90f.htm" />
-        <HelpTOCNode Id="eb969f20-d02e-4d5b-a366-83500bd42858" Title="MainForm Fields" Url="html/e5ab216d-e202-7091-4da4-c866e2ab8ef0.htm">
+        <HelpTOCNode Id="d581e9d8-b015-49ac-9121-aa838af420d0" Title="MainForm Fields" Url="html/e5ab216d-e202-7091-4da4-c866e2ab8ef0.htm">
           <HelpTOCNode Title="BtnWorldGenCA Field" Url="html/d58fc12e-c88a-b9b8-0c10-210a45d342c0.htm" />
           <HelpTOCNode Title="BtnWorldGenGaia Field" Url="html/aa820871-dddf-ae94-9936-21ea0c93b03b.htm" />
           <HelpTOCNode Title="BtnWorldGenHM Field" Url="html/e9550a3a-e241-860f-452c-d88c05dff9b4.htm" />
@@ -121,91 +121,91 @@
           <HelpTOCNode Title="WorldWidth Field" Url="html/ad446f1e-54ee-8c7b-4155-f9e0f6a6a0d6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="da0f7e25-103b-4491-b971-48a352c34c53" Title="Program Class" Url="html/3889c515-7909-0b57-b451-7e22cca0e7f9.htm">
-        <HelpTOCNode Id="06546e5a-66c1-4c00-841e-e0c2861bf8b5" Title="Program Methods" Url="html/c634300b-7862-3e5d-fb64-e20014aea4b5.htm">
+      <HelpTOCNode Id="c5d7f0dc-ec06-4d30-9382-58dc10255f54" Title="Program Class" Url="html/3889c515-7909-0b57-b451-7e22cca0e7f9.htm">
+        <HelpTOCNode Id="8e189f03-61c6-4974-b286-923528610286" Title="Program Methods" Url="html/c634300b-7862-3e5d-fb64-e20014aea4b5.htm">
           <HelpTOCNode Title="Main Method " Url="html/d7b33d17-8e9d-1731-93ea-7c38666fe218.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3b24e7bf-911e-496f-a500-a6284a6c1f0a" Title="RandomThreadSafe Class" Url="html/8af98731-9efe-a352-5eb8-b013c864a1ad.htm">
+      <HelpTOCNode Id="c57446ff-25e0-46bf-9fe0-c06cd1fbd8da" Title="RandomThreadSafe Class" Url="html/8af98731-9efe-a352-5eb8-b013c864a1ad.htm">
         <HelpTOCNode Title="RandomThreadSafe Constructor " Url="html/de3b93ec-77bf-5713-ee13-0c025da18989.htm" />
         <HelpTOCNode Title="RandomThreadSafe Constructor " Url="html/c643d6a3-6805-13e3-2c62-9be29b193543.htm" />
-        <HelpTOCNode Id="dfb5d0b7-0640-403e-8218-47b3b193a894" Title="RandomThreadSafe Methods" Url="html/ff8e93df-c73a-5228-d378-182d9bd6757c.htm">
+        <HelpTOCNode Id="123af963-f5f6-4a22-9230-c9ab4fd44b0f" Title="RandomThreadSafe Methods" Url="html/ff8e93df-c73a-5228-d378-182d9bd6757c.htm">
           <HelpTOCNode Title="EnsureLocalExists Method " Url="html/56fe7ec0-5361-edfa-7b36-e2fdb442e100.htm" />
-          <HelpTOCNode Id="e98d8d8f-1f78-4eed-86e6-b25fe1646b5a" Title="Next Method " Url="html/720f87bf-73da-6d85-7448-dd523ff35228.htm">
+          <HelpTOCNode Id="68570a7d-43cc-416e-bd9e-987cd485c6ee" Title="Next Method " Url="html/720f87bf-73da-6d85-7448-dd523ff35228.htm">
             <HelpTOCNode Title="Next Method " Url="html/91206094-c5ff-b937-a9ae-7424429aa713.htm" />
             <HelpTOCNode Title="Next Method (Int32)" Url="html/fa37d375-346a-7982-2b8c-e4ab51715003.htm" />
             <HelpTOCNode Title="Next Method (Int32, Int32)" Url="html/01064c39-6f04-8030-84b7-f6c331da76a1.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="4faa71f6-ecb9-4ba0-9df6-ce7579cd2c08" Title="NextDouble Method " Url="html/026690d5-0ede-253e-af14-0c3912a92f35.htm">
+          <HelpTOCNode Id="829a8bb7-1ef1-48ea-bd08-bb4178a9c5fa" Title="NextDouble Method " Url="html/026690d5-0ede-253e-af14-0c3912a92f35.htm">
             <HelpTOCNode Title="NextDouble Method " Url="html/355ae103-cdee-5c14-590f-28b103e1a7eb.htm" />
             <HelpTOCNode Title="NextDouble Method (Double, Double)" Url="html/9f7400e2-7819-b450-fa84-29ffb2e028c8.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="SetSeed Method " Url="html/dde55671-ee44-d5d2-54cf-8ff310e1c34c.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="82b17395-0931-4393-956a-b481a29b9cfa" Title="RandomThreadSafe Fields" Url="html/8a2a399b-6bdf-dd8e-fc11-e2fb388a069b.htm">
+        <HelpTOCNode Id="de767ab1-5b51-4f8b-b9db-d2c622c55690" Title="RandomThreadSafe Fields" Url="html/8a2a399b-6bdf-dd8e-fc11-e2fb388a069b.htm">
           <HelpTOCNode Title="global Field" Url="html/84969cec-52e4-7771-0711-9449cf5687c1.htm" />
           <HelpTOCNode Title="local Field" Url="html/248bc00c-3ffc-1c28-847b-c82d1d7741fe.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="30cd5df5-c7b2-401e-b186-45f21de62f22" Title="SimulationLoop Class" Url="html/b495b246-0e89-989e-11f8-0aa2eb9ef0d5.htm">
+      <HelpTOCNode Id="6ec3b0f8-beca-4534-a238-705c7d39e2fd" Title="SimulationLoop Class" Url="html/b495b246-0e89-989e-11f8-0aa2eb9ef0d5.htm">
         <HelpTOCNode Title="SimulationLoop Constructor " Url="html/4b2ca254-791e-2117-10bf-d90db824ed88.htm" />
-        <HelpTOCNode Id="49ffb72d-08ae-48ab-9b46-f2092919f9fc" Title="SimulationLoop Properties" Url="html/df3bd46a-3a6e-7387-660e-23822edf90c9.htm">
+        <HelpTOCNode Id="e45238c8-ee9f-4967-8ca1-40cb0d0fe62b" Title="SimulationLoop Properties" Url="html/df3bd46a-3a6e-7387-660e-23822edf90c9.htm">
           <HelpTOCNode Title="Delay Property " Url="html/81a584f0-a3e2-c963-a5df-45b6ea1a1f24.htm" />
           <HelpTOCNode Title="Running Property " Url="html/5aba6d62-4ff3-3477-3e4f-7e01c7f6948b.htm" />
           <HelpTOCNode Title="Weather Property " Url="html/ec8a9728-c1d2-a60b-bfd1-5e0650a15202.htm" />
           <HelpTOCNode Title="World Property " Url="html/441c7db8-0af1-a096-09d5-05291ad8cfd1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="4fd478d8-e008-4220-b995-ff83c908ee35" Title="SimulationLoop Methods" Url="html/4545ed4d-36ec-0638-fc4c-ce069fbfb96f.htm">
+        <HelpTOCNode Id="027363d5-327e-4b22-850f-c45b2aa329d3" Title="SimulationLoop Methods" Url="html/4545ed4d-36ec-0638-fc4c-ce069fbfb96f.htm">
           <HelpTOCNode Title="LoadWorld Method " Url="html/4304165a-48da-f556-84b5-4b5c261ad2ae.htm" />
           <HelpTOCNode Title="Pause Method " Url="html/de52afdd-8e9f-4645-beaf-2009163d5faf.htm" />
           <HelpTOCNode Title="Start Method " Url="html/722575ba-ffb5-be6d-ab09-54783f2b3af8.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="3bbcfc73-7555-4523-8365-6c7e42904a24" Title="SimulationLoop Fields" Url="html/ae111d96-89cb-c672-635b-b0d00e1b1a58.htm">
+        <HelpTOCNode Id="df1a76f1-7322-49da-9054-02ea55693eb7" Title="SimulationLoop Fields" Url="html/ae111d96-89cb-c672-635b-b0d00e1b1a58.htm">
           <HelpTOCNode Title="_delay Field" Url="html/06af3458-9b26-f47d-1bc1-9e641e7f3d0a.htm" />
           <HelpTOCNode Title="simulationStopwatch Field" Url="html/46bbf68e-05b8-b55c-6544-d1326871e934.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b0830008-15cf-4f39-9c56-9ea1ba921792" Title="EvolSim.Creature" Url="html/3f1e6843-a73a-40e5-e3f2-73d8493522a7.htm">
-      <HelpTOCNode Id="64e0eefb-1eea-4cc5-9fab-8e5218c5c5c2" Title="Brain Class" Url="html/2d9439a5-318d-8b54-198a-756bd5ffc032.htm">
+    <HelpTOCNode Id="a837c89c-36f6-414e-b2cd-d6d05581c30d" Title="EvolSim.Creature" Url="html/3f1e6843-a73a-40e5-e3f2-73d8493522a7.htm">
+      <HelpTOCNode Id="1f630dfc-fc32-4dee-b28d-23c81f82ce8c" Title="Brain Class" Url="html/2d9439a5-318d-8b54-198a-756bd5ffc032.htm">
         <HelpTOCNode Title="Brain Constructor " Url="html/886269e0-b98d-d33a-7452-c13232ae40ad.htm" />
-        <HelpTOCNode Id="7dd7b616-6cfc-4931-9bc7-5f3097503253" Title="Brain Properties" Url="html/c53cdd45-fd6e-0d9f-d849-c50e3b744367.htm">
+        <HelpTOCNode Id="71a873f1-2218-4d69-872e-6a117b61b5e2" Title="Brain Properties" Url="html/c53cdd45-fd6e-0d9f-d849-c50e3b744367.htm">
           <HelpTOCNode Title="Generated Property " Url="html/4f06ca20-fd34-3b16-4b4e-f26b66908a2d.htm" />
           <HelpTOCNode Title="InputWidth Property " Url="html/c6be45c1-23c4-2680-7eb5-de684eb7c46c.htm" />
           <HelpTOCNode Title="MemoryWidth Property " Url="html/bc131e5d-6740-f177-b0c8-4fafb5f8310d.htm" />
           <HelpTOCNode Title="OutputWidth Property " Url="html/b82cf2ac-dd47-980d-66c6-6003a34d7c25.htm" />
           <HelpTOCNode Title="ThinkingWidth Property " Url="html/c74df934-e781-806e-48c0-21fcccf4d8e7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="287b62e6-b12b-48b3-a909-77c694cbcfcd" Title="Brain Methods" Url="html/58e7985b-3001-8fd1-61a0-ae4f800fc06e.htm">
+        <HelpTOCNode Id="9b6691bb-a654-4883-86eb-1a7e9ae1e036" Title="Brain Methods" Url="html/58e7985b-3001-8fd1-61a0-ae4f800fc06e.htm">
           <HelpTOCNode Title="GenerateFromBrain Method " Url="html/004aed13-4bd8-13ac-7fd0-c4170107b9d8.htm" />
           <HelpTOCNode Title="GenerateRandom Method " Url="html/08399d76-737c-dbdc-81a7-7f4c57393d0a.htm" />
           <HelpTOCNode Title="Think Method " Url="html/e2a9e4f8-8b0c-02a4-3fdc-b02ba682fcde.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e23facb8-366f-4e43-b57d-6aa872528c60" Title="Brain Fields" Url="html/60cdd501-7d7d-05dd-9147-28cfd2d4650c.htm">
+        <HelpTOCNode Id="c6daaa34-0cfa-4b28-8da0-b502ec0f724f" Title="Brain Fields" Url="html/60cdd501-7d7d-05dd-9147-28cfd2d4650c.htm">
           <HelpTOCNode Title="inputNeurons Field" Url="html/9f19b3f0-8be7-d2ce-56bb-e8d84184bb55.htm" />
           <HelpTOCNode Title="memory Field" Url="html/8145e219-a396-76d8-b5b8-79c958c29234.htm" />
           <HelpTOCNode Title="outputNeurons Field" Url="html/6fd86e84-dd9d-17f6-31c9-203066db880d.htm" />
           <HelpTOCNode Title="thinkingNeurons Field" Url="html/457fed66-ed2f-7eb9-d428-3211dbeb8115.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="cae48230-b75e-4482-9ecb-fe55072aa721" Title="BrainRenderer Class" Url="html/dcddead9-dd97-44e6-76c5-9ad345c80ccf.htm">
+      <HelpTOCNode Id="7b6851a5-0ca4-4039-a667-b2f7367428b4" Title="BrainRenderer Class" Url="html/dcddead9-dd97-44e6-76c5-9ad345c80ccf.htm">
         <HelpTOCNode Title="BrainRenderer Constructor " Url="html/9e39ef71-4a51-a3dd-87cc-de145606a792.htm" />
-        <HelpTOCNode Id="cb5f1ade-666b-43a6-a09f-69ab7f746490" Title="BrainRenderer Methods" Url="html/c105e9a0-8d54-96dd-6c4d-59581dbbcb2f.htm">
+        <HelpTOCNode Id="db1e532c-8291-44d0-8179-d779166a654c" Title="BrainRenderer Methods" Url="html/c105e9a0-8d54-96dd-6c4d-59581dbbcb2f.htm">
           <HelpTOCNode Title="Render Method " Url="html/9a0592af-824f-a774-47f5-40526e55c569.htm" />
           <HelpTOCNode Title="RenderBuffered Method " Url="html/4aabb5aa-2380-153a-3304-c77df866969d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="686e5123-aa17-465e-b30f-393fcab1acb8" Title="BrainRenderer Fields" Url="html/4597c9ab-4648-539d-b29d-8bc5284804d6.htm">
+        <HelpTOCNode Id="5045d1b4-8464-42e3-bcf5-45f9e7ea02fb" Title="BrainRenderer Fields" Url="html/4597c9ab-4648-539d-b29d-8bc5284804d6.htm">
           <HelpTOCNode Title="brushes Field" Url="html/e0d2d306-0f1c-be03-0035-f82af06dc052.htm" />
           <HelpTOCNode Title="nodeSpacing Field" Url="html/49200577-9240-8ff7-c287-4d3145c020ee.htm" />
           <HelpTOCNode Title="pens Field" Url="html/92eaa99b-68d9-1967-aedf-909715359a7c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="31d762a5-29ed-4f71-aae5-3f760e3b008e" Title="Creature Class" Url="html/d64420f5-a763-81f1-0740-b014583ab77a.htm">
-        <HelpTOCNode Id="8d9cb194-318b-482a-9b90-40941b471380" Title="Creature Constructor " Url="html/c52e45bf-7fe6-1458-7fec-e711dada05dc.htm">
+      <HelpTOCNode Id="2625d657-11de-4ef2-a42c-3d3a1f82e7ee" Title="Creature Class" Url="html/d64420f5-a763-81f1-0740-b014583ab77a.htm">
+        <HelpTOCNode Id="561b7992-73df-4c61-94a2-03b67ce70d16" Title="Creature Constructor " Url="html/c52e45bf-7fe6-1458-7fec-e711dada05dc.htm">
           <HelpTOCNode Title="Creature Constructor (Creature)" Url="html/0050514a-5edb-2f6d-545c-18cab824eecd.htm" />
           <HelpTOCNode Title="Creature Constructor (World)" Url="html/2678c78f-9c78-9ce4-c1aa-f54222b2ac91.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="89324488-04d8-4e20-825f-c20998748b80" Title="Creature Properties" Url="html/cbe33e65-2b8c-9f8b-f87e-475a4ebe699c.htm">
+        <HelpTOCNode Id="fe2cda9c-ea08-471e-900f-6943fe5312d2" Title="Creature Properties" Url="html/cbe33e65-2b8c-9f8b-f87e-475a4ebe699c.htm">
           <HelpTOCNode Title="CenterX Property " Url="html/e7f03d63-61d4-61a2-954a-97e02c7de72e.htm" />
           <HelpTOCNode Title="CenterY Property " Url="html/2f4beb35-2b6f-6921-9c86-260afaab2209.htm" />
           <HelpTOCNode Title="Excitability Property " Url="html/87a8f3cf-b70e-c0c4-f3c4-9eb4760dddfe.htm" />
@@ -223,7 +223,7 @@
           <HelpTOCNode Title="X Property " Url="html/cde906b1-23a1-97c3-9020-2c61d033ef66.htm" />
           <HelpTOCNode Title="Y Property " Url="html/0111c97c-7aa1-8e30-94c6-f8af29d3c4fc.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="962337bb-e121-41fc-9d31-3e08941d8c23" Title="Creature Methods" Url="html/1b4fdcf1-e5b8-8f11-a27a-65e42a6c94bb.htm">
+        <HelpTOCNode Id="0f2a57d7-84a0-4708-9e73-01e2be3cfcf3" Title="Creature Methods" Url="html/1b4fdcf1-e5b8-8f11-a27a-65e42a6c94bb.htm">
           <HelpTOCNode Title="CalculateSenses Method " Url="html/8247f9a0-5bbc-1f42-ec23-a2024795f072.htm" />
           <HelpTOCNode Title="CostOfLiving Method " Url="html/ee80d4f7-2696-efae-ede1-57bfb556ea89.htm" />
           <HelpTOCNode Title="CurrentField Method " Url="html/36c5deae-1328-6c89-9a11-8053a544efb6.htm" />
@@ -234,7 +234,7 @@
           <HelpTOCNode Title="Split Method " Url="html/7552b869-b42b-b73a-11e9-e92bc6877564.htm" />
           <HelpTOCNode Title="Update Method " Url="html/32f2f9d2-2021-7780-1f31-8647665db523.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="774fef41-6cd6-43f6-8753-c1eb953874c7" Title="Creature Fields" Url="html/d092ed50-48f0-550d-e23c-df4b3426c2d3.htm">
+        <HelpTOCNode Id="a8ac47ec-69a6-447d-bf3e-b4487eeff2ce" Title="Creature Fields" Url="html/d092ed50-48f0-550d-e23c-df4b3426c2d3.htm">
           <HelpTOCNode Title="_rotation Field" Url="html/fee1ae4e-3ff8-4209-f871-639ebd939a5a.htm" />
           <HelpTOCNode Title="_visionAngle Field" Url="html/dd4132ba-45b6-97dd-423a-bd08b7758f66.htm" />
           <HelpTOCNode Title="_x Field" Url="html/c4bbf390-1019-c578-4d1d-477dbc06db00.htm" />
@@ -249,15 +249,15 @@
           <HelpTOCNode Title="senses Field" Url="html/263a9413-ff9f-0715-4d86-bfa7cacd775a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="bf7eebb1-cdf9-4123-bcd2-818743df2939" Title="Neuron Class" Url="html/ef4db692-ac9c-7d78-7269-7a10af145be8.htm">
-        <HelpTOCNode Id="fe135058-e68e-4be2-ab9f-68125f66ad63" Title="Neuron Constructor " Url="html/14a8ecbf-77b2-6d40-911c-bd5d0e67e960.htm">
+      <HelpTOCNode Id="f79db8f3-07ce-43b6-b857-45483aed7fa7" Title="Neuron Class" Url="html/ef4db692-ac9c-7d78-7269-7a10af145be8.htm">
+        <HelpTOCNode Id="894e22f9-7739-4198-883f-724f720db03e" Title="Neuron Constructor " Url="html/14a8ecbf-77b2-6d40-911c-bd5d0e67e960.htm">
           <HelpTOCNode Title="Neuron Constructor " Url="html/dcf85a34-b8f6-16e7-fcdf-0f3e0115067f.htm" />
           <HelpTOCNode Title="Neuron Constructor (Neuron)" Url="html/fdf6e0e0-0ac6-6a76-a920-0cc95d1d3e3e.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="1ca3d97a-73b6-4e6d-b51f-719f386fe277" Title="Neuron Properties" Url="html/77b2fbae-a90e-8de5-c5ed-d259dfacf913.htm">
+        <HelpTOCNode Id="b85c9055-f576-4861-b710-ad9cdd27e12f" Title="Neuron Properties" Url="html/77b2fbae-a90e-8de5-c5ed-d259dfacf913.htm">
           <HelpTOCNode Title="Output Property " Url="html/73c24f18-9af3-36be-78af-7642237bff34.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b8b072d4-b29a-4b2a-94b4-dbe779406d70" Title="Neuron Methods" Url="html/c043fa91-26cd-cbfa-7ad6-5937b95c0da6.htm">
+        <HelpTOCNode Id="51e86a91-d056-4b0b-89a4-d0020251c4f3" Title="Neuron Methods" Url="html/c043fa91-26cd-cbfa-7ad6-5937b95c0da6.htm">
           <HelpTOCNode Title="AddInput Method " Url="html/9438e728-9c98-1020-aad0-806e0fe862f8.htm" />
           <HelpTOCNode Title="AddOutput Method " Url="html/3ab27bf4-0795-e7bd-239d-031aa814036b.htm" />
           <HelpTOCNode Title="CalculateOutput Method " Url="html/ea2f5977-b330-cb84-9db0-9d037fdc5f96.htm" />
@@ -266,79 +266,79 @@
           <HelpTOCNode Title="OutputParameters Method " Url="html/eee945ae-7ffc-c9ef-e699-0b9216d9803b.htm" />
           <HelpTOCNode Title="OutputTransform Method " Url="html/01c1d608-4d2e-5b3b-6e05-726eb55414b1.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="4137a68f-5964-4375-b8d7-39e1b1c117ed" Title="Neuron Fields" Url="html/09c91deb-dc88-9480-f43e-89ca67e94a19.htm">
+        <HelpTOCNode Id="2d000f27-18e5-437a-8623-188e5652f6a5" Title="Neuron Fields" Url="html/09c91deb-dc88-9480-f43e-89ca67e94a19.htm">
           <HelpTOCNode Title="coeficient Field" Url="html/0f70bad6-9d58-926c-c2d6-20b36738e3d9.htm" />
           <HelpTOCNode Title="inputs Field" Url="html/e1a126ca-ed7b-11b4-bc63-c5d72228f8c6.htm" />
           <HelpTOCNode Title="outputs Field" Url="html/5f2d21d9-6167-22c0-c321-b8d4b56c08da.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ff63dd82-af9c-45df-8788-cd9968d8e81a" Title="SensoryNeuron Class" Url="html/53ec2bff-da5f-1130-5472-a54b1817505f.htm">
-        <HelpTOCNode Id="cbcdc038-da73-4ac9-927a-e2dfaeb51401" Title="SensoryNeuron Constructor " Url="html/9d49e668-2742-d46d-7c1e-357a80687604.htm">
+      <HelpTOCNode Id="48f05e33-1d82-4ad7-b492-dd3ed5f66595" Title="SensoryNeuron Class" Url="html/53ec2bff-da5f-1130-5472-a54b1817505f.htm">
+        <HelpTOCNode Id="eb9438f8-4bf2-4445-8006-0e1626374976" Title="SensoryNeuron Constructor " Url="html/9d49e668-2742-d46d-7c1e-357a80687604.htm">
           <HelpTOCNode Title="SensoryNeuron Constructor " Url="html/cf96de03-4400-15de-904a-41ad549cb97f.htm" />
           <HelpTOCNode Title="SensoryNeuron Constructor (Neuron)" Url="html/9763db2e-f4af-7240-bd05-23510a4d93e2.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="SensoryNeuron Properties" Url="html/71281f69-b764-3351-6619-ade793c0d23a.htm" />
-        <HelpTOCNode Id="a250e72f-e872-46b8-bd4c-ee937c0addfb" Title="SensoryNeuron Methods" Url="html/7a2ab72a-06e4-e8bb-b7c5-6896d965ca5d.htm">
+        <HelpTOCNode Id="17bacd43-ea51-4aaf-b615-1a80f05b0f81" Title="SensoryNeuron Methods" Url="html/7a2ab72a-06e4-e8bb-b7c5-6896d965ca5d.htm">
           <HelpTOCNode Title="AddInput Method " Url="html/bc6c6289-5165-9918-c869-79b966773ef2.htm" />
           <HelpTOCNode Title="CalculateOutput Method " Url="html/b9d717c5-d587-34db-13a4-4a70af58ca17.htm" />
           <HelpTOCNode Title="SetOutput Method " Url="html/4981c9f7-d36d-1ad6-67eb-e2cbdaeca71b.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="SensoryNeuron Fields" Url="html/e291425e-60d9-6ebc-1d78-cc25f18ee6f4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e0b0c64e-d953-4c12-9da5-f8c9ea6e337a" Title="Synapse Class" Url="html/6fdcf291-c57c-6a8c-ad55-93773c8ae7f5.htm">
+      <HelpTOCNode Id="91ef429a-6313-43d5-90ed-90b1e3a31c32" Title="Synapse Class" Url="html/6fdcf291-c57c-6a8c-ad55-93773c8ae7f5.htm">
         <HelpTOCNode Title="Synapse Constructor " Url="html/7b659a1b-df5c-f2b7-6788-17583830551d.htm" />
-        <HelpTOCNode Id="a1196e8e-87a9-4fa2-91dc-2b4b0b08c723" Title="Synapse Properties" Url="html/8cefe5a5-ab6c-c537-1771-965194b5619f.htm">
+        <HelpTOCNode Id="5677ed2f-2389-4d12-baf7-75c19ee74553" Title="Synapse Properties" Url="html/8cefe5a5-ab6c-c537-1771-965194b5619f.htm">
           <HelpTOCNode Title="From Property " Url="html/33a795b6-9b9f-bd7e-3fdd-017e89cc2d53.htm" />
           <HelpTOCNode Title="To Property " Url="html/e46cf9f6-a2c2-789e-8293-53fafeb6ba9f.htm" />
           <HelpTOCNode Title="Weight Property " Url="html/6ad0ea6a-cb74-b695-0621-0c524d050842.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b96d88f7-57fd-4618-871e-4368ffa840d5" Title="Synapse Methods" Url="html/66214c16-46e2-eb76-0e64-ea286afee580.htm">
+        <HelpTOCNode Id="d3512962-e984-41e2-bc0e-feac9f6f909f" Title="Synapse Methods" Url="html/66214c16-46e2-eb76-0e64-ea286afee580.htm">
           <HelpTOCNode Title="Mutate Method " Url="html/fad84185-f56b-e5a4-f580-552f82c93753.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="0f7c6d37-15e1-4a1c-8c60-78eacb5f8564" Title="EvolSim.Extensions" Url="html/f379361b-8b09-f1cc-a69d-2a141c9790dc.htm">
-      <HelpTOCNode Id="481edb59-de3a-4136-b63a-699f7824005e" Title="DoubleExtensions Class" Url="html/bc4f5375-0ee3-b346-e073-a410c2023361.htm">
-        <HelpTOCNode Id="dafd18ac-f281-450b-8305-7a0643d850c9" Title="DoubleExtensions Methods" Url="html/6f4626cc-3711-9e45-d3ac-410445fddcf1.htm">
+    <HelpTOCNode Id="aab424a7-1af6-4686-877d-1e1923817f3c" Title="EvolSim.Extensions" Url="html/f379361b-8b09-f1cc-a69d-2a141c9790dc.htm">
+      <HelpTOCNode Id="9fa5bd0d-dbdb-491e-a07f-51122d053240" Title="DoubleExtensions Class" Url="html/bc4f5375-0ee3-b346-e073-a410c2023361.htm">
+        <HelpTOCNode Id="31a80e1d-fdb3-480a-9981-5eae98ce1328" Title="DoubleExtensions Methods" Url="html/6f4626cc-3711-9e45-d3ac-410445fddcf1.htm">
           <HelpTOCNode Title="Modulo Method " Url="html/7727fd41-4a8f-ca90-66c7-ec845dcbf59d.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="44a9ac08-9aba-45be-8f99-75e764fc62b1" Title="IntExtensions Class" Url="html/04add363-5acd-70ff-05ee-58eae3afca80.htm">
-        <HelpTOCNode Id="7bc5a216-c5a4-455f-ba10-d3ca69e2789c" Title="IntExtensions Methods" Url="html/047cfe06-7045-71e8-e485-051a5b34ec39.htm">
+      <HelpTOCNode Id="cf752b0e-af5b-468b-bea3-6d77b44bc154" Title="IntExtensions Class" Url="html/04add363-5acd-70ff-05ee-58eae3afca80.htm">
+        <HelpTOCNode Id="7e4a1716-52f7-4835-95d9-8b5d31a8e793" Title="IntExtensions Methods" Url="html/047cfe06-7045-71e8-e485-051a5b34ec39.htm">
           <HelpTOCNode Title="Modulo Method " Url="html/b93fdd92-eb02-e4b3-9e44-0ea77dbf5872.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="46372f33-f989-4f5a-ae68-2bf3a7a31351" Title="ListExtensions Class" Url="html/2db0ae67-d830-cde0-c1a7-2dd4188e9957.htm">
-        <HelpTOCNode Id="d87f6550-b6bd-438e-b113-65ac5728d207" Title="ListExtensions Methods" Url="html/6a220e23-7fd9-3582-4c09-4486fd0f6063.htm">
+      <HelpTOCNode Id="110c4fde-2fa5-4253-b6ec-379bf4fc7034" Title="ListExtensions Class" Url="html/2db0ae67-d830-cde0-c1a7-2dd4188e9957.htm">
+        <HelpTOCNode Id="b7ce77eb-bf0c-4500-96a3-0eadbed96853" Title="ListExtensions Methods" Url="html/6a220e23-7fd9-3582-4c09-4486fd0f6063.htm">
           <HelpTOCNode Title="Shuffle(T) Method " Url="html/bf4e4096-af47-6b2b-d126-07cd17c7a115.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="100a75ce-79ea-4feb-9e3e-c863fa48f005" Title="EvolSim.Map Namespaces" Url="html/3ad16439-4aa1-9f04-da2d-6478ba9c6a8e.htm">
-      <HelpTOCNode Id="219837c9-adf5-42d6-9a03-ac944f33eff2" Title="EvolSim.Map" Url="html/27317f54-a023-dffb-777f-14780ab3c0d2.htm">
-        <HelpTOCNode Id="268d5ac1-e3e5-44c1-bfa9-e991555a42c1" Title="CellularAutomataGenerator Class" Url="html/c0a87ff1-d7ae-a4e9-aacf-ec3dfb569075.htm">
+    <HelpTOCNode Id="1e03ad38-bd29-466b-932b-516a7306827e" Title="EvolSim.Map Namespaces" Url="html/3ad16439-4aa1-9f04-da2d-6478ba9c6a8e.htm">
+      <HelpTOCNode Id="736499c4-ebcf-4ea5-af68-f6ffca68ac9a" Title="EvolSim.Map" Url="html/27317f54-a023-dffb-777f-14780ab3c0d2.htm">
+        <HelpTOCNode Id="f65ec2df-3daa-4894-81f0-a1bece4e9714" Title="CellularAutomataGenerator Class" Url="html/c0a87ff1-d7ae-a4e9-aacf-ec3dfb569075.htm">
           <HelpTOCNode Title="CellularAutomataGenerator Constructor " Url="html/e225e0e8-ee64-e4cd-bcd7-732aa79c1c75.htm" />
-          <HelpTOCNode Id="e9cc2f87-6174-4444-acc2-f5272b87fc73" Title="CellularAutomataGenerator Methods" Url="html/c5abe64a-c9dd-501d-99b9-aa0c41dd0682.htm">
+          <HelpTOCNode Id="38290866-29e3-4660-84f0-f889e76ddd7d" Title="CellularAutomataGenerator Methods" Url="html/c5abe64a-c9dd-501d-99b9-aa0c41dd0682.htm">
             <HelpTOCNode Title="Generate Method " Url="html/054cb023-7d91-1446-fce9-7060823374c2.htm" />
             <HelpTOCNode Title="RegisterNewFeature Method " Url="html/63e9fa34-da77-3e5f-9918-ef31052c1922.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="ba1f242b-f51b-422c-8527-e74e2c1fad3b" Title="CellularAutomataGenerator Fields" Url="html/4fee757a-fe45-d43d-3ac8-54e5204bd598.htm">
+          <HelpTOCNode Id="bfb96005-f8f6-4ac5-bb3f-2754cd133afc" Title="CellularAutomataGenerator Fields" Url="html/4fee757a-fe45-d43d-3ac8-54e5204bd598.htm">
             <HelpTOCNode Title="availableFeatures Field" Url="html/7157b630-2844-84c1-1b00-30d8de5a8de6.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="5b44bfc7-a2b5-4b4e-abb6-9a5987b66578" Title="Coordinate Structure" Url="html/b34ac456-a068-cf63-95a4-49b4efc52e6c.htm">
+        <HelpTOCNode Id="8769860e-c502-435a-96ea-49fe8028993b" Title="Coordinate Structure" Url="html/b34ac456-a068-cf63-95a4-49b4efc52e6c.htm">
           <HelpTOCNode Title="Coordinate Constructor " Url="html/5585eefc-69a1-6614-3ea4-9d45a23d6d9b.htm" />
-          <HelpTOCNode Id="1ac2ed03-6960-401c-8da7-960f13909e6b" Title="Coordinate Methods" Url="html/721a8e8e-047b-6c64-cf26-ed1e6da300dc.htm">
+          <HelpTOCNode Id="89562665-f8eb-4885-9c71-afe8ce479f67" Title="Coordinate Methods" Url="html/721a8e8e-047b-6c64-cf26-ed1e6da300dc.htm">
             <HelpTOCNode Title="Rotate Method " Url="html/33757b03-b6b3-9007-f94e-d12e896a1a2b.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="c0f340fe-117e-4c2e-93d2-b0ac581e70f5" Title="Coordinate Fields" Url="html/8cf751bc-56ab-dcd7-1747-379f1b3549df.htm">
+          <HelpTOCNode Id="26f96b93-e042-45c7-851c-2cbd974856ae" Title="Coordinate Fields" Url="html/8cf751bc-56ab-dcd7-1747-379f1b3549df.htm">
             <HelpTOCNode Title="x Field" Url="html/1422fe68-da8e-a35d-d3ed-1802688e9259.htm" />
             <HelpTOCNode Title="y Field" Url="html/3e2eb39a-c9a8-fd28-3c0a-17434444171a.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="e51ba106-1a23-429f-b835-b1c89f4e5972" Title="Field Class" Url="html/1c38a69f-61ca-0ced-e9d5-f2d3e5bfacd0.htm">
+        <HelpTOCNode Id="68f8b964-a4e8-4fbf-a79c-19efb397301f" Title="Field Class" Url="html/1c38a69f-61ca-0ced-e9d5-f2d3e5bfacd0.htm">
           <HelpTOCNode Title="Field Constructor " Url="html/6223c7bd-71c5-50b4-1336-df991e5e93f2.htm" />
-          <HelpTOCNode Id="5d213547-b7c9-4261-be21-f515cfbce9af" Title="Field Properties" Url="html/470b776e-35c3-353c-ae9e-fd3e3b9ad4f8.htm">
+          <HelpTOCNode Id="d8716af2-079a-4e51-84f0-876e356d8566" Title="Field Properties" Url="html/470b776e-35c3-353c-ae9e-fd3e3b9ad4f8.htm">
             <HelpTOCNode Title="Calories Property " Url="html/1a370465-558d-7a56-e4f3-ad5ce7b8c36e.htm" />
             <HelpTOCNode Title="Height Property " Url="html/6c4246f6-a24c-0131-3e00-15b12fb10539.htm" />
             <HelpTOCNode Title="InitialTemperature Property " Url="html/35a6460d-796f-ff23-dbd7-e1cc76671e63.htm" />
@@ -346,12 +346,12 @@
             <HelpTOCNode Title="Temperature Property " Url="html/a9d97a67-de95-b375-7813-fc6133a7014c.htm" />
             <HelpTOCNode Title="TemperatureOffset Property " Url="html/4a2c2f11-26f2-c19e-2695-ae36fa07e2af.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="5f98a08e-9f6a-471b-b718-b5fec4f081e3" Title="Field Methods" Url="html/f27496c2-da95-e01a-d381-035c730cf435.htm">
+          <HelpTOCNode Id="c10397d5-f843-48a3-af37-9eb6d6570b96" Title="Field Methods" Url="html/f27496c2-da95-e01a-d381-035c730cf435.htm">
             <HelpTOCNode Title="Drop Method " Url="html/8ab2d3e2-571a-325a-ed71-0caa049660eb.htm" />
             <HelpTOCNode Title="GrowCalories Method " Url="html/9068e343-2744-68bb-3841-a1ba29e92950.htm" />
             <HelpTOCNode Title="ToString Method " Url="html/8101ee49-b085-08dc-4ce6-42fcbfd4f3f4.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="7becec8c-239f-4fc9-a8b3-eecd84e398bd" Title="Field Fields" Url="html/b30df682-36ee-1d6f-c0e2-ca488f189fba.htm">
+          <HelpTOCNode Id="b1fed020-a3b1-4398-a36c-634c1e6470df" Title="Field Fields" Url="html/b30df682-36ee-1d6f-c0e2-ca488f189fba.htm">
             <HelpTOCNode Title="_calories Field" Url="html/c2528590-c92e-1e1b-94b2-5371481a4b03.htm" />
             <HelpTOCNode Title="_initialTemperature Field" Url="html/6207ea39-b168-8d2d-2da7-86b1ac775e79.htm" />
             <HelpTOCNode Title="_temperatureOffset Field" Url="html/d58e3cbe-2cba-de45-7c58-296f3e73c100.htm" />
@@ -361,55 +361,55 @@
             <HelpTOCNode Title="MaxValue Field" Url="html/60f02366-7724-e56e-2f85-988f6ed70684.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="90d72c68-4001-4917-9023-2522938edbf8" Title="GaiaGenerator Class" Url="html/eccfdd56-3136-6729-4626-63303bc2ae59.htm">
+        <HelpTOCNode Id="dc525aa8-67bd-4303-8f4c-fc4022440096" Title="GaiaGenerator Class" Url="html/eccfdd56-3136-6729-4626-63303bc2ae59.htm">
           <HelpTOCNode Title="GaiaGenerator Constructor " Url="html/0e988999-68bd-9e82-a41b-6991abbadba9.htm" />
-          <HelpTOCNode Id="855cd8a7-40a5-4df4-b38f-cfbeae904614" Title="GaiaGenerator Methods" Url="html/5ae03006-5947-26df-2ce5-abaf69261f93.htm">
+          <HelpTOCNode Id="80153e63-0ded-47e0-a2b6-ab7047ab1331" Title="GaiaGenerator Methods" Url="html/5ae03006-5947-26df-2ce5-abaf69261f93.htm">
             <HelpTOCNode Title="Generate Method " Url="html/1df6f179-1c14-ada1-03e7-3ae77528f04f.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="be66751a-b209-4b15-ac73-ec71ac41a22d" Title="HeightMapGenerator Class" Url="html/030c796e-7755-add6-fc14-01cb10ce4ada.htm">
+        <HelpTOCNode Id="e0ed3641-e49d-4f26-aea4-945600db8293" Title="HeightMapGenerator Class" Url="html/030c796e-7755-add6-fc14-01cb10ce4ada.htm">
           <HelpTOCNode Title="HeightMapGenerator Constructor " Url="html/62ca4952-9316-570b-0594-57084ef70eec.htm" />
-          <HelpTOCNode Id="a7ca65e5-d885-490f-89e7-8d972e2e9c91" Title="HeightMapGenerator Methods" Url="html/da810ee1-733e-2a00-f2fc-62ebe7913d86.htm">
+          <HelpTOCNode Id="1027b3e2-40e8-4165-9de8-2d4d891e0d27" Title="HeightMapGenerator Methods" Url="html/da810ee1-733e-2a00-f2fc-62ebe7913d86.htm">
             <HelpTOCNode Title="AgitateDrop Method " Url="html/23f105b5-105b-700c-9583-81ea18364d52.htm" />
             <HelpTOCNode Title="Generate Method " Url="html/d669bde4-b2a8-c878-2876-55f2a6cf5a41.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="c141860c-944e-4e54-bfc4-6a4def83042b" Title="HeightMapGenerator Fields" Url="html/3cef5144-2ba4-9731-c385-efcb67e2327d.htm">
+          <HelpTOCNode Id="938fea18-ec96-4a6a-82ec-63e41e81a5a4" Title="HeightMapGenerator Fields" Url="html/3cef5144-2ba4-9731-c385-efcb67e2327d.htm">
             <HelpTOCNode Title="AgitationDelta Field" Url="html/f5bb3a03-7671-ac62-8acc-cbf928c10bd0.htm" />
             <HelpTOCNode Title="AgitationRadius Field" Url="html/ddc8c5f1-41d9-7fcc-ba2c-719b5dd7ddae.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="278f6494-db61-48f6-9392-7d906413aea5" Title="IMapFeature Interface" Url="html/1c89c8fb-3f20-acf8-57f8-71bb949690db.htm">
-          <HelpTOCNode Id="eb595479-eb8d-411a-a1d7-b9eb57314c9a" Title="IMapFeature Methods" Url="html/5190a539-9019-6bdb-da90-b75223460518.htm">
+        <HelpTOCNode Id="6b7a4523-c9a2-46e9-9da1-e9141c9044fe" Title="IMapFeature Interface" Url="html/1c89c8fb-3f20-acf8-57f8-71bb949690db.htm">
+          <HelpTOCNode Id="2f9a5950-1d40-44fb-8790-27f29e16a7fc" Title="IMapFeature Methods" Url="html/5190a539-9019-6bdb-da90-b75223460518.htm">
             <HelpTOCNode Title="CreateSelf Method " Url="html/3ed2d502-2d43-7b4e-4bed-c1514455770b.htm" />
             <HelpTOCNode Title="Effect Method " Url="html/f981f950-b04d-08c2-3be8-e82451e9453f.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="8d7a8e2b-5247-48c3-9782-662530b6f186" Title="IMapGenerator Interface" Url="html/8c747635-dfc4-d561-7b41-3bb15543daac.htm">
-          <HelpTOCNode Id="6924eefb-6ebf-4fb0-99bc-9dab28f2c637" Title="IMapGenerator Methods" Url="html/2651ae31-669f-b004-edea-8452c00ec777.htm">
+        <HelpTOCNode Id="edac34fc-b23f-4d48-a20f-671fe2fbd598" Title="IMapGenerator Interface" Url="html/8c747635-dfc4-d561-7b41-3bb15543daac.htm">
+          <HelpTOCNode Id="2803bcd6-1265-4170-b73f-bda0a6d47dfb" Title="IMapGenerator Methods" Url="html/2651ae31-669f-b004-edea-8452c00ec777.htm">
             <HelpTOCNode Title="Generate Method " Url="html/1c80f30e-0055-4962-1adc-7126a130c3ab.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="e96ebe53-cbb4-47c4-a31c-f936be59d3f0" Title="Renderer Class" Url="html/7b7da4f5-ba2d-dbee-e3d7-fa9bdaf610aa.htm">
-          <HelpTOCNode Id="fe6996cc-abc4-4d7c-b5c7-687192a531a2" Title="Renderer Methods" Url="html/d849c1a0-3974-7a20-6e3d-df85af41c1b8.htm">
+        <HelpTOCNode Id="7148b3f0-09d2-4f52-8a60-ea80a221a19e" Title="Renderer Class" Url="html/7b7da4f5-ba2d-dbee-e3d7-fa9bdaf610aa.htm">
+          <HelpTOCNode Id="c78fca83-f05c-494b-b7c0-c48a819ec4d5" Title="Renderer Methods" Url="html/d849c1a0-3974-7a20-6e3d-df85af41c1b8.htm">
             <HelpTOCNode Title="Render Method " Url="html/ae34d774-a6e7-98b9-1f73-aecfea131548.htm" />
             <HelpTOCNode Title="RenderBuffered Method " Url="html/a069d3bf-2e0a-a2bd-decc-77fae5cd61b7.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="aba449a7-a733-4337-94e6-2d069b0a7ab2" Title="Weather Class" Url="html/2bd8f655-b710-96fa-1d30-6c4e4716a36f.htm">
+        <HelpTOCNode Id="7a5ea1bf-d575-4c2f-b9ff-4e1ebaba9c5a" Title="Weather Class" Url="html/2bd8f655-b710-96fa-1d30-6c4e4716a36f.htm">
           <HelpTOCNode Title="Weather Constructor " Url="html/21a3f77c-9605-b50a-cdf6-fb803165b053.htm" />
-          <HelpTOCNode Id="f1e0c8f1-b77d-48da-b48f-cb6d7c656c4d" Title="Weather Properties" Url="html/e73e4b05-4180-7c98-04b6-4b6290a042e5.htm">
+          <HelpTOCNode Id="b707b642-e913-47d1-83c8-0aa923b41e84" Title="Weather Properties" Url="html/e73e4b05-4180-7c98-04b6-4b6290a042e5.htm">
             <HelpTOCNode Title="Amplitude Property " Url="html/4795e75b-4d39-7486-bac7-48bf9ef13c14.htm" />
             <HelpTOCNode Title="CurrentWeather Property " Url="html/8edd43cb-0419-f294-6554-9b1575ff7f97.htm" />
             <HelpTOCNode Title="ChangeInterval Property " Url="html/ae81543d-ca76-dee6-de73-d4ba77af2b94.htm" />
             <HelpTOCNode Title="World Property " Url="html/c9642ac1-04d5-e617-fe44-a406d24bec34.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="6daf615d-8679-4131-8062-783782eaadc7" Title="Weather Methods" Url="html/45a32eb0-b350-9f4c-c14d-1f1ea8f4872d.htm">
+          <HelpTOCNode Id="cab6cebe-553d-41ca-8cd7-5cc12fa1e5c4" Title="Weather Methods" Url="html/45a32eb0-b350-9f4c-c14d-1f1ea8f4872d.htm">
             <HelpTOCNode Title="DoWeatherStep Method " Url="html/abe4809c-0104-49f3-18ee-5fb878767a08.htm" />
             <HelpTOCNode Title="SetRandomWeather Method " Url="html/5c518644-120d-1b99-a239-49e0177ca132.htm" />
             <HelpTOCNode Title="SetSinusoidalWeather Method " Url="html/0508eb87-d2fe-ff54-f17c-91345050090c.htm" />
             <HelpTOCNode Title="SetStaticWeather Method " Url="html/2642317d-4a3e-318c-4506-3a8eb2380ef7.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="cb5d5006-663f-4f02-b0ff-5543dcf0ea52" Title="Weather Fields" Url="html/f72e6385-cf92-2176-cc31-b6858b138296.htm">
+          <HelpTOCNode Id="43da1527-ab81-495d-8e1f-cf07e2b3cff5" Title="Weather Fields" Url="html/f72e6385-cf92-2176-cc31-b6858b138296.htm">
             <HelpTOCNode Title="_amplitude Field" Url="html/bd5e66fe-9033-3bac-9a80-31ea5173f8a6.htm" />
             <HelpTOCNode Title="_currentWeather Field" Url="html/3a283610-c2e3-2e1c-7f6f-9806f97aa1bd.htm" />
             <HelpTOCNode Title="_changeInterval Field" Url="html/a00e1c25-598c-2b5d-77cb-06cb7e26cd3a.htm" />
@@ -418,9 +418,9 @@
           </HelpTOCNode>
         </HelpTOCNode>
         <HelpTOCNode Title="WeatherType Enumeration" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
-        <HelpTOCNode Id="2809807b-dc9e-4b93-ab72-b5b6be31404e" Title="World Class" Url="html/22938a28-88bc-075b-dcc7-3f1c7da96b93.htm">
+        <HelpTOCNode Id="fec13c12-ab1d-4f68-863a-9f44aae7b38a" Title="World Class" Url="html/22938a28-88bc-075b-dcc7-3f1c7da96b93.htm">
           <HelpTOCNode Title="World Constructor " Url="html/1db6634e-4643-c3a5-ffe8-e1ab3c793b53.htm" />
-          <HelpTOCNode Id="0ab6f0c2-c8a7-4313-91fe-e271cadef37c" Title="World Properties" Url="html/e7a8a282-3cb1-e813-2bc9-31ae4ecb0b8e.htm">
+          <HelpTOCNode Id="ae77258a-b230-4609-9c51-c9a2402e1f24" Title="World Properties" Url="html/e7a8a282-3cb1-e813-2bc9-31ae4ecb0b8e.htm">
             <HelpTOCNode Title="Creatures Property " Url="html/f210e6f7-b91c-7c66-0e02-087095625532.htm" />
             <HelpTOCNode Title="Fields Property " Url="html/eb4465d7-9e7b-5afb-dcc3-57fb8e7407b1.htm" />
             <HelpTOCNode Title="Height Property " Url="html/f0e15941-614b-9af5-b18e-359554658581.htm" />
@@ -431,7 +431,7 @@
             <HelpTOCNode Title="SelectedFieldY Property " Url="html/44bd928a-9c10-8560-8947-a82ccdd20356.htm" />
             <HelpTOCNode Title="Width Property " Url="html/8345a298-774f-60ac-0914-be1ec8e6d964.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="217f6fd0-6f07-4b81-b857-a8f5b0c0d1af" Title="World Methods" Url="html/5baaa723-787d-cd5a-4010-df389fb7dde0.htm">
+          <HelpTOCNode Id="3371e3ef-2c5a-4fdc-910c-0531c5f20ca5" Title="World Methods" Url="html/5baaa723-787d-cd5a-4010-df389fb7dde0.htm">
             <HelpTOCNode Title="AddCreature Method " Url="html/e5a9beeb-cbb5-d2ea-9dfb-bb9440f62488.htm" />
             <HelpTOCNode Title="BlankMap Method " Url="html/b62c1a04-fc7f-4b51-8e43-4b717acd97fe.htm" />
             <HelpTOCNode Title="Generate Method " Url="html/2cfe2afb-2491-304a-0e4e-498dacd61336.htm" />
@@ -439,22 +439,22 @@
             <HelpTOCNode Title="SelectField Method " Url="html/c3ef5d97-60df-e955-e0bf-fa23b127f76a.htm" />
             <HelpTOCNode Title="Update Method " Url="html/ae977ec9-94ca-d5ef-3504-de91fac4c1e3.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="4ddbeb6d-a7a3-4771-ac9c-624a7b80655e" Title="World Fields" Url="html/6535e32f-678c-4fd9-6277-a42ef28552eb.htm">
+          <HelpTOCNode Id="dfbdb13c-81ce-4095-bd53-6aef6c680d30" Title="World Fields" Url="html/6535e32f-678c-4fd9-6277-a42ef28552eb.htm">
             <HelpTOCNode Title="creaturesToBirth Field" Url="html/27ebe4f3-a63a-34fb-e7e0-f6021e831c4f.htm" />
             <HelpTOCNode Title="creaturesToDie Field" Url="html/976ae300-8164-127f-3443-3f3bc509b265.htm" />
             <HelpTOCNode Title="maxCreatures Field" Url="html/af912ae5-ed34-1fb4-a8f6-fd60fa775b0c.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="68911b98-c3f6-4bf9-b930-fa6ef52f4f58" Title="EvolSim.Map.Features" Url="html/063a2eaf-8365-0e28-feb5-07da45ea8124.htm">
-        <HelpTOCNode Id="938e37db-c60c-452a-b9ea-eeef961c6e7f" Title="Desert Class" Url="html/bc7b5104-e9fb-c8ad-a479-035078ca8a12.htm">
-          <HelpTOCNode Id="ed0ef52b-cfc1-4659-9918-51e0383d117c" Title="Desert Constructor " Url="html/011ed463-47cc-a573-2add-838497895ab9.htm">
+      <HelpTOCNode Id="f448bbdd-1f57-4b4c-acac-227738c7d07b" Title="EvolSim.Map.Features" Url="html/063a2eaf-8365-0e28-feb5-07da45ea8124.htm">
+        <HelpTOCNode Id="be098798-243e-4c2e-8eb3-e3864718f5f4" Title="Desert Class" Url="html/bc7b5104-e9fb-c8ad-a479-035078ca8a12.htm">
+          <HelpTOCNode Id="26ac2904-c806-466c-ac57-dd5500bfb3a5" Title="Desert Constructor " Url="html/011ed463-47cc-a573-2add-838497895ab9.htm">
             <HelpTOCNode Title="Desert Constructor " Url="html/189ed5c0-9c71-de87-6cc5-3628e7d035e0.htm" />
             <HelpTOCNode Title="Desert Constructor (World)" Url="html/a763cd60-a03a-5389-7525-dd79467cf971.htm" />
             <HelpTOCNode Title="Desert Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/8d3350ab-c20a-8538-f872-2dfb669e1e82.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="5256d969-142b-48a3-a415-0abe308bc7b5" Title="Desert Methods" Url="html/c7a4d640-d2a7-14f8-f02e-ffe500ad3883.htm">
-            <HelpTOCNode Id="c175568d-8280-4220-9d51-91eddce63528" Title="CreateSelf Method " Url="html/cbdef027-c868-7d24-77aa-cedc237e3a81.htm">
+          <HelpTOCNode Id="f74599ec-f502-4427-b9fe-b7a1de3dc584" Title="Desert Methods" Url="html/c7a4d640-d2a7-14f8-f02e-ffe500ad3883.htm">
+            <HelpTOCNode Id="2ec216a9-2279-4284-b13a-3b3e72cb5ea0" Title="CreateSelf Method " Url="html/cbdef027-c868-7d24-77aa-cedc237e3a81.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/c0d145d6-a137-2bbb-1e8b-746396121220.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/1fb7bf3d-1032-b346-6d71-66ae51d8f519.htm" />
             </HelpTOCNode>
@@ -462,14 +462,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Desert Fields" Url="html/ecfc93f0-efda-ea06-63ef-668343c6f467.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f85f9590-870d-4b9b-80f2-d14a991e9e5d" Title="Feature Class" Url="html/5cfaa675-0047-1044-a8c5-f679312c33f6.htm">
-          <HelpTOCNode Id="accf8509-7e5e-44e8-9cd7-4ce5286e1c96" Title="Feature Constructor " Url="html/bf0157ad-d0d8-587d-2e08-3d2aefb663ff.htm">
+        <HelpTOCNode Id="7e18c155-5aa5-4dba-8d96-7fab2d569221" Title="Feature Class" Url="html/5cfaa675-0047-1044-a8c5-f679312c33f6.htm">
+          <HelpTOCNode Id="0364459e-9ad3-4073-a7c4-e32b0cb32427" Title="Feature Constructor " Url="html/bf0157ad-d0d8-587d-2e08-3d2aefb663ff.htm">
             <HelpTOCNode Title="Feature Constructor " Url="html/2a8fe15c-5e84-aae7-6263-4e7d3d30d72b.htm" />
             <HelpTOCNode Title="Feature Constructor (World)" Url="html/5e2f4f67-4e56-6f71-b14f-02db05314ffb.htm" />
             <HelpTOCNode Title="Feature Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/a20f1af2-10f5-118a-f81f-221b82f94492.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="e4f44d70-e4d3-4db7-afc2-e490ae8df71a" Title="Feature Methods" Url="html/741cf2f2-b385-020c-ec4c-a870e820a5bf.htm">
-            <HelpTOCNode Id="18998bf9-a8ec-4911-96c4-134ac9ab0535" Title="CreateSelf Method " Url="html/813ce292-1583-c55d-21cb-4ce51296998c.htm">
+          <HelpTOCNode Id="44fac367-a92c-4a28-b6a9-94b39619c972" Title="Feature Methods" Url="html/741cf2f2-b385-020c-ec4c-a870e820a5bf.htm">
+            <HelpTOCNode Id="6388090e-8795-4acd-9605-011b72c2ec9d" Title="CreateSelf Method " Url="html/813ce292-1583-c55d-21cb-4ce51296998c.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/689b2d43-1fc6-1e6b-7391-3a777c97045e.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/b1ca7245-465a-a84b-dfc7-3565934b8d7b.htm" />
             </HelpTOCNode>
@@ -477,7 +477,7 @@
             <HelpTOCNode Title="EffectInternal Method " Url="html/141533bc-ff64-e0db-cff2-a989209e5a3c.htm" />
             <HelpTOCNode Title="EffectSpread Method " Url="html/fd499b1e-7fa7-5b4d-ed5b-779c7afe00d5.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="369cddc3-9d52-47af-96f8-5b21baf474b2" Title="Feature Fields" Url="html/289eb031-d59d-e632-28b2-112ed36251aa.htm">
+          <HelpTOCNode Id="f56beb99-57a6-4aaa-89c0-e99a5ae34dc2" Title="Feature Fields" Url="html/289eb031-d59d-e632-28b2-112ed36251aa.htm">
             <HelpTOCNode Title="canMoveMinusX Field" Url="html/71a04069-39c4-4d20-8791-855ee640d4da.htm" />
             <HelpTOCNode Title="canMoveMinusY Field" Url="html/7d08e541-88c4-0255-807f-42a4fb27b48f.htm" />
             <HelpTOCNode Title="canMovePlusX Field" Url="html/eef183d8-3667-38fc-dd58-5598f8c703c6.htm" />
@@ -490,14 +490,14 @@
             <HelpTOCNode Title="y Field" Url="html/2b0217c9-8c00-4a65-206e-4bbba280c0e3.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
-        <HelpTOCNode Id="f25a3eeb-aaed-4a2a-95b1-8cf0ccc2fe31" Title="Glacier Class" Url="html/630b79b1-0a37-369e-e606-3d382adec894.htm">
-          <HelpTOCNode Id="edf46d56-392a-4f9c-a238-6cd77cd4131d" Title="Glacier Constructor " Url="html/4c842c0d-856e-926f-cc1e-99f8b46fe2c5.htm">
+        <HelpTOCNode Id="ce3a84bb-4290-4ee6-84fc-6eabac14f591" Title="Glacier Class" Url="html/630b79b1-0a37-369e-e606-3d382adec894.htm">
+          <HelpTOCNode Id="30f84eaf-b3cc-479d-9acd-4f3586d5d819" Title="Glacier Constructor " Url="html/4c842c0d-856e-926f-cc1e-99f8b46fe2c5.htm">
             <HelpTOCNode Title="Glacier Constructor " Url="html/f6dbe633-975d-724a-73dd-85a1bdfd0129.htm" />
             <HelpTOCNode Title="Glacier Constructor (World)" Url="html/297556e5-cfe1-8364-3e13-71e3b342bc6a.htm" />
             <HelpTOCNode Title="Glacier Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/cfed58f1-e72f-0a39-171d-fd9ab1204b76.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="16eaf2ff-10e8-413e-8e28-2d65676029d1" Title="Glacier Methods" Url="html/b46def74-01f0-3265-3002-63f9b85e0558.htm">
-            <HelpTOCNode Id="c49cf301-667a-4044-81a0-2bcabfc0d2d2" Title="CreateSelf Method " Url="html/7d29b684-b1e5-a2f2-f9da-587e4de11162.htm">
+          <HelpTOCNode Id="6ac3b942-0c3e-4544-9832-76f3e9ceab74" Title="Glacier Methods" Url="html/b46def74-01f0-3265-3002-63f9b85e0558.htm">
+            <HelpTOCNode Id="4b00b1e0-f8e6-4b3a-a1e6-8e4e9367716c" Title="CreateSelf Method " Url="html/7d29b684-b1e5-a2f2-f9da-587e4de11162.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/3521b05f-6262-0b1f-9105-877e408f403c.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/4741c38b-12df-f586-4251-8e2bf56b76d2.htm" />
             </HelpTOCNode>
@@ -505,14 +505,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Glacier Fields" Url="html/19825ed3-7957-b7ec-6d00-a57d13a559fa.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="97061edd-134c-4df8-8c59-5b3c09de89c2" Title="Lake Class" Url="html/72deb674-4eb9-4eea-cbfa-2cb871bb961b.htm">
-          <HelpTOCNode Id="d5358621-8057-436e-ac0a-719a7b109851" Title="Lake Constructor " Url="html/cb1bd645-6d59-64e3-a4d1-00a8ab72b326.htm">
+        <HelpTOCNode Id="8c108369-0535-47bd-952e-e5f4563b4ffb" Title="Lake Class" Url="html/72deb674-4eb9-4eea-cbfa-2cb871bb961b.htm">
+          <HelpTOCNode Id="44abd36b-1c92-4280-b208-49fe54ac618d" Title="Lake Constructor " Url="html/cb1bd645-6d59-64e3-a4d1-00a8ab72b326.htm">
             <HelpTOCNode Title="Lake Constructor " Url="html/ce186797-5926-7e02-4041-03724ace5e07.htm" />
             <HelpTOCNode Title="Lake Constructor (World)" Url="html/5ca4124a-6d75-bbd0-3e9c-40749fe2b3fb.htm" />
             <HelpTOCNode Title="Lake Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/c785ed13-5ea9-9d5f-5570-22519d423a5d.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="d51aece4-c2d0-4c8c-8adb-ab99fb707657" Title="Lake Methods" Url="html/d18d557b-1a2c-5536-d294-7fe45a82c4d3.htm">
-            <HelpTOCNode Id="085c9cdd-fc7f-4570-9443-0499968667e7" Title="CreateSelf Method " Url="html/bc779444-7b31-55a0-b8e0-61e289710d43.htm">
+          <HelpTOCNode Id="5b613d44-2b75-4a8b-92e9-126c9eac47df" Title="Lake Methods" Url="html/d18d557b-1a2c-5536-d294-7fe45a82c4d3.htm">
+            <HelpTOCNode Id="d8091b63-2be5-4ce6-a481-ba0fd18be645" Title="CreateSelf Method " Url="html/bc779444-7b31-55a0-b8e0-61e289710d43.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/429f8de6-1a94-1072-a771-54f19cecb02f.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/40db1659-dfac-1d53-b6d9-ca262600ffaa.htm" />
             </HelpTOCNode>
@@ -520,14 +520,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Lake Fields" Url="html/2de9fafa-8c19-ff63-a318-4a092d20c297.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a6355775-474c-4d71-9814-e7efb0f8dc97" Title="Mountain Class" Url="html/27d77a58-df1a-3771-9aaa-39d991563f5a.htm">
-          <HelpTOCNode Id="d4ee6732-ceab-442b-b6d1-7396d50681c1" Title="Mountain Constructor " Url="html/70b14c21-7cd8-e716-9f5c-e24f2e03b91d.htm">
+        <HelpTOCNode Id="806f8f26-95e8-4999-be35-212000bdc241" Title="Mountain Class" Url="html/27d77a58-df1a-3771-9aaa-39d991563f5a.htm">
+          <HelpTOCNode Id="f28ae5c2-9b22-4a65-91f5-164291a69c0f" Title="Mountain Constructor " Url="html/70b14c21-7cd8-e716-9f5c-e24f2e03b91d.htm">
             <HelpTOCNode Title="Mountain Constructor " Url="html/8cab27f6-515a-6f6e-81d2-8872dd1d06aa.htm" />
             <HelpTOCNode Title="Mountain Constructor (World)" Url="html/4a72d47f-6026-4a21-bea9-7c1efa2a251a.htm" />
             <HelpTOCNode Title="Mountain Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/b18bcf7b-f5e5-5657-63e6-ac9007f0c100.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="cbe79f75-98d2-4390-b7cc-d3d2ab372452" Title="Mountain Methods" Url="html/4baca111-f914-4841-b653-8644cb2b344b.htm">
-            <HelpTOCNode Id="bdce01d9-4524-492b-9dbe-ba9bab64bbaa" Title="CreateSelf Method " Url="html/c50bf6de-3580-2f85-6678-314c9bad6cd7.htm">
+          <HelpTOCNode Id="3bff7485-ee62-4de0-a871-48416476a697" Title="Mountain Methods" Url="html/4baca111-f914-4841-b653-8644cb2b344b.htm">
+            <HelpTOCNode Id="e7290164-5fae-49db-9955-e8a449bc2cb7" Title="CreateSelf Method " Url="html/c50bf6de-3580-2f85-6678-314c9bad6cd7.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/1bcd8978-539c-f4e2-893e-fe7b75a0c217.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/fbdca7bf-beb6-bf13-8118-a5fb2f8a898d.htm" />
             </HelpTOCNode>
@@ -535,14 +535,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Mountain Fields" Url="html/513a0214-8363-5ec0-95a9-bc0b410664c7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="066f7797-b5e0-4724-b525-db0f4bcbb5bd" Title="River Class" Url="html/db839bdb-8e39-8cc1-ee86-4f259cd8cf68.htm">
-          <HelpTOCNode Id="ce18f974-48a7-4d06-91e1-2d679efdf415" Title="River Constructor " Url="html/f0aab0b2-d4b4-2f52-b62b-61b365813343.htm">
+        <HelpTOCNode Id="95e67964-c9c4-430c-a8bc-a33626ac4164" Title="River Class" Url="html/db839bdb-8e39-8cc1-ee86-4f259cd8cf68.htm">
+          <HelpTOCNode Id="608e8f36-39da-45aa-86d4-391e7a92fb26" Title="River Constructor " Url="html/f0aab0b2-d4b4-2f52-b62b-61b365813343.htm">
             <HelpTOCNode Title="River Constructor " Url="html/f2ea0550-228f-0b70-48de-21101ecd4ec8.htm" />
             <HelpTOCNode Title="River Constructor (World)" Url="html/6769e3a8-a5d0-8723-02f7-f03589c7b938.htm" />
             <HelpTOCNode Title="River Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/626271ad-1100-d310-8130-3a62151191cb.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="f57bae13-ef37-4fdc-b9c3-d1e8c97f01e9" Title="River Methods" Url="html/ad461129-49f7-c48f-e592-54be1ec75694.htm">
-            <HelpTOCNode Id="bec22565-bc33-41bf-b9dc-d2bf8bce0617" Title="CreateSelf Method " Url="html/50ca4c12-e899-11ed-96fe-5293228f104f.htm">
+          <HelpTOCNode Id="6dde56f2-4dd5-4080-98b1-a33a7ae6ab5b" Title="River Methods" Url="html/ad461129-49f7-c48f-e592-54be1ec75694.htm">
+            <HelpTOCNode Id="e46e1607-b19e-4514-856f-a1aa5957c728" Title="CreateSelf Method " Url="html/50ca4c12-e899-11ed-96fe-5293228f104f.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/1268a2d8-e7d5-5750-72c2-e1fe0e36270f.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/f3d4e965-a63b-68a7-2214-76b6b7a993ca.htm" />
             </HelpTOCNode>
@@ -551,14 +551,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="River Fields" Url="html/dae22902-e487-1d95-0de0-67735dcba340.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="029485d7-c565-4e92-b635-6f0afbbf51d8" Title="Swamp Class" Url="html/ba5abd17-bbd2-4e14-9377-ca6351a0d596.htm">
-          <HelpTOCNode Id="4fcfb578-c1db-417f-8a96-c5a30100cbd2" Title="Swamp Constructor " Url="html/543c97d1-777c-00c5-5624-00c53a4d6070.htm">
+        <HelpTOCNode Id="706de6c7-4e51-4dbd-bdd7-de0612ebeee9" Title="Swamp Class" Url="html/ba5abd17-bbd2-4e14-9377-ca6351a0d596.htm">
+          <HelpTOCNode Id="f27af125-78eb-49ec-a85a-a18aaa4607f3" Title="Swamp Constructor " Url="html/543c97d1-777c-00c5-5624-00c53a4d6070.htm">
             <HelpTOCNode Title="Swamp Constructor " Url="html/b59c3f29-73c1-dfc3-b9a9-2d207fbc9786.htm" />
             <HelpTOCNode Title="Swamp Constructor (World)" Url="html/167000a9-b7c9-8077-4a9d-aa092b54fd7b.htm" />
             <HelpTOCNode Title="Swamp Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/f48211df-229c-3c0a-d680-08683a39587f.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="8af0ca9b-b829-4570-8829-05463d8eb0fd" Title="Swamp Methods" Url="html/de55c922-2a54-a5a6-1cb6-41fc8fbbe107.htm">
-            <HelpTOCNode Id="a0bb8af4-7734-422a-b53f-a603c33eff94" Title="CreateSelf Method " Url="html/c9fd1c76-e96b-35bf-d318-002940e5e927.htm">
+          <HelpTOCNode Id="4dc9bdc7-d3ca-4815-9b15-3fe9e83e7ebb" Title="Swamp Methods" Url="html/de55c922-2a54-a5a6-1cb6-41fc8fbbe107.htm">
+            <HelpTOCNode Id="c101f09f-f25b-4033-bcf9-4660a186b136" Title="CreateSelf Method " Url="html/c9fd1c76-e96b-35bf-d318-002940e5e927.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/25782228-110d-b2a4-aa5f-5637620c990f.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/f41d1cab-a3f8-eb27-afd8-e0261a06f3b6.htm" />
             </HelpTOCNode>
@@ -566,14 +566,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Swamp Fields" Url="html/76a76ba2-066f-db51-729d-bf7bac64eea0.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="db6086a6-ac5e-49cd-bc8d-6d1ac07e1a6c" Title="Tundra Class" Url="html/ae155b65-7390-fb2a-3813-3f61e5944aee.htm">
-          <HelpTOCNode Id="77d544bf-407f-4db2-afc4-2b546bbe6c31" Title="Tundra Constructor " Url="html/8fe09f88-c336-8732-35aa-b4d1cf771673.htm">
+        <HelpTOCNode Id="8a24ed76-c200-4d94-ba85-019b90453402" Title="Tundra Class" Url="html/ae155b65-7390-fb2a-3813-3f61e5944aee.htm">
+          <HelpTOCNode Id="744694e2-66e2-4e3e-bff3-9a041ad75482" Title="Tundra Constructor " Url="html/8fe09f88-c336-8732-35aa-b4d1cf771673.htm">
             <HelpTOCNode Title="Tundra Constructor " Url="html/456dc51c-c181-c777-0fae-1b4997b8b24d.htm" />
             <HelpTOCNode Title="Tundra Constructor (World)" Url="html/014d83c4-bd4b-460e-3b18-09524cc0be17.htm" />
             <HelpTOCNode Title="Tundra Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/56c6ecf0-1248-44e6-3069-fbc76c96a0f0.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="08654b5a-be34-49c4-9ba2-b74153153d5d" Title="Tundra Methods" Url="html/d56722f2-2680-3680-b056-6b7ccbc3fbb3.htm">
-            <HelpTOCNode Id="56b0700c-de9f-4d20-b599-0065eeace952" Title="CreateSelf Method " Url="html/ed4cc402-ffb7-b959-4038-ffa402d4c04d.htm">
+          <HelpTOCNode Id="43296bad-1fc1-494c-920e-84ca0eeeeef7" Title="Tundra Methods" Url="html/d56722f2-2680-3680-b056-6b7ccbc3fbb3.htm">
+            <HelpTOCNode Id="df326e88-0665-4847-a10f-01a5ba454fc3" Title="CreateSelf Method " Url="html/ed4cc402-ffb7-b959-4038-ffa402d4c04d.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/a797fa65-6b8d-dc5c-3585-4c5eac5c7a46.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/1d7705f8-3561-5ef5-0543-8f8d8d49553f.htm" />
             </HelpTOCNode>
@@ -581,14 +581,14 @@
           </HelpTOCNode>
           <HelpTOCNode Title="Tundra Fields" Url="html/b8ac4ab4-31fa-c1a7-f443-c0107d2e1db7.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="60489006-f0f3-4bc0-8dce-0ac3eb22ae14" Title="Volcano Class" Url="html/5619f7ff-b07e-00e4-461d-4e649d01fd0b.htm">
-          <HelpTOCNode Id="bf49ad77-36dd-427f-9e43-9c5140d36f17" Title="Volcano Constructor " Url="html/a586cc5d-8672-21b5-0c13-8ee47cf2345c.htm">
+        <HelpTOCNode Id="51fa44f3-bc68-4d1a-865e-8e758b8615c7" Title="Volcano Class" Url="html/5619f7ff-b07e-00e4-461d-4e649d01fd0b.htm">
+          <HelpTOCNode Id="92530b68-8fb6-4ef1-a92b-ce473f01c20e" Title="Volcano Constructor " Url="html/a586cc5d-8672-21b5-0c13-8ee47cf2345c.htm">
             <HelpTOCNode Title="Volcano Constructor " Url="html/9327c773-eb2c-f7d5-1193-49354c5af838.htm" />
             <HelpTOCNode Title="Volcano Constructor (World)" Url="html/5fedb1c6-df25-1093-a3e6-79f2243d5ace.htm" />
             <HelpTOCNode Title="Volcano Constructor (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/a3ee7420-7993-797b-7b9e-e1dd43490a08.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="eb51b708-98b2-4a1a-8996-0c90684b1664" Title="Volcano Methods" Url="html/fcb5021b-7e8b-f589-8d32-7709633db618.htm">
-            <HelpTOCNode Id="ca989858-26bf-40af-8497-d7a6f1b80477" Title="CreateSelf Method " Url="html/4bf5444e-0e89-170f-006d-90eae8987b95.htm">
+          <HelpTOCNode Id="023b5032-01a9-4480-adb7-4bec3e4a9af7" Title="Volcano Methods" Url="html/fcb5021b-7e8b-f589-8d32-7709633db618.htm">
+            <HelpTOCNode Id="746e0153-507d-4fee-b631-ed995fb7dced" Title="CreateSelf Method " Url="html/4bf5444e-0e89-170f-006d-90eae8987b95.htm">
               <HelpTOCNode Title="CreateSelf Method (World)" Url="html/c3133624-fadf-8867-1d05-36a53fa9aa07.htm" />
               <HelpTOCNode Title="CreateSelf Method (World, Int32, Int32, Int32, Int32, Boolean, Boolean, Boolean, Boolean)" Url="html/37ed4f96-0eb1-01f5-cd96-f6256c7c8ba4.htm" />
             </HelpTOCNode>
