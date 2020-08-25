@@ -49,11 +49,16 @@ namespace EvolSim.Creature
         {
             if (brain == null)
             {
-                throw new ArgumentNullException("World can not be null");
-            }
+                throw new ArgumentNullException("Brain can not be null");
+            }            
             if (paintEventArgs == null)
             {
                 throw new ArgumentNullException("PaintEventArgs can not be null");
+            }
+            if (!brain.Generated)
+            {
+                //Ungenerated brain does not get rendered
+                return;
             }
 
             //We calculate all the node widths 

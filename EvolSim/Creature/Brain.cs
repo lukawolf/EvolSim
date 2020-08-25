@@ -27,7 +27,10 @@ namespace EvolSim.Creature
         internal SensoryNeuron[] inputNeurons;
         internal Neuron[] thinkingNeurons;
         internal Neuron[] outputNeurons;
-        private bool generated;
+        /// <summary>
+        /// Whether the brain is generated 
+        /// </summary>
+        public bool Generated { get; private set; }
         /// <summary>
         /// Creates a brain with given widths.
         /// </summary>
@@ -49,7 +52,7 @@ namespace EvolSim.Creature
         }
 
         /// <summary>
-        /// Thinks on the given inputs and returns outputs
+        /// Thinks on the given inputs and returns outputs. If the brain is not generated, it generates itself randomly
         /// </summary>
         /// <param name="inputs">Thought input array</param>
         /// <returns>Thought output array</returns>
@@ -59,7 +62,7 @@ namespace EvolSim.Creature
             {
                 throw new ArgumentException("The input needs to be as wide as declared during construction!");
             }
-            if (!generated)
+            if (!Generated)
             {
                 GenerateRandom();
             }
@@ -100,7 +103,7 @@ namespace EvolSim.Creature
         /// </summary>
         public void GenerateRandom()
         {
-            if (generated)
+            if (Generated)
             {
                 throw new InvalidOperationException("Brain already generated!");
             }
@@ -135,7 +138,7 @@ namespace EvolSim.Creature
                 var toIndex = RandomThreadSafe.Next(outputNeurons.Length);
                 var synapse = new Synapse(thinkingNeurons[fromIndex], outputNeurons[toIndex], RandomThreadSafe.NextDouble());
             }
-            generated = true;
+            Generated = true;
         }
 
         /// <summary>
@@ -145,7 +148,7 @@ namespace EvolSim.Creature
         /// <param name="mutability">Mutability</param>
         public void GenerateFromBrain(Brain parent, double mutability)
         {
-            if (generated)
+            if (Generated)
             {
                 throw new InvalidOperationException("Brain already generated!");
             }
@@ -190,7 +193,7 @@ namespace EvolSim.Creature
                 }
                 thinkingNeurons[i].MutateSynapses(mutability, outputNeurons);
             }            
-            generated = true;
+            Generated = true;
         }
     }
 }

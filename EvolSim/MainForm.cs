@@ -133,8 +133,8 @@ namespace EvolSim
                 TileHeight.Enabled = true;
                 TileCalories.Enabled = true;
                 TileCoordinates.Text = world.SelectedFieldX.ToString() + "X, " + world.SelectedFieldY.ToString() + "Y";
-                TileTemperature.Text = world.SelectedField.Temperature.ToString() + "/255";
-                TileMaxCalories.Text = world.SelectedField.MaxCalories.ToString() + "/255";
+                TileTemperature.Text = world.SelectedField.Temperature.ToString() + "/" + Field.MaxValue.ToString();
+                TileMaxCalories.Text = world.SelectedField.MaxCalories.ToString() + "/" + Field.MaxValue.ToString();
                 if (!TileInitialTemperature.Focused)
                 {
                     TileInitialTemperature.Value = world.SelectedField.InitialTemperature;

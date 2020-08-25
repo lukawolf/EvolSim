@@ -12,6 +12,7 @@ namespace EvolSim.Creature
         public const double MinimalTileSize = 0.25;
         public const double MaximalTileSize = 1.75;
         public const double MaximalLifeSpan = 1000 * 3;
+        public const int MaxSize = 255;
         protected const double EatingEfficiency = 10;
         protected const double BaseMovementCost = 0.1;
         public double LifeLength { get; set; } = 0;
@@ -21,8 +22,8 @@ namespace EvolSim.Creature
         private double _y;
         public double Y { get => _y; set => _y = value.Modulo(World.Height - 1); }
         //The center of our creature moduloed onto the world
-        public double CenterX { get => (X + SizeInTiles).Modulo(World.Width - 1); }
-        public double CenterY { get => (Y + SizeInTiles).Modulo(World.Height - 1); }
+        public double CenterX { get => (X + SizeInTiles / 2).Modulo(World.Width - 1); }
+        public double CenterY { get => (Y + SizeInTiles / 2).Modulo(World.Height - 1); }
         private double _rotation;
         //We modulo the rotation due to the period of cos and sin, the same with vision angle
         public double Rotation { get => _rotation; set => _rotation = value.Modulo(Math.PI * 2); }
@@ -37,7 +38,7 @@ namespace EvolSim.Creature
         public double Size { get; set; }
         //Target size is used so that our later behavior is not impacted by the previous, especially when sending the size into negatives
         protected double TargetSize { get; set; }
-        public double SizeInTiles { get => MinimalTileSize + Size / 255 * MaximalTileSize; }
+        public double SizeInTiles { get => MinimalTileSize + Size / MaxSize * MaximalTileSize; }
         public Map.World World { get; private set; }
         internal Brain brain;
         //Constant senses to save memory
@@ -64,8 +65,8 @@ namespace EvolSim.Creature
             brain = new Brain(13, 17, 4, 4);
             Mutability = RandomThreadSafe.NextDouble();
             Excitability = RandomThreadSafe.NextDouble();
-            HeightAffinity = RandomThreadSafe.Next(0, 255);
-            TemperatureAffinity = RandomThreadSafe.Next(0, 255);
+            HeightAffinity = RandomThreadSafe.Next(0, Map.Field.MaxValue);
+            TemperatureAffinity = RandomThreadSafe.Next(0, Map.Field.MaxValue);
             VisionDistance = RandomThreadSafe.NextDouble(0, Math.Min(World.Width, World.Height));
             VisionAngle = RandomThreadSafe.NextDouble(0, 2 * Math.PI);
         }
@@ -85,8 +86,8 @@ namespace EvolSim.Creature
             Mutability = Math.Max(0, Math.Min(1, Mutability));
             Excitability = parent.Excitability + RandomThreadSafe.NextDouble(-parent.Mutability, parent.Mutability);
             Excitability = Math.Max(0, Math.Min(1, Excitability));
-            HeightAffinity = (parent.HeightAffinity + RandomThreadSafe.NextDouble(-126 * parent.Mutability, 126 * parent.Mutability)).Modulo(255);
-            TemperatureAffinity = (parent.TemperatureAffinity + RandomThreadSafe.NextDouble(-126 * parent.Mutability, 126 * parent.Mutability)).Modulo(255);
+            HeightAffinity = (parent.HeightAffinity + RandomThreadSafe.NextDouble(-126 * parent.Mutability, 126 * parent.Mutability)).Modulo(Map.Field.MaxValue);
+            TemperatureAffinity = (parent.TemperatureAffinity + RandomThreadSafe.NextDouble(-126 * parent.Mutability, 126 * parent.Mutability)).Modulo(Map.Field.MaxValue);
             VisionDistance = (parent.VisionDistance + RandomThreadSafe.NextDouble(-parent.Mutability * Math.Min(World.Width, World.Height) / 2, parent.Mutability * Math.Min(World.Width, World.Height) / 2)).Modulo(Math.Min(World.Width, World.Height));
             VisionAngle = parent.VisionAngle + RandomThreadSafe.NextDouble(-Math.PI * parent.Mutability, Math.PI * parent.Mutability);
 
@@ -106,20 +107,20 @@ namespace EvolSim.Creature
             visionY = visionY.Modulo(World.Height);
             lock (currentField)
             {
-                senses[0] = currentField.Height / 255;
-                senses[1] = currentField.Temperature / 255;
-                senses[2] = currentField.Calories / 255;
+                senses[0] = currentField.Height / Map.Field.MaxValue;
+                senses[1] = currentField.Temperature / Map.Field.MaxValue;
+                senses[2] = currentField.Calories / Map.Field.MaxValue;
             }
             lock (World.Fields[visionX][visionY])
             {
-                senses[3] = World.Fields[visionX][visionY].Height / 255;
-                senses[4] = World.Fields[visionX][visionY].Temperature / 255;
-                senses[5] = World.Fields[visionX][visionY].Calories / 255;
+                senses[3] = World.Fields[visionX][visionY].Height / Map.Field.MaxValue;
+                senses[4] = World.Fields[visionX][visionY].Temperature / Map.Field.MaxValue;
+                senses[5] = World.Fields[visionX][visionY].Calories / Map.Field.MaxValue;
             }
             senses[6] = Mutability;
-            senses[7] = HeightAffinity / 255;
-            senses[8] = TemperatureAffinity / 255;
-            senses[9] = Size / 255;
+            senses[7] = HeightAffinity / Map.Field.MaxValue;
+            senses[8] = TemperatureAffinity / Map.Field.MaxValue;
+            senses[9] = Size / MaxSize;
             senses[10] = X / World.Width;
             senses[11] = Y / World.Height;
             senses[12] = Rotation / (Math.PI * 2);
@@ -202,9 +203,9 @@ namespace EvolSim.Creature
                         eatenField.Calories = 0;
                     }
                 }
-                if (TargetSize > 255)
+                if (TargetSize > MaxSize)
                 {
-                    TargetSize = 255;
+                    TargetSize = MaxSize;
                 }
             }
         }

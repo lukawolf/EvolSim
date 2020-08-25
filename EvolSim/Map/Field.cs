@@ -9,15 +9,17 @@ namespace EvolSim.Map
     {
         public const int IdealTemperature = 126;
         public const int IdealHeight = 126;
+        public const int MaxValue = 255;
+        public const int AllowedDivergenceFraction = 10;
 
         // Height under 0 means water
         public int Height { get; set; }
 
-        // Final temperature is computed from initial and offset and limited within 0 and 255 as are the other values
+        // Final temperature is computed from initial and offset and limited within 0 and MaxValue as are the other values
         public int Temperature { get {
                 var toReturn = InitialTemperature + TemperatureOffset;
-                if (toReturn > 255)
-                    return 255;
+                if (toReturn > MaxValue)
+                    return MaxValue;
                 if (toReturn < 0)
                     return 0;
                 return toReturn;
@@ -27,9 +29,9 @@ namespace EvolSim.Map
             get => _temperatureOffset;
             set
             {
-                if (value < -255 || value > 255)
+                if (value < -MaxValue || value > MaxValue)
                 {
-                    throw new ArgumentException("Temperature offset can be only between -255 and 255");
+                    throw new ArgumentException("Temperature offset can be only between -MaxValue and MaxValue");
                 }
                 _temperatureOffset = value;
             }
@@ -38,9 +40,9 @@ namespace EvolSim.Map
         public int InitialTemperature {
             get => _initialTemperature;
             set {
-                if (value < -255 || value > 255)
+                if (value < -MaxValue || value > MaxValue)
                 {
-                    throw new ArgumentException("Initial temperature can be only between -255 and 255");
+                    throw new ArgumentException("Initial temperature can be only between -MaxValue and MaxValue");
                 }
                 _initialTemperature = value;
             }
@@ -49,9 +51,9 @@ namespace EvolSim.Map
         public double Calories {
             get => _calories;
             set {
-                if (value < 0 || value > 255)
+                if (value < 0 || value > MaxValue)
                 {
-                    throw new ArgumentException("Calories can be only between 0 and 255");
+                    throw new ArgumentException("Calories can be only between 0 and MaxValue");
                 }
                 _calories = value;
             }
@@ -59,9 +61,9 @@ namespace EvolSim.Map
         public int MaxCalories {
             get
             {
-                var toReturn = 255 - Math.Abs(IdealHeight - Height) - Math.Abs(IdealTemperature - Temperature);
-                if (toReturn > 255)
-                    return 255;
+                var toReturn = MaxValue - Math.Abs(IdealHeight - Height) - Math.Abs(IdealTemperature - Temperature);
+                if (toReturn > MaxValue)
+                    return MaxValue;
                 if (toReturn < 0)
                     return 0;
                 return toReturn;
@@ -79,17 +81,17 @@ namespace EvolSim.Map
         }
 
         /// <summary>
-        /// Drops a bunch of height and temperature at the field, causing changes of said values. They are still bound to be between 0 and 255
+        /// Drops a bunch of height and temperature at the field, causing changes of said values. They are still bound to be between 0 and MaxValue
         /// </summary>
         /// <param name="height">The height to be dropped upon the field</param>
         /// <param name="temperature">The temperature to be dropped upon the field</param>
         public void Drop(int height, int temperature)
         {
-            if (Height + height > 255) Height = 255;
+            if (Height + height > MaxValue) Height = MaxValue;
             else if (Height + height < 0) Height = 0;
             else Height += height;
 
-            if (InitialTemperature + temperature > 255) InitialTemperature = 255;
+            if (InitialTemperature + temperature > MaxValue) InitialTemperature = MaxValue;
             else if (InitialTemperature + temperature < 0) InitialTemperature = 0;
             else InitialTemperature += temperature;
             Calories = MaxCalories / 2;
@@ -112,7 +114,7 @@ namespace EvolSim.Map
         {
             var calories = Calories;
             //Allow for some divergence from the limits to limit flickering
-            var allowedDivergence = MaxCalories / 10;
+            var allowedDivergence = MaxCalories / AllowedDivergenceFraction;
             //If we have too much calories, decay half of the difference plus one
             if (calories > MaxCalories + allowedDivergence)
             {
@@ -125,11 +127,11 @@ namespace EvolSim.Map
             }
             else if (calories < MaxCalories - allowedDivergence)
             {
-                calories += (MaxCalories / 10 + 1) * fractionElapsed;
+                calories += (MaxCalories / AllowedDivergenceFraction + 1) * fractionElapsed;
             }
             //Stick within value limits
             if (calories < 0) calories = 0;
-            if (calories > 255) calories = 255;
+            if (calories > MaxValue) calories = MaxValue;
             Calories = calories;
         }
     }

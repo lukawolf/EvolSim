@@ -44,7 +44,7 @@ namespace EvolSim.Map
         public void Generate(World world, ProgressBar progressBar = null)
         {
             progressBar.Value = 0;
-            world.BlankMap(126, 126);
+            world.BlankMap(Field.IdealHeight, Field.IdealTemperature);
             var featureCount = RandomThreadSafe.Next((world.Width + world.Height) / 4, (world.Width + world.Height) * 2);
             var features = new List<IMapFeature>();
             for (int i = 0; i < featureCount; i++)

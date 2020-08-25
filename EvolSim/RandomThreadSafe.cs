@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace EvolSim
 {
-    class RandomThreadSafe
+    /// <summary>
+    /// ThreadSafe Random wrapper
+    /// </summary>
+    public class RandomThreadSafe
     {
+        //The global random used to generate the ThreadStatic locals
         private static Random global = new Random();
         [ThreadStatic]
         private static Random local;

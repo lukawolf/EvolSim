@@ -33,7 +33,7 @@ namespace EvolSim.Map
                     //Drop a random ammount of height and / or temperature particles on a given field
                     var doHeight = RandomThreadSafe.Next(0, 2);
                     var doTemp = RandomThreadSafe.Next(0, 2);
-                    world.Fields[x][y].Drop(RandomThreadSafe.Next(64, 255) * doHeight, RandomThreadSafe.Next(64, 255) * doTemp);
+                    world.Fields[x][y].Drop(RandomThreadSafe.Next(64, 255) * doHeight, RandomThreadSafe.Next(64, Field.MaxValue) * doTemp);
                     toAgitate.Add(new Coordinate(x, y));
                 }
                 foreach (var item in toAgitate)

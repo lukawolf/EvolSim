@@ -12,7 +12,7 @@ namespace EvolSim
         public bool Running { get; private set; }
         public Map.World World { get; private set; }
         public Map.Weather Weather { get; private set; }
-        private int _delay = 8;
+        private int _delay;
         public int Delay {
             get
             {

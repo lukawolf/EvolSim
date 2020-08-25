@@ -178,9 +178,9 @@ namespace EvolSim.Map
             foreach(var creature in Creatures)
             {
                 //We use hyper "extreme rounding" to catch the creature
-                if (creature.CenterX >= x - 1 && creature.CenterX <= x + 1)
+                if ((creature.CenterX >= x - 1) && (creature.CenterX <= x + 1))
                 {
-                    if (creature.CenterY >= y - 1 && creature.CenterY <= y + 1)
+                    if ((creature.CenterY >= y - 1) && (creature.CenterY <= y + 1))
                     {
                         SelectedCreature = creature;
                         return;
