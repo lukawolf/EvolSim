@@ -6,7 +6,7 @@ namespace EvolSim.Map.Features
     /// <summary>
     /// An abstract parent of all map features handling common functionality
     /// </summary>
-    abstract class Feature: IMapFeature
+    public abstract class Feature: IMapFeature
     {
         //Whether the feature spreads in a given direction
         protected bool canMovePlusX;

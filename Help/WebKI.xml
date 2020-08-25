@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AddCreature method" Url="html/e5a9beeb-cbb5-d2ea-9dfb-bb9440f62488.htm" />
+  <HelpKINode Title="AddInput method">
+    <HelpKINode Title="Neuron.AddInput Method " Url="html/9438e728-9c98-1020-aad0-806e0fe862f8.htm" />
+    <HelpKINode Title="SensoryNeuron.AddInput Method " Url="html/bc6c6289-5165-9918-c869-79b966773ef2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddOutput method" Url="html/3ab27bf4-0795-e7bd-239d-031aa814036b.htm" />
+  <HelpKINode Title="AgitateDrop method" Url="html/23f105b5-105b-700c-9583-81ea18364d52.htm" />
+  <HelpKINode Title="AgitationDelta field" Url="html/f5bb3a03-7671-ac62-8acc-cbf928c10bd0.htm" />
+  <HelpKINode Title="AgitationRadius field" Url="html/ddc8c5f1-41d9-7fcc-ba2c-719b5dd7ddae.htm" />
+  <HelpKINode Title="AllowedDivergenceFraction field" Url="html/2b87766d-fa8c-4ed2-a592-dd465f3a9161.htm" />
+  <HelpKINode Title="Amplitude property" Url="html/4795e75b-4d39-7486-bac7-48bf9ef13c14.htm" />
+  <HelpKINode Title="availableFeatures field" Url="html/7157b630-2844-84c1-1b00-30d8de5a8de6.htm" />
+  <HelpKINode Title="BaseMovementCost field" Url="html/a200c084-141e-cb37-c805-bb845059fb8f.htm" />
+  <HelpKINode Title="BlankMap method" Url="html/b62c1a04-fc7f-4b51-8e43-4b717acd97fe.htm" />
+  <HelpKINode Title="Brain class">
+    <HelpKINode Title="Brain Class" Url="html/2d9439a5-318d-8b54-198a-756bd5ffc032.htm" />
+    <HelpKINode Title="constructor" Url="html/886269e0-b98d-d33a-7452-c13232ae40ad.htm" />
+    <HelpKINode Title="fields" Url="html/60cdd501-7d7d-05dd-9147-28cfd2d4650c.htm" />
+    <HelpKINode Title="methods" Url="html/58e7985b-3001-8fd1-61a0-ae4f800fc06e.htm" />
+    <HelpKINode Title="properties" Url="html/c53cdd45-fd6e-0d9f-d849-c50e3b744367.htm" />
+  </HelpKINode>
+  <HelpKINode Title="brain field" Url="html/ba3130dd-7c06-5717-6aa4-9e8ae8815871.htm" />
+  <HelpKINode Title="Brain.Brain constructor" Url="html/886269e0-b98d-d33a-7452-c13232ae40ad.htm" />
+  <HelpKINode Title="Brain.Generated property" Url="html/4f06ca20-fd34-3b16-4b4e-f26b66908a2d.htm" />
+  <HelpKINode Title="Brain.GenerateFromBrain method" Url="html/004aed13-4bd8-13ac-7fd0-c4170107b9d8.htm" />
+  <HelpKINode Title="Brain.GenerateRandom method" Url="html/08399d76-737c-dbdc-81a7-7f4c57393d0a.htm" />
+  <HelpKINode Title="Brain.inputNeurons field" Url="html/9f19b3f0-8be7-d2ce-56bb-e8d84184bb55.htm" />
+  <HelpKINode Title="Brain.InputWidth property" Url="html/c6be45c1-23c4-2680-7eb5-de684eb7c46c.htm" />
+  <HelpKINode Title="Brain.memory field" Url="html/8145e219-a396-76d8-b5b8-79c958c29234.htm" />
+  <HelpKINode Title="Brain.MemoryWidth property" Url="html/bc131e5d-6740-f177-b0c8-4fafb5f8310d.htm" />
+  <HelpKINode Title="Brain.outputNeurons field" Url="html/6fd86e84-dd9d-17f6-31c9-203066db880d.htm" />
+  <HelpKINode Title="Brain.OutputWidth property" Url="html/b82cf2ac-dd47-980d-66c6-6003a34d7c25.htm" />
+  <HelpKINode Title="Brain.Think method" Url="html/e2a9e4f8-8b0c-02a4-3fdc-b02ba682fcde.htm" />
+  <HelpKINode Title="Brain.thinkingNeurons field" Url="html/457fed66-ed2f-7eb9-d428-3211dbeb8115.htm" />
+  <HelpKINode Title="Brain.ThinkingWidth property" Url="html/c74df934-e781-806e-48c0-21fcccf4d8e7.htm" />
+  <HelpKINode Title="BrainRenderer class">
+    <HelpKINode Title="BrainRenderer Class" Url="html/dcddead9-dd97-44e6-76c5-9ad345c80ccf.htm" />
+    <HelpKINode Title="constructor" Url="html/9e39ef71-4a51-a3dd-87cc-de145606a792.htm" />
+    <HelpKINode Title="fields" Url="html/4597c9ab-4648-539d-b29d-8bc5284804d6.htm" />
+    <HelpKINode Title="methods" Url="html/c105e9a0-8d54-96dd-6c4d-59581dbbcb2f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BrainRenderer.BrainRenderer constructor" Url="html/9e39ef71-4a51-a3dd-87cc-de145606a792.htm" />
+  <HelpKINode Title="BrainRenderer.brushes field" Url="html/e0d2d306-0f1c-be03-0035-f82af06dc052.htm" />
+  <HelpKINode Title="BrainRenderer.nodeSpacing field" Url="html/49200577-9240-8ff7-c287-4d3145c020ee.htm" />
+  <HelpKINode Title="BrainRenderer.pens field" Url="html/92eaa99b-68d9-1967-aedf-909715359a7c.htm" />
+  <HelpKINode Title="BrainRenderer.Render method" Url="html/9a0592af-824f-a774-47f5-40526e55c569.htm" />
+  <HelpKINode Title="BrainRenderer.RenderBuffered method" Url="html/4aabb5aa-2380-153a-3304-c77df866969d.htm" />
+  <HelpKINode Title="brushes field" Url="html/e0d2d306-0f1c-be03-0035-f82af06dc052.htm" />
+  <HelpKINode Title="BtnWorldGenCA field" Url="html/d58fc12e-c88a-b9b8-0c10-210a45d342c0.htm" />
+  <HelpKINode Title="BtnWorldGenCA_Click method" Url="html/13650769-a450-a94b-a51a-174789813ffa.htm" />
+  <HelpKINode Title="BtnWorldGenGaia field" Url="html/aa820871-dddf-ae94-9936-21ea0c93b03b.htm" />
+  <HelpKINode Title="BtnWorldGenGaia_Click method" Url="html/3fd8a534-b51c-5720-4abd-06e01a4b1a58.htm" />
+  <HelpKINode Title="BtnWorldGenHM field" Url="html/e9550a3a-e241-860f-452c-d88c05dff9b4.htm" />
+  <HelpKINode Title="BtnWorldGenHM_Click method" Url="html/71d038ad-656d-46bd-2e00-7e4c88e29712.htm" />
+  <HelpKINode Title="CalculateOutput method">
+    <HelpKINode Title="Neuron.CalculateOutput Method " Url="html/ea2f5977-b330-cb84-9db0-9d037fdc5f96.htm" />
+    <HelpKINode Title="SensoryNeuron.CalculateOutput Method " Url="html/b9d717c5-d587-34db-13a4-4a70af58ca17.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CalculateSenses method" Url="html/8247f9a0-5bbc-1f42-ec23-a2024795f072.htm" />
+  <HelpKINode Title="Calories property" Url="html/1a370465-558d-7a56-e4f3-ad5ce7b8c36e.htm" />
+  <HelpKINode Title="canMoveMinusX field" Url="html/71a04069-39c4-4d20-8791-855ee640d4da.htm" />
+  <HelpKINode Title="canMoveMinusY field" Url="html/7d08e541-88c4-0255-807f-42a4fb27b48f.htm" />
+  <HelpKINode Title="canMovePlusX field" Url="html/eef183d8-3667-38fc-dd58-5598f8c703c6.htm" />
+  <HelpKINode Title="canMovePlusY field" Url="html/fcd87ca3-203e-727d-d54e-fe207002b97d.htm" />
+  <HelpKINode Title="CellularAutomataGenerator class">
+    <HelpKINode Title="CellularAutomataGenerator Class" Url="html/c0a87ff1-d7ae-a4e9-aacf-ec3dfb569075.htm" />
+    <HelpKINode Title="constructor" Url="html/e225e0e8-ee64-e4cd-bcd7-732aa79c1c75.htm" />
+    <HelpKINode Title="fields" Url="html/4fee757a-fe45-d43d-3ac8-54e5204bd598.htm" />
+    <HelpKINode Title="methods" Url="html/c5abe64a-c9dd-501d-99b9-aa0c41dd0682.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CellularAutomataGenerator.availableFeatures field" Url="html/7157b630-2844-84c1-1b00-30d8de5a8de6.htm" />
+  <HelpKINode Title="CellularAutomataGenerator.CellularAutomataGenerator constructor" Url="html/e225e0e8-ee64-e4cd-bcd7-732aa79c1c75.htm" />
+  <HelpKINode Title="CellularAutomataGenerator.Generate method" Url="html/054cb023-7d91-1446-fce9-7060823374c2.htm" />
+  <HelpKINode Title="CellularAutomataGenerator.RegisterNewFeature method" Url="html/63e9fa34-da77-3e5f-9918-ef31052c1922.htm" />
+  <HelpKINode Title="CenterX property" Url="html/e7f03d63-61d4-61a2-954a-97e02c7de72e.htm" />
+  <HelpKINode Title="CenterY property" Url="html/2f4beb35-2b6f-6921-9c86-260afaab2209.htm" />
+  <HelpKINode Title="ChangeInterval property" Url="html/ae81543d-ca76-dee6-de73-d4ba77af2b94.htm" />
+  <HelpKINode Title="coeficient field" Url="html/0f70bad6-9d58-926c-c2d6-20b36738e3d9.htm" />
+  <HelpKINode Title="components field" Url="html/e34575f7-a895-f2f4-7c58-81d4892c4f21.htm" />
+  <HelpKINode Title="Coordinate structure">
+    <HelpKINode Title="Coordinate Structure" Url="html/b34ac456-a068-cf63-95a4-49b4efc52e6c.htm" />
+    <HelpKINode Title="constructor" Url="html/5585eefc-69a1-6614-3ea4-9d45a23d6d9b.htm" />
+    <HelpKINode Title="fields" Url="html/8cf751bc-56ab-dcd7-1747-379f1b3549df.htm" />
+    <HelpKINode Title="methods" Url="html/721a8e8e-047b-6c64-cf26-ed1e6da300dc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Coordinate.Coordinate constructor" Url="html/5585eefc-69a1-6614-3ea4-9d45a23d6d9b.htm" />
+  <HelpKINode Title="Coordinate.Rotate method" Url="html/33757b03-b6b3-9007-f94e-d12e896a1a2b.htm" />
+  <HelpKINode Title="Coordinate.x field" Url="html/1422fe68-da8e-a35d-d3ed-1802688e9259.htm" />
+  <HelpKINode Title="Coordinate.y field" Url="html/3e2eb39a-c9a8-fd28-3c0a-17434444171a.htm" />
+  <HelpKINode Title="CostOfLiving method" Url="html/ee80d4f7-2696-efae-ede1-57bfb556ea89.htm" />
+  <HelpKINode Title="CreateSelf method">
+    <HelpKINode Title="Desert.CreateSelf Method " Url="html/cbdef027-c868-7d24-77aa-cedc237e3a81.htm" />
+    <HelpKINode Title="Feature.CreateSelf Method " Url="html/813ce292-1583-c55d-21cb-4ce51296998c.htm" />
+    <HelpKINode Title="Glacier.CreateSelf Method " Url="html/7d29b684-b1e5-a2f2-f9da-587e4de11162.htm" />
+    <HelpKINode Title="IMapFeature.CreateSelf Method " Url="html/3ed2d502-2d43-7b4e-4bed-c1514455770b.htm" />
+    <HelpKINode Title="Lake.CreateSelf Method " Url="html/bc779444-7b31-55a0-b8e0-61e289710d43.htm" />
+    <HelpKINode Title="Mountain.CreateSelf Method " Url="html/c50bf6de-3580-2f85-6678-314c9bad6cd7.htm" />
+    <HelpKINode Title="River.CreateSelf Method " Url="html/50ca4c12-e899-11ed-96fe-5293228f104f.htm" />
+    <HelpKINode Title="Swamp.CreateSelf Method " Url="html/c9fd1c76-e96b-35bf-d318-002940e5e927.htm" />
+    <HelpKINode Title="Tundra.CreateSelf Method " Url="html/ed4cc402-ffb7-b959-4038-ffa402d4c04d.htm" />
+    <HelpKINode Title="Volcano.CreateSelf Method " Url="html/4bf5444e-0e89-170f-006d-90eae8987b95.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Creature class">
+    <HelpKINode Title="Creature Class" Url="html/d64420f5-a763-81f1-0740-b014583ab77a.htm" />
+    <HelpKINode Title="constructor" Url="html/c52e45bf-7fe6-1458-7fec-e711dada05dc.htm" />
+    <HelpKINode Title="fields" Url="html/d092ed50-48f0-550d-e23c-df4b3426c2d3.htm" />
+    <HelpKINode Title="methods" Url="html/1b4fdcf1-e5b8-8f11-a27a-65e42a6c94bb.htm" />
+    <HelpKINode Title="properties" Url="html/cbe33e65-2b8c-9f8b-f87e-475a4ebe699c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Creature.BaseMovementCost field" Url="html/a200c084-141e-cb37-c805-bb845059fb8f.htm" />
+  <HelpKINode Title="Creature.brain field" Url="html/ba3130dd-7c06-5717-6aa4-9e8ae8815871.htm" />
+  <HelpKINode Title="Creature.CalculateSenses method" Url="html/8247f9a0-5bbc-1f42-ec23-a2024795f072.htm" />
+  <HelpKINode Title="Creature.CenterX property" Url="html/e7f03d63-61d4-61a2-954a-97e02c7de72e.htm" />
+  <HelpKINode Title="Creature.CenterY property" Url="html/2f4beb35-2b6f-6921-9c86-260afaab2209.htm" />
+  <HelpKINode Title="Creature.CostOfLiving method" Url="html/ee80d4f7-2696-efae-ede1-57bfb556ea89.htm" />
+  <HelpKINode Title="Creature.Creature constructor" Url="html/c52e45bf-7fe6-1458-7fec-e711dada05dc.htm" />
+  <HelpKINode Title="Creature.CurrentField method" Url="html/36c5deae-1328-6c89-9a11-8053a544efb6.htm" />
+  <HelpKINode Title="Creature.Eat method" Url="html/61bf1bbd-503a-93ab-c9c0-ac069ec2aaf4.htm" />
+  <HelpKINode Title="Creature.EatingEfficiency field" Url="html/6287300f-6fcb-b75f-a843-0e02d2b3fc5b.htm" />
+  <HelpKINode Title="Creature.Excitability property" Url="html/87a8f3cf-b70e-c0c4-f3c4-9eb4760dddfe.htm" />
+  <HelpKINode Title="Creature.HeightAffinity property" Url="html/e2058d7c-7f89-48de-c31e-034b7dfc7bd3.htm" />
+  <HelpKINode Title="Creature.LifeLength property" Url="html/51f1a96a-f589-bccb-f728-04aa6ed0468c.htm" />
+  <HelpKINode Title="Creature.MaximalLifeSpan field" Url="html/0540669e-0ab3-1975-76fc-d9b484121198.htm" />
+  <HelpKINode Title="Creature.MaximalTileSize field" Url="html/3e44fc5e-517e-a1f4-1a13-a7f3d710c08c.htm" />
+  <HelpKINode Title="Creature.MaxSize field" Url="html/583ce92d-fb22-1260-abfe-8ee311861503.htm" />
+  <HelpKINode Title="Creature.MinimalTileSize field" Url="html/bb68d7b4-7a51-b9fa-c553-dce25eeafb01.htm" />
+  <HelpKINode Title="Creature.Move method" Url="html/b9e12a1e-6968-909d-4419-424ef5e3875b.htm" />
+  <HelpKINode Title="Creature.Mutability property" Url="html/b4930156-19dd-0ea9-307b-f0ef86cf5890.htm" />
+  <HelpKINode Title="Creature.Rotate method" Url="html/16379b96-0081-8ce3-2479-57a0d9985a4a.htm" />
+  <HelpKINode Title="Creature.Rotation property" Url="html/f45f0e50-ecd3-0422-01ee-1e23bda43d51.htm" />
+  <HelpKINode Title="Creature.senses field" Url="html/263a9413-ff9f-0715-4d86-bfa7cacd775a.htm" />
+  <HelpKINode Title="Creature.ShouldDie method" Url="html/69175a65-bccd-7e31-ef1b-556857d12413.htm" />
+  <HelpKINode Title="Creature.Size property" Url="html/14dfe947-40fb-fd7d-75ef-69c10be92190.htm" />
+  <HelpKINode Title="Creature.SizeInTiles property" Url="html/fadffd66-f1dd-bedb-a4fc-5614a5dd51f8.htm" />
+  <HelpKINode Title="Creature.Split method" Url="html/7552b869-b42b-b73a-11e9-e92bc6877564.htm" />
+  <HelpKINode Title="Creature.TargetSize property" Url="html/565555d7-b8a6-dc05-8bf2-7f9ade4ba842.htm" />
+  <HelpKINode Title="Creature.TemperatureAffinity property" Url="html/82c57a1f-f22b-8448-b7b1-48b3232c9698.htm" />
+  <HelpKINode Title="Creature.Update method" Url="html/32f2f9d2-2021-7780-1f31-8647665db523.htm" />
+  <HelpKINode Title="Creature.VisionAngle property" Url="html/38216758-4cd6-a42a-9e3e-adc08b81107f.htm" />
+  <HelpKINode Title="Creature.VisionDistance property" Url="html/f6927f31-d823-c855-1992-35da6e91b388.htm" />
+  <HelpKINode Title="Creature.World property" Url="html/68e37d91-4524-f04c-16fb-14aeae4beee3.htm" />
+  <HelpKINode Title="Creature.X property" Url="html/cde906b1-23a1-97c3-9020-2c61d033ef66.htm" />
+  <HelpKINode Title="Creature.Y property" Url="html/0111c97c-7aa1-8e30-94c6-f8af29d3c4fc.htm" />
+  <HelpKINode Title="Creature._rotation field" Url="html/fee1ae4e-3ff8-4209-f871-639ebd939a5a.htm" />
+  <HelpKINode Title="Creature._visionAngle field" Url="html/dd4132ba-45b6-97dd-423a-bd08b7758f66.htm" />
+  <HelpKINode Title="Creature._x field" Url="html/c4bbf390-1019-c578-4d1d-477dbc06db00.htm" />
+  <HelpKINode Title="Creature._y field" Url="html/be89596b-2a98-c132-b1c1-f5f0b41e7d8b.htm" />
+  <HelpKINode Title="CreatureAge field" Url="html/b2192bfe-22c1-44a9-60cd-aad22d87dbae.htm" />
+  <HelpKINode Title="CreatureAge_ValueChanged method" Url="html/65237da4-5ffe-4e8c-7837-f7a56946853c.htm" />
+  <HelpKINode Title="CreatureBrainCanvas field" Url="html/828c9311-84d6-e85c-9574-6c9672e21f28.htm" />
+  <HelpKINode Title="CreatureBrainCanvas_Paint method" Url="html/343e97f4-6ee1-4205-f7b9-1f9523d776a2.htm" />
+  <HelpKINode Title="CreatureBrainPanel field" Url="html/bcb30161-3876-41e5-14be-25552566d312.htm" />
+  <HelpKINode Title="CreatureControlPanel field" Url="html/731b8a5b-3bcc-f38f-b6ff-7147821a5fe0.htm" />
+  <HelpKINode Title="CreatureExcitability field" Url="html/fff6d84d-eeca-daa9-c93a-07364147ffd9.htm" />
+  <HelpKINode Title="CreatureExcitability_ValueChanged method" Url="html/e33b2b8e-624d-9335-44a9-a393c8ffbd2b.htm" />
+  <HelpKINode Title="CreatureHeightAffinity field" Url="html/7c3ef3bb-8f91-a0da-8219-5193dbcba788.htm" />
+  <HelpKINode Title="CreatureHeightAffinity_ValueChanged method" Url="html/d977717c-52f1-18d0-4abc-343f1d5b5214.htm" />
+  <HelpKINode Title="CreatureMutability field" Url="html/547a2e27-88cb-856e-015c-23f0cd3df55c.htm" />
+  <HelpKINode Title="CreatureMutability_ValueChanged method" Url="html/d51daa29-6033-b8dc-5099-cec7a6c581f5.htm" />
+  <HelpKINode Title="CreatureRotation field" Url="html/91b73c27-ed77-3627-def5-c6fadd0c06c2.htm" />
+  <HelpKINode Title="CreatureRotation_ValueChanged method" Url="html/deeb9298-df1c-aa8d-7b64-7b1547ad69c5.htm" />
+  <HelpKINode Title="Creatures property" Url="html/f210e6f7-b91c-7c66-0e02-087095625532.htm" />
+  <HelpKINode Title="CreatureSize field" Url="html/a067108e-aa20-1487-09bd-04579d56ae2e.htm" />
+  <HelpKINode Title="CreatureSize_ValueChanged method" Url="html/113073e2-03a8-988e-cf5b-4f08cb9b8b3c.htm" />
+  <HelpKINode Title="creaturesToBirth field" Url="html/27ebe4f3-a63a-34fb-e7e0-f6021e831c4f.htm" />
+  <HelpKINode Title="creaturesToDie field" Url="html/976ae300-8164-127f-3443-3f3bc509b265.htm" />
+  <HelpKINode Title="CreatureTemperatureAffinity field" Url="html/206f5345-db70-9d6f-47e0-a932337644b7.htm" />
+  <HelpKINode Title="CreatureTemperatureAffinity_ValueChanged method" Url="html/15823d7d-909a-f0ed-a13d-503c4db19e6f.htm" />
+  <HelpKINode Title="CreatureVisionAngle field" Url="html/590b01a6-c248-1157-f015-8a83f87cd02a.htm" />
+  <HelpKINode Title="CreatureVisionAngle_ValueChanged method" Url="html/46cc9cca-f701-bac8-8398-faa61d8b4c36.htm" />
+  <HelpKINode Title="CreatureVisionDistance field" Url="html/5aa952ef-f20c-22b6-3b65-0d483a7057fb.htm" />
+  <HelpKINode Title="CreatureVisionDistance_ValueChanged method" Url="html/56f09310-82a6-f7b6-9849-f9cc306ac351.htm" />
+  <HelpKINode Title="CreatureX field" Url="html/60f8d626-8c47-8ca6-ae93-2213a3a62251.htm" />
+  <HelpKINode Title="CreatureX_ValueChanged method" Url="html/8ee682d0-c05f-082f-d68b-a299e7f85418.htm" />
+  <HelpKINode Title="CreatureY field" Url="html/9a5218a6-0013-7a55-161f-fbaceec436f5.htm" />
+  <HelpKINode Title="CreatureY_ValueChanged method" Url="html/8cea4224-31db-2142-8e33-45b87250eef8.htm" />
+  <HelpKINode Title="CurrentField method" Url="html/36c5deae-1328-6c89-9a11-8053a544efb6.htm" />
+  <HelpKINode Title="CurrentWeather property" Url="html/8edd43cb-0419-f294-6554-9b1575ff7f97.htm" />
+  <HelpKINode Title="CycleSleep field" Url="html/e26eaee9-2717-2d2e-cfed-0659b0059d02.htm" />
+  <HelpKINode Title="CycleSleep_ValueChanged method" Url="html/16ff913a-9e4f-0cc4-dd6e-728b94358946.htm" />
+  <HelpKINode Title="Delay property" Url="html/81a584f0-a3e2-c963-a5df-45b6ea1a1f24.htm" />
+  <HelpKINode Title="Desert class">
+    <HelpKINode Title="Desert Class" Url="html/bc7b5104-e9fb-c8ad-a479-035078ca8a12.htm" />
+    <HelpKINode Title="constructor" Url="html/011ed463-47cc-a573-2add-838497895ab9.htm" />
+    <HelpKINode Title="fields" Url="html/ecfc93f0-efda-ea06-63ef-668343c6f467.htm" />
+    <HelpKINode Title="methods" Url="html/c7a4d640-d2a7-14f8-f02e-ffe500ad3883.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Desert.CreateSelf method" Url="html/cbdef027-c868-7d24-77aa-cedc237e3a81.htm" />
+  <HelpKINode Title="Desert.Desert constructor" Url="html/011ed463-47cc-a573-2add-838497895ab9.htm" />
+  <HelpKINode Title="Desert.EffectInternal method" Url="html/e4680992-6b5c-e5a2-dcc6-33684e2cf56a.htm" />
+  <HelpKINode Title="Dispose method" Url="html/57832404-6d14-21ac-fe71-b6ad3b80d615.htm" />
+  <HelpKINode Title="distance field" Url="html/eb904b9e-e429-d62a-7b04-b7c29c7309ed.htm" />
+  <HelpKINode Title="DoubleExtensions class">
+    <HelpKINode Title="DoubleExtensions Class" Url="html/bc4f5375-0ee3-b346-e073-a410c2023361.htm" />
+    <HelpKINode Title="methods" Url="html/6f4626cc-3711-9e45-d3ac-410445fddcf1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DoubleExtensions.Modulo method" Url="html/7727fd41-4a8f-ca90-66c7-ec845dcbf59d.htm" />
+  <HelpKINode Title="DoWeatherStep method" Url="html/abe4809c-0104-49f3-18ee-5fb878767a08.htm" />
+  <HelpKINode Title="Drop method" Url="html/8ab2d3e2-571a-325a-ed71-0caa049660eb.htm" />
+  <HelpKINode Title="Eat method" Url="html/61bf1bbd-503a-93ab-c9c0-ac069ec2aaf4.htm" />
+  <HelpKINode Title="EatingEfficiency field" Url="html/6287300f-6fcb-b75f-a843-0e02d2b3fc5b.htm" />
+  <HelpKINode Title="Effect method">
+    <HelpKINode Title="Feature.Effect Method " Url="html/0e0bd3c4-5653-410f-5347-9a60b050c801.htm" />
+    <HelpKINode Title="IMapFeature.Effect Method " Url="html/f981f950-b04d-08c2-3be8-e82451e9453f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EffectInternal method">
+    <HelpKINode Title="Desert.EffectInternal Method " Url="html/e4680992-6b5c-e5a2-dcc6-33684e2cf56a.htm" />
+    <HelpKINode Title="Feature.EffectInternal Method " Url="html/141533bc-ff64-e0db-cff2-a989209e5a3c.htm" />
+    <HelpKINode Title="Glacier.EffectInternal Method " Url="html/27e044e0-7e73-a7c7-0e7d-7c3c4b17034c.htm" />
+    <HelpKINode Title="Lake.EffectInternal Method " Url="html/a625cfbe-ad81-f04d-48c7-99a3e8b8e017.htm" />
+    <HelpKINode Title="Mountain.EffectInternal Method " Url="html/96780d39-fb8d-aa2d-99f8-9c2822539b93.htm" />
+    <HelpKINode Title="River.EffectInternal Method " Url="html/4b28bb3d-8c20-7e25-421f-e47e1e2f8379.htm" />
+    <HelpKINode Title="Swamp.EffectInternal Method " Url="html/aca01a43-22d2-e33c-a5b7-fdd75d687c42.htm" />
+    <HelpKINode Title="Tundra.EffectInternal Method " Url="html/3e224e48-7fa6-e45b-75ee-cd54fc8baf26.htm" />
+    <HelpKINode Title="Volcano.EffectInternal Method " Url="html/c3a88be6-d149-dbd2-7b08-2c0fccb8dede.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EffectSpread method">
+    <HelpKINode Title="Feature.EffectSpread Method " Url="html/fd499b1e-7fa7-5b4d-ed5b-779c7afe00d5.htm" />
+    <HelpKINode Title="River.EffectSpread Method " Url="html/4f784ce9-1223-9df9-1373-7172bc8c0782.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EnsureLocalExists method" Url="html/56fe7ec0-5361-edfa-7b36-e2fdb442e100.htm" />
+  <HelpKINode Title="EvolSim namespace" Url="html/8a439968-967d-9159-a6fe-bedf9caf2503.htm" />
+  <HelpKINode Title="EvolSim.Creature namespace" Url="html/3f1e6843-a73a-40e5-e3f2-73d8493522a7.htm" />
+  <HelpKINode Title="EvolSim.Creature.Brain class" Url="html/2d9439a5-318d-8b54-198a-756bd5ffc032.htm" />
+  <HelpKINode Title="EvolSim.Creature.BrainRenderer class" Url="html/dcddead9-dd97-44e6-76c5-9ad345c80ccf.htm" />
+  <HelpKINode Title="EvolSim.Creature.Creature class" Url="html/d64420f5-a763-81f1-0740-b014583ab77a.htm" />
+  <HelpKINode Title="EvolSim.Creature.Neuron class" Url="html/ef4db692-ac9c-7d78-7269-7a10af145be8.htm" />
+  <HelpKINode Title="EvolSim.Creature.SensoryNeuron class" Url="html/53ec2bff-da5f-1130-5472-a54b1817505f.htm" />
+  <HelpKINode Title="EvolSim.Creature.Synapse class" Url="html/6fdcf291-c57c-6a8c-ad55-93773c8ae7f5.htm" />
+  <HelpKINode Title="EvolSim.Extensions namespace" Url="html/f379361b-8b09-f1cc-a69d-2a141c9790dc.htm" />
+  <HelpKINode Title="EvolSim.Extensions.DoubleExtensions class" Url="html/bc4f5375-0ee3-b346-e073-a410c2023361.htm" />
+  <HelpKINode Title="EvolSim.Extensions.IntExtensions class" Url="html/04add363-5acd-70ff-05ee-58eae3afca80.htm" />
+  <HelpKINode Title="EvolSim.Extensions.ListExtensions class" Url="html/2db0ae67-d830-cde0-c1a7-2dd4188e9957.htm" />
+  <HelpKINode Title="EvolSim.MainForm class" Url="html/b0289f13-3d5c-51b7-8aad-0b9a3c72a279.htm" />
+  <HelpKINode Title="EvolSim.Map namespace" Url="html/27317f54-a023-dffb-777f-14780ab3c0d2.htm" />
+  <HelpKINode Title="EvolSim.Map.CellularAutomataGenerator class" Url="html/c0a87ff1-d7ae-a4e9-aacf-ec3dfb569075.htm" />
+  <HelpKINode Title="EvolSim.Map.Coordinate structure" Url="html/b34ac456-a068-cf63-95a4-49b4efc52e6c.htm" />
+  <HelpKINode Title="EvolSim.Map.Features namespace" Url="html/063a2eaf-8365-0e28-feb5-07da45ea8124.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Desert class" Url="html/bc7b5104-e9fb-c8ad-a479-035078ca8a12.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Feature class" Url="html/5cfaa675-0047-1044-a8c5-f679312c33f6.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Glacier class" Url="html/630b79b1-0a37-369e-e606-3d382adec894.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Lake class" Url="html/72deb674-4eb9-4eea-cbfa-2cb871bb961b.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Mountain class" Url="html/27d77a58-df1a-3771-9aaa-39d991563f5a.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.River class" Url="html/db839bdb-8e39-8cc1-ee86-4f259cd8cf68.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Swamp class" Url="html/ba5abd17-bbd2-4e14-9377-ca6351a0d596.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Tundra class" Url="html/ae155b65-7390-fb2a-3813-3f61e5944aee.htm" />
+  <HelpKINode Title="EvolSim.Map.Features.Volcano class" Url="html/5619f7ff-b07e-00e4-461d-4e649d01fd0b.htm" />
+  <HelpKINode Title="EvolSim.Map.Field class" Url="html/1c38a69f-61ca-0ced-e9d5-f2d3e5bfacd0.htm" />
+  <HelpKINode Title="EvolSim.Map.GaiaGenerator class" Url="html/eccfdd56-3136-6729-4626-63303bc2ae59.htm" />
+  <HelpKINode Title="EvolSim.Map.HeightMapGenerator class" Url="html/030c796e-7755-add6-fc14-01cb10ce4ada.htm" />
+  <HelpKINode Title="EvolSim.Map.IMapFeature interface" Url="html/1c89c8fb-3f20-acf8-57f8-71bb949690db.htm" />
+  <HelpKINode Title="EvolSim.Map.IMapGenerator interface" Url="html/8c747635-dfc4-d561-7b41-3bb15543daac.htm" />
+  <HelpKINode Title="EvolSim.Map.Renderer class" Url="html/7b7da4f5-ba2d-dbee-e3d7-fa9bdaf610aa.htm" />
+  <HelpKINode Title="EvolSim.Map.Weather class" Url="html/2bd8f655-b710-96fa-1d30-6c4e4716a36f.htm" />
+  <HelpKINode Title="EvolSim.Map.WeatherType enumeration" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
+  <HelpKINode Title="EvolSim.Map.World class" Url="html/22938a28-88bc-075b-dcc7-3f1c7da96b93.htm" />
+  <HelpKINode Title="EvolSim.Program class" Url="html/3889c515-7909-0b57-b451-7e22cca0e7f9.htm" />
+  <HelpKINode Title="EvolSim.RandomThreadSafe class" Url="html/8af98731-9efe-a352-5eb8-b013c864a1ad.htm" />
+  <HelpKINode Title="EvolSim.SimulationLoop class" Url="html/b495b246-0e89-989e-11f8-0aa2eb9ef0d5.htm" />
+  <HelpKINode Title="Excitability property" Url="html/87a8f3cf-b70e-c0c4-f3c4-9eb4760dddfe.htm" />
+  <HelpKINode Title="Feature class">
+    <HelpKINode Title="Feature Class" Url="html/5cfaa675-0047-1044-a8c5-f679312c33f6.htm" />
+    <HelpKINode Title="constructor" Url="html/bf0157ad-d0d8-587d-2e08-3d2aefb663ff.htm" />
+    <HelpKINode Title="fields" Url="html/289eb031-d59d-e632-28b2-112ed36251aa.htm" />
+    <HelpKINode Title="methods" Url="html/741cf2f2-b385-020c-ec4c-a870e820a5bf.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Feature.canMoveMinusX field" Url="html/71a04069-39c4-4d20-8791-855ee640d4da.htm" />
+  <HelpKINode Title="Feature.canMoveMinusY field" Url="html/7d08e541-88c4-0255-807f-42a4fb27b48f.htm" />
+  <HelpKINode Title="Feature.canMovePlusX field" Url="html/eef183d8-3667-38fc-dd58-5598f8c703c6.htm" />
+  <HelpKINode Title="Feature.canMovePlusY field" Url="html/fcd87ca3-203e-727d-d54e-fe207002b97d.htm" />
+  <HelpKINode Title="Feature.CreateSelf method" Url="html/813ce292-1583-c55d-21cb-4ce51296998c.htm" />
+  <HelpKINode Title="Feature.distance field" Url="html/eb904b9e-e429-d62a-7b04-b7c29c7309ed.htm" />
+  <HelpKINode Title="Feature.Effect method" Url="html/0e0bd3c4-5653-410f-5347-9a60b050c801.htm" />
+  <HelpKINode Title="Feature.EffectInternal method" Url="html/141533bc-ff64-e0db-cff2-a989209e5a3c.htm" />
+  <HelpKINode Title="Feature.EffectSpread method" Url="html/fd499b1e-7fa7-5b4d-ed5b-779c7afe00d5.htm" />
+  <HelpKINode Title="Feature.Feature constructor" Url="html/bf0157ad-d0d8-587d-2e08-3d2aefb663ff.htm" />
+  <HelpKINode Title="Feature.intensity field" Url="html/950a539e-b2a0-c73b-5c27-42a5c03b460b.htm" />
+  <HelpKINode Title="Feature.isChild field" Url="html/84d47936-a1ff-3ee3-e292-96c737d90672.htm" />
+  <HelpKINode Title="Feature.world field" Url="html/18b0b85e-47d1-c383-c22f-1f1645d44351.htm" />
+  <HelpKINode Title="Feature.x field" Url="html/d9d2df36-0e28-e52f-1097-fce852b718a8.htm" />
+  <HelpKINode Title="Feature.y field" Url="html/2b0217c9-8c00-4a65-206e-4bbba280c0e3.htm" />
+  <HelpKINode Title="Field class">
+    <HelpKINode Title="Field Class" Url="html/1c38a69f-61ca-0ced-e9d5-f2d3e5bfacd0.htm" />
+    <HelpKINode Title="constructor" Url="html/6223c7bd-71c5-50b4-1336-df991e5e93f2.htm" />
+    <HelpKINode Title="fields" Url="html/b30df682-36ee-1d6f-c0e2-ca488f189fba.htm" />
+    <HelpKINode Title="methods" Url="html/f27496c2-da95-e01a-d381-035c730cf435.htm" />
+    <HelpKINode Title="properties" Url="html/470b776e-35c3-353c-ae9e-fd3e3b9ad4f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Field.AllowedDivergenceFraction field" Url="html/2b87766d-fa8c-4ed2-a592-dd465f3a9161.htm" />
+  <HelpKINode Title="Field.Calories property" Url="html/1a370465-558d-7a56-e4f3-ad5ce7b8c36e.htm" />
+  <HelpKINode Title="Field.Drop method" Url="html/8ab2d3e2-571a-325a-ed71-0caa049660eb.htm" />
+  <HelpKINode Title="Field.Field constructor" Url="html/6223c7bd-71c5-50b4-1336-df991e5e93f2.htm" />
+  <HelpKINode Title="Field.GrowCalories method" Url="html/9068e343-2744-68bb-3841-a1ba29e92950.htm" />
+  <HelpKINode Title="Field.Height property" Url="html/6c4246f6-a24c-0131-3e00-15b12fb10539.htm" />
+  <HelpKINode Title="Field.IdealHeight field" Url="html/04a82afb-5a6b-c383-b4f0-47d741c42caa.htm" />
+  <HelpKINode Title="Field.IdealTemperature field" Url="html/cdafaf8f-1228-6f09-b4aa-f71db207d9a2.htm" />
+  <HelpKINode Title="Field.InitialTemperature property" Url="html/35a6460d-796f-ff23-dbd7-e1cc76671e63.htm" />
+  <HelpKINode Title="Field.MaxCalories property" Url="html/f5129222-c24d-b446-fc5b-3bc4288567c4.htm" />
+  <HelpKINode Title="Field.MaxValue field" Url="html/60f02366-7724-e56e-2f85-988f6ed70684.htm" />
+  <HelpKINode Title="Field.Temperature property" Url="html/a9d97a67-de95-b375-7813-fc6133a7014c.htm" />
+  <HelpKINode Title="Field.TemperatureOffset property" Url="html/4a2c2f11-26f2-c19e-2695-ae36fa07e2af.htm" />
+  <HelpKINode Title="Field.ToString method" Url="html/8101ee49-b085-08dc-4ce6-42fcbfd4f3f4.htm" />
+  <HelpKINode Title="Field._calories field" Url="html/c2528590-c92e-1e1b-94b2-5371481a4b03.htm" />
+  <HelpKINode Title="Field._initialTemperature field" Url="html/6207ea39-b168-8d2d-2da7-86b1ac775e79.htm" />
+  <HelpKINode Title="Field._temperatureOffset field" Url="html/d58e3cbe-2cba-de45-7c58-296f3e73c100.htm" />
+  <HelpKINode Title="FieldControlPanel field" Url="html/863cb97c-0105-0ee6-606c-d07e00768d1b.htm" />
+  <HelpKINode Title="Fields property" Url="html/eb4465d7-9e7b-5afb-dcc3-57fb8e7407b1.htm" />
+  <HelpKINode Title="From property" Url="html/33a795b6-9b9f-bd7e-3fdd-017e89cc2d53.htm" />
+  <HelpKINode Title="GaiaGenerator class">
+    <HelpKINode Title="GaiaGenerator Class" Url="html/eccfdd56-3136-6729-4626-63303bc2ae59.htm" />
+    <HelpKINode Title="constructor" Url="html/0e988999-68bd-9e82-a41b-6991abbadba9.htm" />
+    <HelpKINode Title="methods" Url="html/5ae03006-5947-26df-2ce5-abaf69261f93.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GaiaGenerator.GaiaGenerator constructor" Url="html/0e988999-68bd-9e82-a41b-6991abbadba9.htm" />
+  <HelpKINode Title="GaiaGenerator.Generate method" Url="html/1df6f179-1c14-ada1-03e7-3ae77528f04f.htm" />
+  <HelpKINode Title="Generate method">
+    <HelpKINode Title="CellularAutomataGenerator.Generate Method " Url="html/054cb023-7d91-1446-fce9-7060823374c2.htm" />
+    <HelpKINode Title="GaiaGenerator.Generate Method " Url="html/1df6f179-1c14-ada1-03e7-3ae77528f04f.htm" />
+    <HelpKINode Title="HeightMapGenerator.Generate Method " Url="html/d669bde4-b2a8-c878-2876-55f2a6cf5a41.htm" />
+    <HelpKINode Title="IMapGenerator.Generate Method " Url="html/1c80f30e-0055-4962-1adc-7126a130c3ab.htm" />
+    <HelpKINode Title="World.Generate Method " Url="html/2cfe2afb-2491-304a-0e4e-498dacd61336.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Generated property" Url="html/4f06ca20-fd34-3b16-4b4e-f26b66908a2d.htm" />
+  <HelpKINode Title="GenerateFromBrain method" Url="html/004aed13-4bd8-13ac-7fd0-c4170107b9d8.htm" />
+  <HelpKINode Title="GenerateRandom method" Url="html/08399d76-737c-dbdc-81a7-7f4c57393d0a.htm" />
+  <HelpKINode Title="GetSelectedWeather method" Url="html/db956e3c-ccdb-8418-0eb0-264529ad0207.htm" />
+  <HelpKINode Title="Glacier class">
+    <HelpKINode Title="Glacier Class" Url="html/630b79b1-0a37-369e-e606-3d382adec894.htm" />
+    <HelpKINode Title="constructor" Url="html/4c842c0d-856e-926f-cc1e-99f8b46fe2c5.htm" />
+    <HelpKINode Title="fields" Url="html/19825ed3-7957-b7ec-6d00-a57d13a559fa.htm" />
+    <HelpKINode Title="methods" Url="html/b46def74-01f0-3265-3002-63f9b85e0558.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Glacier.CreateSelf method" Url="html/7d29b684-b1e5-a2f2-f9da-587e4de11162.htm" />
+  <HelpKINode Title="Glacier.EffectInternal method" Url="html/27e044e0-7e73-a7c7-0e7d-7c3c4b17034c.htm" />
+  <HelpKINode Title="Glacier.Glacier constructor" Url="html/4c842c0d-856e-926f-cc1e-99f8b46fe2c5.htm" />
+  <HelpKINode Title="global field" Url="html/84969cec-52e4-7771-0711-9449cf5687c1.htm" />
+  <HelpKINode Title="GraphicTimer field" Url="html/38a49357-eb6f-febe-7f82-badd0d703edd.htm" />
+  <HelpKINode Title="GraphicTimer_Tick method" Url="html/ec465085-a7fb-f806-cd69-24f0e8a9433e.htm" />
+  <HelpKINode Title="GrowCalories method" Url="html/9068e343-2744-68bb-3841-a1ba29e92950.htm" />
+  <HelpKINode Title="Height property">
+    <HelpKINode Title="Field.Height Property " Url="html/6c4246f6-a24c-0131-3e00-15b12fb10539.htm" />
+    <HelpKINode Title="World.Height Property " Url="html/f0e15941-614b-9af5-b18e-359554658581.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HeightAffinity property" Url="html/e2058d7c-7f89-48de-c31e-034b7dfc7bd3.htm" />
+  <HelpKINode Title="HeightMapGenerator class">
+    <HelpKINode Title="HeightMapGenerator Class" Url="html/030c796e-7755-add6-fc14-01cb10ce4ada.htm" />
+    <HelpKINode Title="constructor" Url="html/62ca4952-9316-570b-0594-57084ef70eec.htm" />
+    <HelpKINode Title="fields" Url="html/3cef5144-2ba4-9731-c385-efcb67e2327d.htm" />
+    <HelpKINode Title="methods" Url="html/da810ee1-733e-2a00-f2fc-62ebe7913d86.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HeightMapGenerator.AgitateDrop method" Url="html/23f105b5-105b-700c-9583-81ea18364d52.htm" />
+  <HelpKINode Title="HeightMapGenerator.AgitationDelta field" Url="html/f5bb3a03-7671-ac62-8acc-cbf928c10bd0.htm" />
+  <HelpKINode Title="HeightMapGenerator.AgitationRadius field" Url="html/ddc8c5f1-41d9-7fcc-ba2c-719b5dd7ddae.htm" />
+  <HelpKINode Title="HeightMapGenerator.Generate method" Url="html/d669bde4-b2a8-c878-2876-55f2a6cf5a41.htm" />
+  <HelpKINode Title="HeightMapGenerator.HeightMapGenerator constructor" Url="html/62ca4952-9316-570b-0594-57084ef70eec.htm" />
+  <HelpKINode Title="IdealHeight field" Url="html/04a82afb-5a6b-c383-b4f0-47d741c42caa.htm" />
+  <HelpKINode Title="IdealTemperature field" Url="html/cdafaf8f-1228-6f09-b4aa-f71db207d9a2.htm" />
+  <HelpKINode Title="IMapFeature interface">
+    <HelpKINode Title="IMapFeature Interface" Url="html/1c89c8fb-3f20-acf8-57f8-71bb949690db.htm" />
+    <HelpKINode Title="methods" Url="html/5190a539-9019-6bdb-da90-b75223460518.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMapFeature.CreateSelf method" Url="html/3ed2d502-2d43-7b4e-4bed-c1514455770b.htm" />
+  <HelpKINode Title="IMapFeature.Effect method" Url="html/f981f950-b04d-08c2-3be8-e82451e9453f.htm" />
+  <HelpKINode Title="IMapGenerator interface">
+    <HelpKINode Title="IMapGenerator Interface" Url="html/8c747635-dfc4-d561-7b41-3bb15543daac.htm" />
+    <HelpKINode Title="methods" Url="html/2651ae31-669f-b004-edea-8452c00ec777.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IMapGenerator.Generate method" Url="html/1c80f30e-0055-4962-1adc-7126a130c3ab.htm" />
+  <HelpKINode Title="InitializeComponent method" Url="html/70ec4a24-aa5a-1da5-4f2e-8efb8ca4acb7.htm" />
+  <HelpKINode Title="InitialTemperature property" Url="html/35a6460d-796f-ff23-dbd7-e1cc76671e63.htm" />
+  <HelpKINode Title="inputNeurons field" Url="html/9f19b3f0-8be7-d2ce-56bb-e8d84184bb55.htm" />
+  <HelpKINode Title="inputs field" Url="html/e1a126ca-ed7b-11b4-bc63-c5d72228f8c6.htm" />
+  <HelpKINode Title="InputWidth property" Url="html/c6be45c1-23c4-2680-7eb5-de684eb7c46c.htm" />
+  <HelpKINode Title="intensity field" Url="html/950a539e-b2a0-c73b-5c27-42a5c03b460b.htm" />
+  <HelpKINode Title="IntExtensions class">
+    <HelpKINode Title="IntExtensions Class" Url="html/04add363-5acd-70ff-05ee-58eae3afca80.htm" />
+    <HelpKINode Title="methods" Url="html/047cfe06-7045-71e8-e485-051a5b34ec39.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IntExtensions.Modulo method" Url="html/b93fdd92-eb02-e4b3-9e44-0ea77dbf5872.htm" />
+  <HelpKINode Title="isChild field" Url="html/84d47936-a1ff-3ee3-e292-96c737d90672.htm" />
+  <HelpKINode Title="label1 field" Url="html/66994709-a025-b87c-2583-eb6a21b83414.htm" />
+  <HelpKINode Title="label10 field" Url="html/675f378d-0034-f507-9375-577d0baa2939.htm" />
+  <HelpKINode Title="label11 field" Url="html/1a0464ff-f1cb-7bae-51b6-a5c74b090550.htm" />
+  <HelpKINode Title="label12 field" Url="html/4748830a-24fc-9137-05d3-4c09b215bcc6.htm" />
+  <HelpKINode Title="label13 field" Url="html/04310549-1a46-2927-189a-d658d71d37ba.htm" />
+  <HelpKINode Title="label14 field" Url="html/c90a8dbb-04de-0f9e-4973-89208d91e0b4.htm" />
+  <HelpKINode Title="label15 field" Url="html/ffb59000-4009-af8e-9aee-697e00a303db.htm" />
+  <HelpKINode Title="label16 field" Url="html/d4ab2c6a-7539-81a7-2419-8102af300125.htm" />
+  <HelpKINode Title="label17 field" Url="html/cb99aa61-a84e-dc85-35a6-fb6c53b6bcea.htm" />
+  <HelpKINode Title="label18 field" Url="html/c00dedef-d4f6-4d71-fefd-8c36689a7c05.htm" />
+  <HelpKINode Title="label19 field" Url="html/0c695b98-ce16-00eb-4f1c-a091a6efe83a.htm" />
+  <HelpKINode Title="label2 field" Url="html/35b04ed1-ee93-2aa5-b3af-3813a2732f20.htm" />
+  <HelpKINode Title="label20 field" Url="html/ba7d0e13-8696-19fd-b744-b2a9bde6ef8a.htm" />
+  <HelpKINode Title="label21 field" Url="html/9abd5686-5a41-2d67-3418-f91968f507af.htm" />
+  <HelpKINode Title="label22 field" Url="html/6c29d96b-554f-78ac-f7cf-c5fbf6cae15b.htm" />
+  <HelpKINode Title="label23 field" Url="html/d4fa7dd7-fba7-4f52-9207-ec58d4cbd0c0.htm" />
+  <HelpKINode Title="label24 field" Url="html/f17b6828-3513-1342-13ab-ba1cc39210e2.htm" />
+  <HelpKINode Title="label25 field" Url="html/9db6fc5e-ed85-94f7-f1e7-fb87bc502bc8.htm" />
+  <HelpKINode Title="label26 field" Url="html/b6a6e691-ecfc-646a-2472-62a51666bbb2.htm" />
+  <HelpKINode Title="label27 field" Url="html/0c30ce28-fa39-08a2-4c47-3b02dc4d9b0d.htm" />
+  <HelpKINode Title="label28 field" Url="html/14054468-073d-e170-619d-5008228fdd33.htm" />
+  <HelpKINode Title="label29 field" Url="html/3aef73cc-1a1d-f972-4134-ed2230943063.htm" />
+  <HelpKINode Title="label3 field" Url="html/117f6c72-f103-52ff-a848-876dc55dd0ff.htm" />
+  <HelpKINode Title="label30 field" Url="html/19012fcd-7fec-209b-6b9f-ff45a929895b.htm" />
+  <HelpKINode Title="label32 field" Url="html/fb9804e9-d15a-e718-a0cc-ce9e709b4ee4.htm" />
+  <HelpKINode Title="label4 field" Url="html/23f2dfb4-2a7e-43e7-9556-947426ad7206.htm" />
+  <HelpKINode Title="label5 field" Url="html/2117f610-4563-72b2-c3ee-75a158042952.htm" />
+  <HelpKINode Title="label6 field" Url="html/edaf4271-33cf-2f38-3a74-a2a09f9daf1a.htm" />
+  <HelpKINode Title="label7 field" Url="html/80e4d65f-942e-90f0-d19e-5fa3330db4df.htm" />
+  <HelpKINode Title="label8 field" Url="html/22d3d2bf-7f1b-6abb-55ba-b86753a465b7.htm" />
+  <HelpKINode Title="label9 field" Url="html/7736b81c-b362-c2d2-a44f-2a4b9445afbc.htm" />
+  <HelpKINode Title="Lake class">
+    <HelpKINode Title="Lake Class" Url="html/72deb674-4eb9-4eea-cbfa-2cb871bb961b.htm" />
+    <HelpKINode Title="constructor" Url="html/cb1bd645-6d59-64e3-a4d1-00a8ab72b326.htm" />
+    <HelpKINode Title="fields" Url="html/2de9fafa-8c19-ff63-a318-4a092d20c297.htm" />
+    <HelpKINode Title="methods" Url="html/d18d557b-1a2c-5536-d294-7fe45a82c4d3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Lake.CreateSelf method" Url="html/bc779444-7b31-55a0-b8e0-61e289710d43.htm" />
+  <HelpKINode Title="Lake.EffectInternal method" Url="html/a625cfbe-ad81-f04d-48c7-99a3e8b8e017.htm" />
+  <HelpKINode Title="Lake.Lake constructor" Url="html/cb1bd645-6d59-64e3-a4d1-00a8ab72b326.htm" />
+  <HelpKINode Title="LifeLength property" Url="html/51f1a96a-f589-bccb-f728-04aa6ed0468c.htm" />
+  <HelpKINode Title="ListExtensions class">
+    <HelpKINode Title="ListExtensions Class" Url="html/2db0ae67-d830-cde0-c1a7-2dd4188e9957.htm" />
+    <HelpKINode Title="methods" Url="html/6a220e23-7fd9-3582-4c09-4486fd0f6063.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ListExtensions.Shuffle(Of T) method" Url="html/bf4e4096-af47-6b2b-d126-07cd17c7a115.htm" />
+  <HelpKINode Title="ListExtensions.Shuffle&lt;T&gt; method" Url="html/bf4e4096-af47-6b2b-d126-07cd17c7a115.htm" />
+  <HelpKINode Title="LoadWorld method" Url="html/4304165a-48da-f556-84b5-4b5c261ad2ae.htm" />
+  <HelpKINode Title="local field" Url="html/248bc00c-3ffc-1c28-847b-c82d1d7741fe.htm" />
+  <HelpKINode Title="Main method" Url="html/d7b33d17-8e9d-1731-93ea-7c38666fe218.htm" />
+  <HelpKINode Title="MainForm class">
+    <HelpKINode Title="MainForm Class" Url="html/b0289f13-3d5c-51b7-8aad-0b9a3c72a279.htm" />
+    <HelpKINode Title="constructor" Url="html/d66d4b04-8165-1363-95ce-e7dc3a5b2336.htm" />
+    <HelpKINode Title="events" Url="html/28f23a1a-321d-8823-5378-df77bff2b90f.htm" />
+    <HelpKINode Title="fields" Url="html/e5ab216d-e202-7091-4da4-c866e2ab8ef0.htm" />
+    <HelpKINode Title="methods" Url="html/a6a714bc-239c-30eb-5c3b-91e8f971dc64.htm" />
+    <HelpKINode Title="properties" Url="html/d102ef3c-88e5-4f91-24a2-c0853d7e9f20.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainForm.BtnWorldGenCA field" Url="html/d58fc12e-c88a-b9b8-0c10-210a45d342c0.htm" />
+  <HelpKINode Title="MainForm.BtnWorldGenCA_Click method" Url="html/13650769-a450-a94b-a51a-174789813ffa.htm" />
+  <HelpKINode Title="MainForm.BtnWorldGenGaia field" Url="html/aa820871-dddf-ae94-9936-21ea0c93b03b.htm" />
+  <HelpKINode Title="MainForm.BtnWorldGenGaia_Click method" Url="html/3fd8a534-b51c-5720-4abd-06e01a4b1a58.htm" />
+  <HelpKINode Title="MainForm.BtnWorldGenHM field" Url="html/e9550a3a-e241-860f-452c-d88c05dff9b4.htm" />
+  <HelpKINode Title="MainForm.BtnWorldGenHM_Click method" Url="html/71d038ad-656d-46bd-2e00-7e4c88e29712.htm" />
+  <HelpKINode Title="MainForm.components field" Url="html/e34575f7-a895-f2f4-7c58-81d4892c4f21.htm" />
+  <HelpKINode Title="MainForm.CreatureAge field" Url="html/b2192bfe-22c1-44a9-60cd-aad22d87dbae.htm" />
+  <HelpKINode Title="MainForm.CreatureAge_ValueChanged method" Url="html/65237da4-5ffe-4e8c-7837-f7a56946853c.htm" />
+  <HelpKINode Title="MainForm.CreatureBrainCanvas field" Url="html/828c9311-84d6-e85c-9574-6c9672e21f28.htm" />
+  <HelpKINode Title="MainForm.CreatureBrainCanvas_Paint method" Url="html/343e97f4-6ee1-4205-f7b9-1f9523d776a2.htm" />
+  <HelpKINode Title="MainForm.CreatureBrainPanel field" Url="html/bcb30161-3876-41e5-14be-25552566d312.htm" />
+  <HelpKINode Title="MainForm.CreatureControlPanel field" Url="html/731b8a5b-3bcc-f38f-b6ff-7147821a5fe0.htm" />
+  <HelpKINode Title="MainForm.CreatureExcitability field" Url="html/fff6d84d-eeca-daa9-c93a-07364147ffd9.htm" />
+  <HelpKINode Title="MainForm.CreatureExcitability_ValueChanged method" Url="html/e33b2b8e-624d-9335-44a9-a393c8ffbd2b.htm" />
+  <HelpKINode Title="MainForm.CreatureHeightAffinity field" Url="html/7c3ef3bb-8f91-a0da-8219-5193dbcba788.htm" />
+  <HelpKINode Title="MainForm.CreatureHeightAffinity_ValueChanged method" Url="html/d977717c-52f1-18d0-4abc-343f1d5b5214.htm" />
+  <HelpKINode Title="MainForm.CreatureMutability field" Url="html/547a2e27-88cb-856e-015c-23f0cd3df55c.htm" />
+  <HelpKINode Title="MainForm.CreatureMutability_ValueChanged method" Url="html/d51daa29-6033-b8dc-5099-cec7a6c581f5.htm" />
+  <HelpKINode Title="MainForm.CreatureRotation field" Url="html/91b73c27-ed77-3627-def5-c6fadd0c06c2.htm" />
+  <HelpKINode Title="MainForm.CreatureRotation_ValueChanged method" Url="html/deeb9298-df1c-aa8d-7b64-7b1547ad69c5.htm" />
+  <HelpKINode Title="MainForm.CreatureSize field" Url="html/a067108e-aa20-1487-09bd-04579d56ae2e.htm" />
+  <HelpKINode Title="MainForm.CreatureSize_ValueChanged method" Url="html/113073e2-03a8-988e-cf5b-4f08cb9b8b3c.htm" />
+  <HelpKINode Title="MainForm.CreatureTemperatureAffinity field" Url="html/206f5345-db70-9d6f-47e0-a932337644b7.htm" />
+  <HelpKINode Title="MainForm.CreatureTemperatureAffinity_ValueChanged method" Url="html/15823d7d-909a-f0ed-a13d-503c4db19e6f.htm" />
+  <HelpKINode Title="MainForm.CreatureVisionAngle field" Url="html/590b01a6-c248-1157-f015-8a83f87cd02a.htm" />
+  <HelpKINode Title="MainForm.CreatureVisionAngle_ValueChanged method" Url="html/46cc9cca-f701-bac8-8398-faa61d8b4c36.htm" />
+  <HelpKINode Title="MainForm.CreatureVisionDistance field" Url="html/5aa952ef-f20c-22b6-3b65-0d483a7057fb.htm" />
+  <HelpKINode Title="MainForm.CreatureVisionDistance_ValueChanged method" Url="html/56f09310-82a6-f7b6-9849-f9cc306ac351.htm" />
+  <HelpKINode Title="MainForm.CreatureX field" Url="html/60f8d626-8c47-8ca6-ae93-2213a3a62251.htm" />
+  <HelpKINode Title="MainForm.CreatureX_ValueChanged method" Url="html/8ee682d0-c05f-082f-d68b-a299e7f85418.htm" />
+  <HelpKINode Title="MainForm.CreatureY field" Url="html/9a5218a6-0013-7a55-161f-fbaceec436f5.htm" />
+  <HelpKINode Title="MainForm.CreatureY_ValueChanged method" Url="html/8cea4224-31db-2142-8e33-45b87250eef8.htm" />
+  <HelpKINode Title="MainForm.CycleSleep field" Url="html/e26eaee9-2717-2d2e-cfed-0659b0059d02.htm" />
+  <HelpKINode Title="MainForm.CycleSleep_ValueChanged method" Url="html/16ff913a-9e4f-0cc4-dd6e-728b94358946.htm" />
+  <HelpKINode Title="MainForm.Dispose method" Url="html/57832404-6d14-21ac-fe71-b6ad3b80d615.htm" />
+  <HelpKINode Title="MainForm.FieldControlPanel field" Url="html/863cb97c-0105-0ee6-606c-d07e00768d1b.htm" />
+  <HelpKINode Title="MainForm.GetSelectedWeather method" Url="html/db956e3c-ccdb-8418-0eb0-264529ad0207.htm" />
+  <HelpKINode Title="MainForm.GraphicTimer field" Url="html/38a49357-eb6f-febe-7f82-badd0d703edd.htm" />
+  <HelpKINode Title="MainForm.GraphicTimer_Tick method" Url="html/ec465085-a7fb-f806-cd69-24f0e8a9433e.htm" />
+  <HelpKINode Title="MainForm.InitializeComponent method" Url="html/70ec4a24-aa5a-1da5-4f2e-8efb8ca4acb7.htm" />
+  <HelpKINode Title="MainForm.label1 field" Url="html/66994709-a025-b87c-2583-eb6a21b83414.htm" />
+  <HelpKINode Title="MainForm.label10 field" Url="html/675f378d-0034-f507-9375-577d0baa2939.htm" />
+  <HelpKINode Title="MainForm.label11 field" Url="html/1a0464ff-f1cb-7bae-51b6-a5c74b090550.htm" />
+  <HelpKINode Title="MainForm.label12 field" Url="html/4748830a-24fc-9137-05d3-4c09b215bcc6.htm" />
+  <HelpKINode Title="MainForm.label13 field" Url="html/04310549-1a46-2927-189a-d658d71d37ba.htm" />
+  <HelpKINode Title="MainForm.label14 field" Url="html/c90a8dbb-04de-0f9e-4973-89208d91e0b4.htm" />
+  <HelpKINode Title="MainForm.label15 field" Url="html/ffb59000-4009-af8e-9aee-697e00a303db.htm" />
+  <HelpKINode Title="MainForm.label16 field" Url="html/d4ab2c6a-7539-81a7-2419-8102af300125.htm" />
+  <HelpKINode Title="MainForm.label17 field" Url="html/cb99aa61-a84e-dc85-35a6-fb6c53b6bcea.htm" />
+  <HelpKINode Title="MainForm.label18 field" Url="html/c00dedef-d4f6-4d71-fefd-8c36689a7c05.htm" />
+  <HelpKINode Title="MainForm.label19 field" Url="html/0c695b98-ce16-00eb-4f1c-a091a6efe83a.htm" />
+  <HelpKINode Title="MainForm.label2 field" Url="html/35b04ed1-ee93-2aa5-b3af-3813a2732f20.htm" />
+  <HelpKINode Title="MainForm.label20 field" Url="html/ba7d0e13-8696-19fd-b744-b2a9bde6ef8a.htm" />
+  <HelpKINode Title="MainForm.label21 field" Url="html/9abd5686-5a41-2d67-3418-f91968f507af.htm" />
+  <HelpKINode Title="MainForm.label22 field" Url="html/6c29d96b-554f-78ac-f7cf-c5fbf6cae15b.htm" />
+  <HelpKINode Title="MainForm.label23 field" Url="html/d4fa7dd7-fba7-4f52-9207-ec58d4cbd0c0.htm" />
+  <HelpKINode Title="MainForm.label24 field" Url="html/f17b6828-3513-1342-13ab-ba1cc39210e2.htm" />
+  <HelpKINode Title="MainForm.label25 field" Url="html/9db6fc5e-ed85-94f7-f1e7-fb87bc502bc8.htm" />
+  <HelpKINode Title="MainForm.label26 field" Url="html/b6a6e691-ecfc-646a-2472-62a51666bbb2.htm" />
+  <HelpKINode Title="MainForm.label27 field" Url="html/0c30ce28-fa39-08a2-4c47-3b02dc4d9b0d.htm" />
+  <HelpKINode Title="MainForm.label28 field" Url="html/14054468-073d-e170-619d-5008228fdd33.htm" />
+  <HelpKINode Title="MainForm.label29 field" Url="html/3aef73cc-1a1d-f972-4134-ed2230943063.htm" />
+  <HelpKINode Title="MainForm.label3 field" Url="html/117f6c72-f103-52ff-a848-876dc55dd0ff.htm" />
+  <HelpKINode Title="MainForm.label30 field" Url="html/19012fcd-7fec-209b-6b9f-ff45a929895b.htm" />
+  <HelpKINode Title="MainForm.label32 field" Url="html/fb9804e9-d15a-e718-a0cc-ce9e709b4ee4.htm" />
+  <HelpKINode Title="MainForm.label4 field" Url="html/23f2dfb4-2a7e-43e7-9556-947426ad7206.htm" />
+  <HelpKINode Title="MainForm.label5 field" Url="html/2117f610-4563-72b2-c3ee-75a158042952.htm" />
+  <HelpKINode Title="MainForm.label6 field" Url="html/edaf4271-33cf-2f38-3a74-a2a09f9daf1a.htm" />
+  <HelpKINode Title="MainForm.label7 field" Url="html/80e4d65f-942e-90f0-d19e-5fa3330db4df.htm" />
+  <HelpKINode Title="MainForm.label8 field" Url="html/22d3d2bf-7f1b-6abb-55ba-b86753a465b7.htm" />
+  <HelpKINode Title="MainForm.label9 field" Url="html/7736b81c-b362-c2d2-a44f-2a4b9445afbc.htm" />
+  <HelpKINode Title="MainForm.MainForm constructor" Url="html/d66d4b04-8165-1363-95ce-e7dc3a5b2336.htm" />
+  <HelpKINode Title="MainForm.MapGenProgress field" Url="html/774cbd15-9393-8438-0612-ead80db003d4.htm" />
+  <HelpKINode Title="MainForm.MinimalCreatureAmount field" Url="html/58148715-aa78-69af-8386-20196c2e0530.htm" />
+  <HelpKINode Title="MainForm.MinimalCreatureAmount_ValueChanged method" Url="html/a3049203-d1d0-7c71-4e2e-8680e5544ec4.htm" />
+  <HelpKINode Title="MainForm.NewWorld method" Url="html/9d087ad2-93fd-3749-c10e-d480d0ea7744.htm" />
+  <HelpKINode Title="MainForm.SimulationControlPanel field" Url="html/7199f3da-a963-2bee-3bcf-8e88cf4ef748.htm" />
+  <HelpKINode Title="MainForm.SimulationField_Click method" Url="html/8a8b06b1-7ab3-8106-113d-c31e4a0e55b8.htm" />
+  <HelpKINode Title="MainForm.simulationLoop field" Url="html/0e90f108-ca3f-4635-5d9e-16593242bcb9.htm" />
+  <HelpKINode Title="MainForm.SimulationPanel field" Url="html/d886c072-aa5f-b562-b224-dd6964b00d7a.htm" />
+  <HelpKINode Title="MainForm.SimulationPanel_Paint method" Url="html/b20b8f31-2e2b-8a99-a81e-a91c0d4dc38c.htm" />
+  <HelpKINode Title="MainForm.StatusIndicator field" Url="html/e50c00b1-a0c6-68a1-db34-15b24f8dc672.htm" />
+  <HelpKINode Title="MainForm.StatusSwitchButton field" Url="html/32495b52-972a-9992-827f-0be869655160.htm" />
+  <HelpKINode Title="MainForm.StatusSwitchButton_Click method" Url="html/d213f0d1-8b7e-312e-1f1b-b868f5c12c45.htm" />
+  <HelpKINode Title="MainForm.TileCalories field" Url="html/8f241ab2-9ec6-2d81-df10-eb497e250288.htm" />
+  <HelpKINode Title="MainForm.TileCalories_ValueChanged method" Url="html/aabf9817-ba36-d755-9eec-5c9cf2dc3664.htm" />
+  <HelpKINode Title="MainForm.TileCoordinates field" Url="html/2a8c5c47-812f-8cda-12cd-3c710d6edf65.htm" />
+  <HelpKINode Title="MainForm.TileHeight field" Url="html/8264021c-86e5-9356-b595-07bdbee6cef6.htm" />
+  <HelpKINode Title="MainForm.TileHeight_ValueChanged method" Url="html/d9112b04-e020-6945-9745-5d8b2b1ead5e.htm" />
+  <HelpKINode Title="MainForm.TileInitialTemperature field" Url="html/0a375772-5379-85a2-1bc8-1895b27c1820.htm" />
+  <HelpKINode Title="MainForm.TileInitialTemperature_ValueChanged method" Url="html/db1db28c-43ed-b46e-f343-f21a23b38e63.htm" />
+  <HelpKINode Title="MainForm.TileMaxCalories field" Url="html/1c565ce1-8a93-0ed8-bf78-2dfc9bce4194.htm" />
+  <HelpKINode Title="MainForm.TileTemperature field" Url="html/6866f735-c041-35da-9e13-101ef0a29514.htm" />
+  <HelpKINode Title="MainForm.TileTemperatureOffset field" Url="html/6db974b8-8363-a387-4983-ab4ce12cc900.htm" />
+  <HelpKINode Title="MainForm.TileTemperatureOffset_ValueChanged method" Url="html/4a85e75f-ec88-0d9f-19a2-bed09944333f.htm" />
+  <HelpKINode Title="MainForm.weather field" Url="html/5ceb7474-e74b-c756-4bbc-5be15bbc07b6.htm" />
+  <HelpKINode Title="MainForm.WeatherAmplitude field" Url="html/51105c45-069c-4c93-3005-9ca703e4be9e.htm" />
+  <HelpKINode Title="MainForm.WeatherAmplitude_ValueChanged method" Url="html/6bc321d2-da74-40cf-602e-a71858162be0.htm" />
+  <HelpKINode Title="MainForm.WeatherChanged method" Url="html/63e2f1e3-246f-0011-b906-ba89537b9392.htm" />
+  <HelpKINode Title="MainForm.WeatherChangePeriod field" Url="html/eee87ad5-3b7f-e5dd-48c5-1a4c7b84c04b.htm" />
+  <HelpKINode Title="MainForm.WeatherChangePeriod_ValueChanged method" Url="html/1c15c3c6-e08c-9b12-ff9e-ab25a9cdcd13.htm" />
+  <HelpKINode Title="MainForm.WeatherRandom field" Url="html/b2ba4780-fff2-eece-23ae-0a4e9131cf7a.htm" />
+  <HelpKINode Title="MainForm.WeatherSin field" Url="html/5734a0d3-ea36-ccc9-e1a7-89319f1c755f.htm" />
+  <HelpKINode Title="MainForm.WeatherStatic field" Url="html/902aaeb4-bd93-0862-61f5-b4aae4ceed2a.htm" />
+  <HelpKINode Title="MainForm.world field" Url="html/924d4a7e-9650-603f-f7ee-1d0c4f521c2d.htm" />
+  <HelpKINode Title="MainForm.WorldHeight field" Url="html/27686386-0b81-d731-a7c4-a862bb584dc2.htm" />
+  <HelpKINode Title="MainForm.WorldWidth field" Url="html/ad446f1e-54ee-8c7b-4155-f9e0f6a6a0d6.htm" />
+  <HelpKINode Title="MapGenProgress field" Url="html/774cbd15-9393-8438-0612-ead80db003d4.htm" />
+  <HelpKINode Title="MaxCalories property" Url="html/f5129222-c24d-b446-fc5b-3bc4288567c4.htm" />
+  <HelpKINode Title="maxCreatures field" Url="html/af912ae5-ed34-1fb4-a8f6-fd60fa775b0c.htm" />
+  <HelpKINode Title="MaximalLifeSpan field" Url="html/0540669e-0ab3-1975-76fc-d9b484121198.htm" />
+  <HelpKINode Title="MaximalTileSize field" Url="html/3e44fc5e-517e-a1f4-1a13-a7f3d710c08c.htm" />
+  <HelpKINode Title="MaxSize field" Url="html/583ce92d-fb22-1260-abfe-8ee311861503.htm" />
+  <HelpKINode Title="MaxValue field" Url="html/60f02366-7724-e56e-2f85-988f6ed70684.htm" />
+  <HelpKINode Title="memory field" Url="html/8145e219-a396-76d8-b5b8-79c958c29234.htm" />
+  <HelpKINode Title="MemoryWidth property" Url="html/bc131e5d-6740-f177-b0c8-4fafb5f8310d.htm" />
+  <HelpKINode Title="MinCreatures property" Url="html/fd36a7d8-860d-adb3-fab1-5a13b404176f.htm" />
+  <HelpKINode Title="MinimalCreatureAmount field" Url="html/58148715-aa78-69af-8386-20196c2e0530.htm" />
+  <HelpKINode Title="MinimalCreatureAmount_ValueChanged method" Url="html/a3049203-d1d0-7c71-4e2e-8680e5544ec4.htm" />
+  <HelpKINode Title="MinimalTileSize field" Url="html/bb68d7b4-7a51-b9fa-c553-dce25eeafb01.htm" />
+  <HelpKINode Title="Modulo method">
+    <HelpKINode Title="DoubleExtensions.Modulo Method " Url="html/7727fd41-4a8f-ca90-66c7-ec845dcbf59d.htm" />
+    <HelpKINode Title="IntExtensions.Modulo Method " Url="html/b93fdd92-eb02-e4b3-9e44-0ea77dbf5872.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mountain class">
+    <HelpKINode Title="Mountain Class" Url="html/27d77a58-df1a-3771-9aaa-39d991563f5a.htm" />
+    <HelpKINode Title="constructor" Url="html/70b14c21-7cd8-e716-9f5c-e24f2e03b91d.htm" />
+    <HelpKINode Title="fields" Url="html/513a0214-8363-5ec0-95a9-bc0b410664c7.htm" />
+    <HelpKINode Title="methods" Url="html/4baca111-f914-4841-b653-8644cb2b344b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Mountain.CreateSelf method" Url="html/c50bf6de-3580-2f85-6678-314c9bad6cd7.htm" />
+  <HelpKINode Title="Mountain.EffectInternal method" Url="html/96780d39-fb8d-aa2d-99f8-9c2822539b93.htm" />
+  <HelpKINode Title="Mountain.Mountain constructor" Url="html/70b14c21-7cd8-e716-9f5c-e24f2e03b91d.htm" />
+  <HelpKINode Title="Move method" Url="html/b9e12a1e-6968-909d-4419-424ef5e3875b.htm" />
+  <HelpKINode Title="Mutability property" Url="html/b4930156-19dd-0ea9-307b-f0ef86cf5890.htm" />
+  <HelpKINode Title="Mutate method">
+    <HelpKINode Title="Neuron.Mutate Method " Url="html/e27d2a2e-b17c-aebb-a41d-e34b1fda1084.htm" />
+    <HelpKINode Title="Synapse.Mutate Method " Url="html/fad84185-f56b-e5a4-f580-552f82c93753.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MutateSynapses method" Url="html/5df8a296-6bb7-ba88-9db0-d9cd3681182a.htm" />
+  <HelpKINode Title="Neuron class">
+    <HelpKINode Title="Neuron Class" Url="html/ef4db692-ac9c-7d78-7269-7a10af145be8.htm" />
+    <HelpKINode Title="constructor" Url="html/14a8ecbf-77b2-6d40-911c-bd5d0e67e960.htm" />
+    <HelpKINode Title="fields" Url="html/09c91deb-dc88-9480-f43e-89ca67e94a19.htm" />
+    <HelpKINode Title="methods" Url="html/c043fa91-26cd-cbfa-7ad6-5937b95c0da6.htm" />
+    <HelpKINode Title="properties" Url="html/77b2fbae-a90e-8de5-c5ed-d259dfacf913.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Neuron.AddInput method" Url="html/9438e728-9c98-1020-aad0-806e0fe862f8.htm" />
+  <HelpKINode Title="Neuron.AddOutput method" Url="html/3ab27bf4-0795-e7bd-239d-031aa814036b.htm" />
+  <HelpKINode Title="Neuron.CalculateOutput method" Url="html/ea2f5977-b330-cb84-9db0-9d037fdc5f96.htm" />
+  <HelpKINode Title="Neuron.coeficient field" Url="html/0f70bad6-9d58-926c-c2d6-20b36738e3d9.htm" />
+  <HelpKINode Title="Neuron.inputs field" Url="html/e1a126ca-ed7b-11b4-bc63-c5d72228f8c6.htm" />
+  <HelpKINode Title="Neuron.Mutate method" Url="html/e27d2a2e-b17c-aebb-a41d-e34b1fda1084.htm" />
+  <HelpKINode Title="Neuron.MutateSynapses method" Url="html/5df8a296-6bb7-ba88-9db0-d9cd3681182a.htm" />
+  <HelpKINode Title="Neuron.Neuron constructor" Url="html/14a8ecbf-77b2-6d40-911c-bd5d0e67e960.htm" />
+  <HelpKINode Title="Neuron.Output property" Url="html/73c24f18-9af3-36be-78af-7642237bff34.htm" />
+  <HelpKINode Title="Neuron.OutputParameters method" Url="html/eee945ae-7ffc-c9ef-e699-0b9216d9803b.htm" />
+  <HelpKINode Title="Neuron.outputs field" Url="html/5f2d21d9-6167-22c0-c321-b8d4b56c08da.htm" />
+  <HelpKINode Title="Neuron.OutputTransform method" Url="html/01c1d608-4d2e-5b3b-6e05-726eb55414b1.htm" />
+  <HelpKINode Title="NewWorld method" Url="html/9d087ad2-93fd-3749-c10e-d480d0ea7744.htm" />
+  <HelpKINode Title="Next method" Url="html/720f87bf-73da-6d85-7448-dd523ff35228.htm" />
+  <HelpKINode Title="NextDouble method" Url="html/026690d5-0ede-253e-af14-0c3912a92f35.htm" />
+  <HelpKINode Title="nodeSpacing field" Url="html/49200577-9240-8ff7-c287-4d3145c020ee.htm" />
+  <HelpKINode Title="Output property" Url="html/73c24f18-9af3-36be-78af-7642237bff34.htm" />
+  <HelpKINode Title="outputNeurons field" Url="html/6fd86e84-dd9d-17f6-31c9-203066db880d.htm" />
+  <HelpKINode Title="OutputParameters method" Url="html/eee945ae-7ffc-c9ef-e699-0b9216d9803b.htm" />
+  <HelpKINode Title="outputs field" Url="html/5f2d21d9-6167-22c0-c321-b8d4b56c08da.htm" />
+  <HelpKINode Title="OutputTransform method" Url="html/01c1d608-4d2e-5b3b-6e05-726eb55414b1.htm" />
+  <HelpKINode Title="OutputWidth property" Url="html/b82cf2ac-dd47-980d-66c6-6003a34d7c25.htm" />
+  <HelpKINode Title="Pause method" Url="html/de52afdd-8e9f-4645-beaf-2009163d5faf.htm" />
+  <HelpKINode Title="pens field" Url="html/92eaa99b-68d9-1967-aedf-909715359a7c.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/3889c515-7909-0b57-b451-7e22cca0e7f9.htm" />
+    <HelpKINode Title="methods" Url="html/c634300b-7862-3e5d-fb64-e20014aea4b5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/d7b33d17-8e9d-1731-93ea-7c38666fe218.htm" />
+  <HelpKINode Title="Random enumeration member" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
+  <HelpKINode Title="RandomThreadSafe class">
+    <HelpKINode Title="RandomThreadSafe Class" Url="html/8af98731-9efe-a352-5eb8-b013c864a1ad.htm" />
+    <HelpKINode Title="constructor" Url="html/de3b93ec-77bf-5713-ee13-0c025da18989.htm" />
+    <HelpKINode Title="constructor" Url="html/c643d6a3-6805-13e3-2c62-9be29b193543.htm" />
+    <HelpKINode Title="fields" Url="html/8a2a399b-6bdf-dd8e-fc11-e2fb388a069b.htm" />
+    <HelpKINode Title="methods" Url="html/ff8e93df-c73a-5228-d378-182d9bd6757c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomThreadSafe.EnsureLocalExists method" Url="html/56fe7ec0-5361-edfa-7b36-e2fdb442e100.htm" />
+  <HelpKINode Title="RandomThreadSafe.global field" Url="html/84969cec-52e4-7771-0711-9449cf5687c1.htm" />
+  <HelpKINode Title="RandomThreadSafe.local field" Url="html/248bc00c-3ffc-1c28-847b-c82d1d7741fe.htm" />
+  <HelpKINode Title="RandomThreadSafe.Next method" Url="html/720f87bf-73da-6d85-7448-dd523ff35228.htm" />
+  <HelpKINode Title="RandomThreadSafe.NextDouble method" Url="html/026690d5-0ede-253e-af14-0c3912a92f35.htm" />
+  <HelpKINode Title="RandomThreadSafe.RandomThreadSafe constructor">
+    <HelpKINode Title="RandomThreadSafe Constructor " Url="html/c643d6a3-6805-13e3-2c62-9be29b193543.htm" />
+    <HelpKINode Title="RandomThreadSafe Constructor " Url="html/de3b93ec-77bf-5713-ee13-0c025da18989.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RandomThreadSafe.SetSeed method" Url="html/dde55671-ee44-d5d2-54cf-8ff310e1c34c.htm" />
+  <HelpKINode Title="RegisterNewFeature method" Url="html/63e9fa34-da77-3e5f-9918-ef31052c1922.htm" />
+  <HelpKINode Title="Render method">
+    <HelpKINode Title="BrainRenderer.Render Method " Url="html/9a0592af-824f-a774-47f5-40526e55c569.htm" />
+    <HelpKINode Title="Renderer.Render Method " Url="html/ae34d774-a6e7-98b9-1f73-aecfea131548.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RenderBuffered method">
+    <HelpKINode Title="BrainRenderer.RenderBuffered Method " Url="html/4aabb5aa-2380-153a-3304-c77df866969d.htm" />
+    <HelpKINode Title="Renderer.RenderBuffered Method " Url="html/a069d3bf-2e0a-a2bd-decc-77fae5cd61b7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Renderer class">
+    <HelpKINode Title="Renderer Class" Url="html/7b7da4f5-ba2d-dbee-e3d7-fa9bdaf610aa.htm" />
+    <HelpKINode Title="methods" Url="html/d849c1a0-3974-7a20-6e3d-df85af41c1b8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Renderer.Render method" Url="html/ae34d774-a6e7-98b9-1f73-aecfea131548.htm" />
+  <HelpKINode Title="Renderer.RenderBuffered method" Url="html/a069d3bf-2e0a-a2bd-decc-77fae5cd61b7.htm" />
+  <HelpKINode Title="River class">
+    <HelpKINode Title="River Class" Url="html/db839bdb-8e39-8cc1-ee86-4f259cd8cf68.htm" />
+    <HelpKINode Title="constructor" Url="html/f0aab0b2-d4b4-2f52-b62b-61b365813343.htm" />
+    <HelpKINode Title="fields" Url="html/dae22902-e487-1d95-0de0-67735dcba340.htm" />
+    <HelpKINode Title="methods" Url="html/ad461129-49f7-c48f-e592-54be1ec75694.htm" />
+  </HelpKINode>
+  <HelpKINode Title="River.CreateSelf method" Url="html/50ca4c12-e899-11ed-96fe-5293228f104f.htm" />
+  <HelpKINode Title="River.EffectInternal method" Url="html/4b28bb3d-8c20-7e25-421f-e47e1e2f8379.htm" />
+  <HelpKINode Title="River.EffectSpread method" Url="html/4f784ce9-1223-9df9-1373-7172bc8c0782.htm" />
+  <HelpKINode Title="River.River constructor" Url="html/f0aab0b2-d4b4-2f52-b62b-61b365813343.htm" />
+  <HelpKINode Title="Rotate method">
+    <HelpKINode Title="Coordinate.Rotate Method " Url="html/33757b03-b6b3-9007-f94e-d12e896a1a2b.htm" />
+    <HelpKINode Title="Creature.Rotate Method " Url="html/16379b96-0081-8ce3-2479-57a0d9985a4a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Rotation property" Url="html/f45f0e50-ecd3-0422-01ee-1e23bda43d51.htm" />
+  <HelpKINode Title="Running property" Url="html/5aba6d62-4ff3-3477-3e4f-7e01c7f6948b.htm" />
+  <HelpKINode Title="SelectCreature method" Url="html/4690ac71-f7fa-c56d-826d-eb704c7fe942.htm" />
+  <HelpKINode Title="SelectedCreature property" Url="html/180b3870-83ce-c3ce-6ab7-1a490b00e3c3.htm" />
+  <HelpKINode Title="SelectedField property" Url="html/0eacb745-d801-a49c-1ea2-b94e4c364e3c.htm" />
+  <HelpKINode Title="SelectedFieldX property" Url="html/7e3203d1-990c-01de-87a6-7dd3c97ce2c5.htm" />
+  <HelpKINode Title="SelectedFieldY property" Url="html/44bd928a-9c10-8560-8947-a82ccdd20356.htm" />
+  <HelpKINode Title="SelectField method" Url="html/c3ef5d97-60df-e955-e0bf-fa23b127f76a.htm" />
+  <HelpKINode Title="senses field" Url="html/263a9413-ff9f-0715-4d86-bfa7cacd775a.htm" />
+  <HelpKINode Title="SensoryNeuron class">
+    <HelpKINode Title="SensoryNeuron Class" Url="html/53ec2bff-da5f-1130-5472-a54b1817505f.htm" />
+    <HelpKINode Title="constructor" Url="html/9d49e668-2742-d46d-7c1e-357a80687604.htm" />
+    <HelpKINode Title="fields" Url="html/e291425e-60d9-6ebc-1d78-cc25f18ee6f4.htm" />
+    <HelpKINode Title="methods" Url="html/7a2ab72a-06e4-e8bb-b7c5-6896d965ca5d.htm" />
+    <HelpKINode Title="properties" Url="html/71281f69-b764-3351-6619-ade793c0d23a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SensoryNeuron.AddInput method" Url="html/bc6c6289-5165-9918-c869-79b966773ef2.htm" />
+  <HelpKINode Title="SensoryNeuron.CalculateOutput method" Url="html/b9d717c5-d587-34db-13a4-4a70af58ca17.htm" />
+  <HelpKINode Title="SensoryNeuron.SensoryNeuron constructor" Url="html/9d49e668-2742-d46d-7c1e-357a80687604.htm" />
+  <HelpKINode Title="SensoryNeuron.SetOutput method" Url="html/4981c9f7-d36d-1ad6-67eb-e2cbdaeca71b.htm" />
+  <HelpKINode Title="SetOutput method" Url="html/4981c9f7-d36d-1ad6-67eb-e2cbdaeca71b.htm" />
+  <HelpKINode Title="SetRandomWeather method" Url="html/5c518644-120d-1b99-a239-49e0177ca132.htm" />
+  <HelpKINode Title="SetSeed method" Url="html/dde55671-ee44-d5d2-54cf-8ff310e1c34c.htm" />
+  <HelpKINode Title="SetSinusoidalWeather method" Url="html/0508eb87-d2fe-ff54-f17c-91345050090c.htm" />
+  <HelpKINode Title="SetStaticWeather method" Url="html/2642317d-4a3e-318c-4506-3a8eb2380ef7.htm" />
+  <HelpKINode Title="ShouldDie method" Url="html/69175a65-bccd-7e31-ef1b-556857d12413.htm" />
+  <HelpKINode Title="Shuffle(Of T) method" Url="html/bf4e4096-af47-6b2b-d126-07cd17c7a115.htm" />
+  <HelpKINode Title="Shuffle&lt;T&gt; method" Url="html/bf4e4096-af47-6b2b-d126-07cd17c7a115.htm" />
+  <HelpKINode Title="SimulationControlPanel field" Url="html/7199f3da-a963-2bee-3bcf-8e88cf4ef748.htm" />
+  <HelpKINode Title="SimulationField_Click method" Url="html/8a8b06b1-7ab3-8106-113d-c31e4a0e55b8.htm" />
+  <HelpKINode Title="SimulationLoop class">
+    <HelpKINode Title="SimulationLoop Class" Url="html/b495b246-0e89-989e-11f8-0aa2eb9ef0d5.htm" />
+    <HelpKINode Title="constructor" Url="html/4b2ca254-791e-2117-10bf-d90db824ed88.htm" />
+    <HelpKINode Title="fields" Url="html/ae111d96-89cb-c672-635b-b0d00e1b1a58.htm" />
+    <HelpKINode Title="methods" Url="html/4545ed4d-36ec-0638-fc4c-ce069fbfb96f.htm" />
+    <HelpKINode Title="properties" Url="html/df3bd46a-3a6e-7387-660e-23822edf90c9.htm" />
+  </HelpKINode>
+  <HelpKINode Title="simulationLoop field" Url="html/0e90f108-ca3f-4635-5d9e-16593242bcb9.htm" />
+  <HelpKINode Title="SimulationLoop.Delay property" Url="html/81a584f0-a3e2-c963-a5df-45b6ea1a1f24.htm" />
+  <HelpKINode Title="SimulationLoop.LoadWorld method" Url="html/4304165a-48da-f556-84b5-4b5c261ad2ae.htm" />
+  <HelpKINode Title="SimulationLoop.Pause method" Url="html/de52afdd-8e9f-4645-beaf-2009163d5faf.htm" />
+  <HelpKINode Title="SimulationLoop.Running property" Url="html/5aba6d62-4ff3-3477-3e4f-7e01c7f6948b.htm" />
+  <HelpKINode Title="SimulationLoop.SimulationLoop constructor" Url="html/4b2ca254-791e-2117-10bf-d90db824ed88.htm" />
+  <HelpKINode Title="SimulationLoop.simulationStopwatch field" Url="html/46bbf68e-05b8-b55c-6544-d1326871e934.htm" />
+  <HelpKINode Title="SimulationLoop.Start method" Url="html/722575ba-ffb5-be6d-ab09-54783f2b3af8.htm" />
+  <HelpKINode Title="SimulationLoop.Weather property" Url="html/ec8a9728-c1d2-a60b-bfd1-5e0650a15202.htm" />
+  <HelpKINode Title="SimulationLoop.World property" Url="html/441c7db8-0af1-a096-09d5-05291ad8cfd1.htm" />
+  <HelpKINode Title="SimulationLoop._delay field" Url="html/06af3458-9b26-f47d-1bc1-9e641e7f3d0a.htm" />
+  <HelpKINode Title="SimulationPanel field" Url="html/d886c072-aa5f-b562-b224-dd6964b00d7a.htm" />
+  <HelpKINode Title="SimulationPanel_Paint method" Url="html/b20b8f31-2e2b-8a99-a81e-a91c0d4dc38c.htm" />
+  <HelpKINode Title="simulationStopwatch field" Url="html/46bbf68e-05b8-b55c-6544-d1326871e934.htm" />
+  <HelpKINode Title="Sinusoidal enumeration member" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
+  <HelpKINode Title="sinusoidalShift field" Url="html/6a6765cc-3214-dc38-911b-ec86b5e0a613.htm" />
+  <HelpKINode Title="Size property" Url="html/14dfe947-40fb-fd7d-75ef-69c10be92190.htm" />
+  <HelpKINode Title="SizeInTiles property" Url="html/fadffd66-f1dd-bedb-a4fc-5614a5dd51f8.htm" />
+  <HelpKINode Title="Split method" Url="html/7552b869-b42b-b73a-11e9-e92bc6877564.htm" />
+  <HelpKINode Title="Start method" Url="html/722575ba-ffb5-be6d-ab09-54783f2b3af8.htm" />
+  <HelpKINode Title="Static enumeration member" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
+  <HelpKINode Title="StatusIndicator field" Url="html/e50c00b1-a0c6-68a1-db34-15b24f8dc672.htm" />
+  <HelpKINode Title="StatusSwitchButton field" Url="html/32495b52-972a-9992-827f-0be869655160.htm" />
+  <HelpKINode Title="StatusSwitchButton_Click method" Url="html/d213f0d1-8b7e-312e-1f1b-b868f5c12c45.htm" />
+  <HelpKINode Title="Swamp class">
+    <HelpKINode Title="Swamp Class" Url="html/ba5abd17-bbd2-4e14-9377-ca6351a0d596.htm" />
+    <HelpKINode Title="constructor" Url="html/543c97d1-777c-00c5-5624-00c53a4d6070.htm" />
+    <HelpKINode Title="fields" Url="html/76a76ba2-066f-db51-729d-bf7bac64eea0.htm" />
+    <HelpKINode Title="methods" Url="html/de55c922-2a54-a5a6-1cb6-41fc8fbbe107.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Swamp.CreateSelf method" Url="html/c9fd1c76-e96b-35bf-d318-002940e5e927.htm" />
+  <HelpKINode Title="Swamp.EffectInternal method" Url="html/aca01a43-22d2-e33c-a5b7-fdd75d687c42.htm" />
+  <HelpKINode Title="Swamp.Swamp constructor" Url="html/543c97d1-777c-00c5-5624-00c53a4d6070.htm" />
+  <HelpKINode Title="Synapse class">
+    <HelpKINode Title="Synapse Class" Url="html/6fdcf291-c57c-6a8c-ad55-93773c8ae7f5.htm" />
+    <HelpKINode Title="constructor" Url="html/7b659a1b-df5c-f2b7-6788-17583830551d.htm" />
+    <HelpKINode Title="methods" Url="html/66214c16-46e2-eb76-0e64-ea286afee580.htm" />
+    <HelpKINode Title="properties" Url="html/8cefe5a5-ab6c-c537-1771-965194b5619f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Synapse.From property" Url="html/33a795b6-9b9f-bd7e-3fdd-017e89cc2d53.htm" />
+  <HelpKINode Title="Synapse.Mutate method" Url="html/fad84185-f56b-e5a4-f580-552f82c93753.htm" />
+  <HelpKINode Title="Synapse.Synapse constructor" Url="html/7b659a1b-df5c-f2b7-6788-17583830551d.htm" />
+  <HelpKINode Title="Synapse.To property" Url="html/e46cf9f6-a2c2-789e-8293-53fafeb6ba9f.htm" />
+  <HelpKINode Title="Synapse.Weight property" Url="html/6ad0ea6a-cb74-b695-0621-0c524d050842.htm" />
+  <HelpKINode Title="TargetSize property" Url="html/565555d7-b8a6-dc05-8bf2-7f9ade4ba842.htm" />
+  <HelpKINode Title="Temperature property" Url="html/a9d97a67-de95-b375-7813-fc6133a7014c.htm" />
+  <HelpKINode Title="TemperatureAffinity property" Url="html/82c57a1f-f22b-8448-b7b1-48b3232c9698.htm" />
+  <HelpKINode Title="TemperatureOffset property" Url="html/4a2c2f11-26f2-c19e-2695-ae36fa07e2af.htm" />
+  <HelpKINode Title="Think method" Url="html/e2a9e4f8-8b0c-02a4-3fdc-b02ba682fcde.htm" />
+  <HelpKINode Title="thinkingNeurons field" Url="html/457fed66-ed2f-7eb9-d428-3211dbeb8115.htm" />
+  <HelpKINode Title="ThinkingWidth property" Url="html/c74df934-e781-806e-48c0-21fcccf4d8e7.htm" />
+  <HelpKINode Title="TileCalories field" Url="html/8f241ab2-9ec6-2d81-df10-eb497e250288.htm" />
+  <HelpKINode Title="TileCalories_ValueChanged method" Url="html/aabf9817-ba36-d755-9eec-5c9cf2dc3664.htm" />
+  <HelpKINode Title="TileCoordinates field" Url="html/2a8c5c47-812f-8cda-12cd-3c710d6edf65.htm" />
+  <HelpKINode Title="TileHeight field" Url="html/8264021c-86e5-9356-b595-07bdbee6cef6.htm" />
+  <HelpKINode Title="TileHeight_ValueChanged method" Url="html/d9112b04-e020-6945-9745-5d8b2b1ead5e.htm" />
+  <HelpKINode Title="TileInitialTemperature field" Url="html/0a375772-5379-85a2-1bc8-1895b27c1820.htm" />
+  <HelpKINode Title="TileInitialTemperature_ValueChanged method" Url="html/db1db28c-43ed-b46e-f343-f21a23b38e63.htm" />
+  <HelpKINode Title="TileMaxCalories field" Url="html/1c565ce1-8a93-0ed8-bf78-2dfc9bce4194.htm" />
+  <HelpKINode Title="TileTemperature field" Url="html/6866f735-c041-35da-9e13-101ef0a29514.htm" />
+  <HelpKINode Title="TileTemperatureOffset field" Url="html/6db974b8-8363-a387-4983-ab4ce12cc900.htm" />
+  <HelpKINode Title="TileTemperatureOffset_ValueChanged method" Url="html/4a85e75f-ec88-0d9f-19a2-bed09944333f.htm" />
+  <HelpKINode Title="To property" Url="html/e46cf9f6-a2c2-789e-8293-53fafeb6ba9f.htm" />
+  <HelpKINode Title="ToString method" Url="html/8101ee49-b085-08dc-4ce6-42fcbfd4f3f4.htm" />
+  <HelpKINode Title="Tundra class">
+    <HelpKINode Title="Tundra Class" Url="html/ae155b65-7390-fb2a-3813-3f61e5944aee.htm" />
+    <HelpKINode Title="constructor" Url="html/8fe09f88-c336-8732-35aa-b4d1cf771673.htm" />
+    <HelpKINode Title="fields" Url="html/b8ac4ab4-31fa-c1a7-f443-c0107d2e1db7.htm" />
+    <HelpKINode Title="methods" Url="html/d56722f2-2680-3680-b056-6b7ccbc3fbb3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Tundra.CreateSelf method" Url="html/ed4cc402-ffb7-b959-4038-ffa402d4c04d.htm" />
+  <HelpKINode Title="Tundra.EffectInternal method" Url="html/3e224e48-7fa6-e45b-75ee-cd54fc8baf26.htm" />
+  <HelpKINode Title="Tundra.Tundra constructor" Url="html/8fe09f88-c336-8732-35aa-b4d1cf771673.htm" />
+  <HelpKINode Title="Update method">
+    <HelpKINode Title="Creature.Update Method " Url="html/32f2f9d2-2021-7780-1f31-8647665db523.htm" />
+    <HelpKINode Title="World.Update Method " Url="html/ae977ec9-94ca-d5ef-3504-de91fac4c1e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VisionAngle property" Url="html/38216758-4cd6-a42a-9e3e-adc08b81107f.htm" />
+  <HelpKINode Title="VisionDistance property" Url="html/f6927f31-d823-c855-1992-35da6e91b388.htm" />
+  <HelpKINode Title="Volcano class">
+    <HelpKINode Title="Volcano Class" Url="html/5619f7ff-b07e-00e4-461d-4e649d01fd0b.htm" />
+    <HelpKINode Title="constructor" Url="html/a586cc5d-8672-21b5-0c13-8ee47cf2345c.htm" />
+    <HelpKINode Title="fields" Url="html/ec8d0d4e-7dd6-5577-b373-e680ff1f7aae.htm" />
+    <HelpKINode Title="methods" Url="html/fcb5021b-7e8b-f589-8d32-7709633db618.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Volcano.CreateSelf method" Url="html/4bf5444e-0e89-170f-006d-90eae8987b95.htm" />
+  <HelpKINode Title="Volcano.EffectInternal method" Url="html/c3a88be6-d149-dbd2-7b08-2c0fccb8dede.htm" />
+  <HelpKINode Title="Volcano.Volcano constructor" Url="html/a586cc5d-8672-21b5-0c13-8ee47cf2345c.htm" />
+  <HelpKINode Title="Weather class">
+    <HelpKINode Title="Weather Class" Url="html/2bd8f655-b710-96fa-1d30-6c4e4716a36f.htm" />
+    <HelpKINode Title="constructor" Url="html/21a3f77c-9605-b50a-cdf6-fb803165b053.htm" />
+    <HelpKINode Title="fields" Url="html/f72e6385-cf92-2176-cc31-b6858b138296.htm" />
+    <HelpKINode Title="methods" Url="html/45a32eb0-b350-9f4c-c14d-1f1ea8f4872d.htm" />
+    <HelpKINode Title="properties" Url="html/e73e4b05-4180-7c98-04b6-4b6290a042e5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="weather field" Url="html/5ceb7474-e74b-c756-4bbc-5be15bbc07b6.htm" />
+  <HelpKINode Title="Weather property" Url="html/ec8a9728-c1d2-a60b-bfd1-5e0650a15202.htm" />
+  <HelpKINode Title="Weather.Amplitude property" Url="html/4795e75b-4d39-7486-bac7-48bf9ef13c14.htm" />
+  <HelpKINode Title="Weather.ChangeInterval property" Url="html/ae81543d-ca76-dee6-de73-d4ba77af2b94.htm" />
+  <HelpKINode Title="Weather.CurrentWeather property" Url="html/8edd43cb-0419-f294-6554-9b1575ff7f97.htm" />
+  <HelpKINode Title="Weather.DoWeatherStep method" Url="html/abe4809c-0104-49f3-18ee-5fb878767a08.htm" />
+  <HelpKINode Title="Weather.SetRandomWeather method" Url="html/5c518644-120d-1b99-a239-49e0177ca132.htm" />
+  <HelpKINode Title="Weather.SetSinusoidalWeather method" Url="html/0508eb87-d2fe-ff54-f17c-91345050090c.htm" />
+  <HelpKINode Title="Weather.SetStaticWeather method" Url="html/2642317d-4a3e-318c-4506-3a8eb2380ef7.htm" />
+  <HelpKINode Title="Weather.sinusoidalShift field" Url="html/6a6765cc-3214-dc38-911b-ec86b5e0a613.htm" />
+  <HelpKINode Title="Weather.Weather constructor" Url="html/21a3f77c-9605-b50a-cdf6-fb803165b053.htm" />
+  <HelpKINode Title="Weather.weatherIterator field" Url="html/98befa1f-7dd3-0546-89ee-4f1d7d76fe00.htm" />
+  <HelpKINode Title="Weather.World property" Url="html/c9642ac1-04d5-e617-fe44-a406d24bec34.htm" />
+  <HelpKINode Title="Weather._amplitude field" Url="html/bd5e66fe-9033-3bac-9a80-31ea5173f8a6.htm" />
+  <HelpKINode Title="Weather._changeInterval field" Url="html/a00e1c25-598c-2b5d-77cb-06cb7e26cd3a.htm" />
+  <HelpKINode Title="Weather._currentWeather field" Url="html/3a283610-c2e3-2e1c-7f6f-9806f97aa1bd.htm" />
+  <HelpKINode Title="WeatherAmplitude field" Url="html/51105c45-069c-4c93-3005-9ca703e4be9e.htm" />
+  <HelpKINode Title="WeatherAmplitude_ValueChanged method" Url="html/6bc321d2-da74-40cf-602e-a71858162be0.htm" />
+  <HelpKINode Title="WeatherChanged method" Url="html/63e2f1e3-246f-0011-b906-ba89537b9392.htm" />
+  <HelpKINode Title="WeatherChangePeriod field" Url="html/eee87ad5-3b7f-e5dd-48c5-1a4c7b84c04b.htm" />
+  <HelpKINode Title="WeatherChangePeriod_ValueChanged method" Url="html/1c15c3c6-e08c-9b12-ff9e-ab25a9cdcd13.htm" />
+  <HelpKINode Title="weatherIterator field" Url="html/98befa1f-7dd3-0546-89ee-4f1d7d76fe00.htm" />
+  <HelpKINode Title="WeatherRandom field" Url="html/b2ba4780-fff2-eece-23ae-0a4e9131cf7a.htm" />
+  <HelpKINode Title="WeatherSin field" Url="html/5734a0d3-ea36-ccc9-e1a7-89319f1c755f.htm" />
+  <HelpKINode Title="WeatherStatic field" Url="html/902aaeb4-bd93-0862-61f5-b4aae4ceed2a.htm" />
+  <HelpKINode Title="WeatherType enumeration" Url="html/e3400eb9-3e67-08b2-2823-517965e8b4bf.htm" />
+  <HelpKINode Title="Weight property" Url="html/6ad0ea6a-cb74-b695-0621-0c524d050842.htm" />
+  <HelpKINode Title="Width property" Url="html/8345a298-774f-60ac-0914-be1ec8e6d964.htm" />
+  <HelpKINode Title="World class">
+    <HelpKINode Title="World Class" Url="html/22938a28-88bc-075b-dcc7-3f1c7da96b93.htm" />
+    <HelpKINode Title="constructor" Url="html/1db6634e-4643-c3a5-ffe8-e1ab3c793b53.htm" />
+    <HelpKINode Title="fields" Url="html/6535e32f-678c-4fd9-6277-a42ef28552eb.htm" />
+    <HelpKINode Title="methods" Url="html/5baaa723-787d-cd5a-4010-df389fb7dde0.htm" />
+    <HelpKINode Title="properties" Url="html/e7a8a282-3cb1-e813-2bc9-31ae4ecb0b8e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="world field">
+    <HelpKINode Title="Feature.world Field" Url="html/18b0b85e-47d1-c383-c22f-1f1645d44351.htm" />
+    <HelpKINode Title="MainForm.world Field" Url="html/924d4a7e-9650-603f-f7ee-1d0c4f521c2d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="World property">
+    <HelpKINode Title="Creature.World Property " Url="html/68e37d91-4524-f04c-16fb-14aeae4beee3.htm" />
+    <HelpKINode Title="SimulationLoop.World Property " Url="html/441c7db8-0af1-a096-09d5-05291ad8cfd1.htm" />
+    <HelpKINode Title="Weather.World Property " Url="html/c9642ac1-04d5-e617-fe44-a406d24bec34.htm" />
+  </HelpKINode>
+  <HelpKINode Title="World.AddCreature method" Url="html/e5a9beeb-cbb5-d2ea-9dfb-bb9440f62488.htm" />
+  <HelpKINode Title="World.BlankMap method" Url="html/b62c1a04-fc7f-4b51-8e43-4b717acd97fe.htm" />
+  <HelpKINode Title="World.Creatures property" Url="html/f210e6f7-b91c-7c66-0e02-087095625532.htm" />
+  <HelpKINode Title="World.creaturesToBirth field" Url="html/27ebe4f3-a63a-34fb-e7e0-f6021e831c4f.htm" />
+  <HelpKINode Title="World.creaturesToDie field" Url="html/976ae300-8164-127f-3443-3f3bc509b265.htm" />
+  <HelpKINode Title="World.Fields property" Url="html/eb4465d7-9e7b-5afb-dcc3-57fb8e7407b1.htm" />
+  <HelpKINode Title="World.Generate method" Url="html/2cfe2afb-2491-304a-0e4e-498dacd61336.htm" />
+  <HelpKINode Title="World.Height property" Url="html/f0e15941-614b-9af5-b18e-359554658581.htm" />
+  <HelpKINode Title="World.maxCreatures field" Url="html/af912ae5-ed34-1fb4-a8f6-fd60fa775b0c.htm" />
+  <HelpKINode Title="World.MinCreatures property" Url="html/fd36a7d8-860d-adb3-fab1-5a13b404176f.htm" />
+  <HelpKINode Title="World.SelectCreature method" Url="html/4690ac71-f7fa-c56d-826d-eb704c7fe942.htm" />
+  <HelpKINode Title="World.SelectedCreature property" Url="html/180b3870-83ce-c3ce-6ab7-1a490b00e3c3.htm" />
+  <HelpKINode Title="World.SelectedField property" Url="html/0eacb745-d801-a49c-1ea2-b94e4c364e3c.htm" />
+  <HelpKINode Title="World.SelectedFieldX property" Url="html/7e3203d1-990c-01de-87a6-7dd3c97ce2c5.htm" />
+  <HelpKINode Title="World.SelectedFieldY property" Url="html/44bd928a-9c10-8560-8947-a82ccdd20356.htm" />
+  <HelpKINode Title="World.SelectField method" Url="html/c3ef5d97-60df-e955-e0bf-fa23b127f76a.htm" />
+  <HelpKINode Title="World.Update method" Url="html/ae977ec9-94ca-d5ef-3504-de91fac4c1e3.htm" />
+  <HelpKINode Title="World.Width property" Url="html/8345a298-774f-60ac-0914-be1ec8e6d964.htm" />
+  <HelpKINode Title="World.World constructor" Url="html/1db6634e-4643-c3a5-ffe8-e1ab3c793b53.htm" />
+  <HelpKINode Title="WorldHeight field" Url="html/27686386-0b81-d731-a7c4-a862bb584dc2.htm" />
+  <HelpKINode Title="WorldWidth field" Url="html/ad446f1e-54ee-8c7b-4155-f9e0f6a6a0d6.htm" />
+  <HelpKINode Title="x field">
+    <HelpKINode Title="Coordinate.x Field" Url="html/1422fe68-da8e-a35d-d3ed-1802688e9259.htm" />
+    <HelpKINode Title="Feature.x Field" Url="html/d9d2df36-0e28-e52f-1097-fce852b718a8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="X property" Url="html/cde906b1-23a1-97c3-9020-2c61d033ef66.htm" />
+  <HelpKINode Title="y field">
+    <HelpKINode Title="Coordinate.y Field" Url="html/3e2eb39a-c9a8-fd28-3c0a-17434444171a.htm" />
+    <HelpKINode Title="Feature.y Field" Url="html/2b0217c9-8c00-4a65-206e-4bbba280c0e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Y property" Url="html/0111c97c-7aa1-8e30-94c6-f8af29d3c4fc.htm" />
+  <HelpKINode Title="_amplitude field" Url="html/bd5e66fe-9033-3bac-9a80-31ea5173f8a6.htm" />
+  <HelpKINode Title="_calories field" Url="html/c2528590-c92e-1e1b-94b2-5371481a4b03.htm" />
+  <HelpKINode Title="_changeInterval field" Url="html/a00e1c25-598c-2b5d-77cb-06cb7e26cd3a.htm" />
+  <HelpKINode Title="_currentWeather field" Url="html/3a283610-c2e3-2e1c-7f6f-9806f97aa1bd.htm" />
+  <HelpKINode Title="_delay field" Url="html/06af3458-9b26-f47d-1bc1-9e641e7f3d0a.htm" />
+  <HelpKINode Title="_initialTemperature field" Url="html/6207ea39-b168-8d2d-2da7-86b1ac775e79.htm" />
+  <HelpKINode Title="_rotation field" Url="html/fee1ae4e-3ff8-4209-f871-639ebd939a5a.htm" />
+  <HelpKINode Title="_temperatureOffset field" Url="html/d58e3cbe-2cba-de45-7c58-296f3e73c100.htm" />
+  <HelpKINode Title="_visionAngle field" Url="html/dd4132ba-45b6-97dd-423a-bd08b7758f66.htm" />
+  <HelpKINode Title="_x field" Url="html/c4bbf390-1019-c578-4d1d-477dbc06db00.htm" />
+  <HelpKINode Title="_y field" Url="html/be89596b-2a98-c132-b1c1-f5f0b41e7d8b.htm" />
+</HelpKI>

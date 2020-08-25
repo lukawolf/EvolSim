@@ -42,7 +42,7 @@ namespace EvolSim.Creature
         public Map.World World { get; private set; }
         internal Brain brain;
         //Constant senses to save memory
-        protected double[] senses = new double[13];
+        protected double[] senses = new double[14];
         /// <summary>
         /// Computes whether the creature should die
         /// </summary>
@@ -62,7 +62,7 @@ namespace EvolSim.Creature
             Y = RandomThreadSafe.Next(0, World.Height);
             Rotation = RandomThreadSafe.NextDouble(0, 2 * Math.PI);
             Size = RandomThreadSafe.Next(32, 64);
-            brain = new Brain(13, 17, 4, 4);
+            brain = new Brain(14, 17, 4, 4);
             Mutability = RandomThreadSafe.NextDouble();
             Excitability = RandomThreadSafe.NextDouble();
             HeightAffinity = RandomThreadSafe.Next(0, Map.Field.MaxValue);
@@ -81,7 +81,7 @@ namespace EvolSim.Creature
             Y = parent.Y;
             Rotation = RandomThreadSafe.NextDouble(0, 2 * Math.PI);
             Size = parent.Size / 2;
-            brain = new Brain(13, 17, 4, 4);
+            brain = new Brain(14, 17, 4, 4);
             Mutability = parent.Mutability + RandomThreadSafe.NextDouble(-parent.Mutability, parent.Mutability);
             Mutability = Math.Max(0, Math.Min(1, Mutability));
             Excitability = parent.Excitability + RandomThreadSafe.NextDouble(-parent.Mutability, parent.Mutability);
@@ -95,7 +95,7 @@ namespace EvolSim.Creature
         }
 
         /// <summary>
-        /// Calculates the senses, normalising their values for the Brain
+        /// Calculates the senses, normalizing their values for the Brain
         /// </summary>
         private void CalculateSenses()
         {
@@ -124,6 +124,7 @@ namespace EvolSim.Creature
             senses[10] = X / World.Width;
             senses[11] = Y / World.Height;
             senses[12] = Rotation / (Math.PI * 2);
+            senses[13] = LifeLength / MaximalLifeSpan;
         }
 
         /// <summary>

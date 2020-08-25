@@ -2,9 +2,12 @@
 using System.Drawing;
 using System.Windows.Forms;
 using EvolSim.Map;
-//TODO: Move magic constants
+
 namespace EvolSim
 {
+    /// <summary>
+    /// The main application form
+    /// </summary>
     public partial class MainForm : Form
     {
         private World world;

@@ -7,8 +7,14 @@ using System.Diagnostics;
 
 namespace EvolSim
 {
+    /// <summary>
+    /// The simulation loop object
+    /// </summary>
     class SimulationLoop
     {
+        /// <summary>
+        /// Whether the simulation is running
+        /// </summary>
         public bool Running { get; private set; }
         public Map.World World { get; private set; }
         public Map.Weather Weather { get; private set; }
@@ -29,17 +35,29 @@ namespace EvolSim
         }
         protected Stopwatch simulationStopwatch;
 
+        /// <summary>
+        /// Constructs the loop for a given weather and delay
+        /// </summary>
+        /// <param name="delay"></param>
+        /// <param name="weather"></param>
         public SimulationLoop(int delay, Map.Weather weather)
         {
             Delay = delay;
             Weather = weather;
         }
 
+        /// <summary>
+        /// Loads the world into the simulation loop
+        /// </summary>
+        /// <param name="world"></param>
         public void LoadWorld(Map.World world)
         {
             World = world;
         }
 
+        /// <summary>
+        /// Starts the simulation
+        /// </summary>
         public async void Start()
         {
             //Check world
@@ -65,6 +83,9 @@ namespace EvolSim
             }
         }
 
+        /// <summary>
+        /// Pauses the simulation
+        /// </summary>
         public void Pause()
         {
             Running = false;
