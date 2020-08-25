@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\EvolSim.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\EvolSim.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Creature\Brain.cs" />
+    <Compile Include="Creature\BrainRenderer.cs" />
     <Compile Include="Creature\Creature.cs" />
     <Compile Include="Creature\Neuron.cs" />
     <Compile Include="Creature\SensoryNeuron.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="Map\Features\Tundra.cs" />
     <Compile Include="Map\Features\Volcano.cs" />
     <Compile Include="Map\Field.cs" />
+    <Compile Include="Map\GaiaGenerator.cs" />
     <Compile Include="Map\HeightMapGenerator.cs" />
     <Compile Include="Map\IMapFeature.cs" />
     <Compile Include="Map\IMapGenerator.cs" />

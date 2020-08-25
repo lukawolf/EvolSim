@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EvolSim.Map.Features
+﻿namespace EvolSim.Map.Features
 {
+    /// <summary>
+    /// Creates a glacier using the Feature cellular automata machinery
+    /// </summary>
     class Glacier : Feature
     {
         public Glacier()

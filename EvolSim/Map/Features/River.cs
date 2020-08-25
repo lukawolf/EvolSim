@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvolSim.Map.Features
 {
+    /// <summary>
+    /// Creates a river using the Feature cellular automata machinery
+    /// </summary>
     class River : Feature
     {
         public River()
@@ -14,6 +14,7 @@ namespace EvolSim.Map.Features
 
         protected River(World world) : base(world)
         {
+            //The river is different in that it moves in only one direction
             var direction = RandomThreadSafe.Next(8);
             canMoveMinusX = false;
             canMoveMinusY = false;
@@ -76,6 +77,7 @@ namespace EvolSim.Map.Features
 
         protected override void EffectSpread()
         {
+            //The river keeps its direction, not spreading wide and does not lose intensity
             var children = new List<IMapFeature>();
             if (canMoveMinusX)
             {

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// The world field representation
+    /// </summary>
     public class Field
     {
         public const int IdealTemperature = 126;
@@ -67,6 +66,11 @@ namespace EvolSim.Map
                     return 0;
                 return toReturn;
             } }
+        /// <summary>
+        /// Constructs the field using specified height and temperature, then computes a calorie baseline
+        /// </summary>
+        /// <param name="height">The height of the field</param>
+        /// <param name="temperature">The temperature of the field</param>
         public Field(int height, int temperature)
         {
             Height = height;
@@ -74,6 +78,11 @@ namespace EvolSim.Map
             Calories = MaxCalories / 2;
         }
 
+        /// <summary>
+        /// Drops a bunch of height and temperature at the field, causing changes of said values. They are still bound to be between 0 and 255
+        /// </summary>
+        /// <param name="height">The height to be dropped upon the field</param>
+        /// <param name="temperature">The temperature to be dropped upon the field</param>
         public void Drop(int height, int temperature)
         {
             if (Height + height > 255) Height = 255;
@@ -86,14 +95,23 @@ namespace EvolSim.Map
             Calories = MaxCalories / 2;
         }
 
+        /// <summary>
+        /// Converts the field to string giving its basic info
+        /// </summary>
+        /// <returns>The string</returns>
         public override string ToString()
         {
             return "Field: \n Temperature: " + Temperature + "\n Height" + Height + "\n Calories:" + Calories;
         }
 
+        /// <summary>
+        /// Grows calories based on the simulation timestep fraction
+        /// </summary>
+        /// <param name="fractionElapsed">Fraction of simulation time elapsed</param>
         public void GrowCalories(double fractionElapsed)
         {
             var calories = Calories;
+            //Allow for some divergence from the limits to limit flickering
             var allowedDivergence = MaxCalories / 10;
             //If we have too much calories, decay half of the difference plus one
             if (calories > MaxCalories + allowedDivergence)
@@ -109,7 +127,7 @@ namespace EvolSim.Map
             {
                 calories += (MaxCalories / 10 + 1) * fractionElapsed;
             }
-            
+            //Stick within value limits
             if (calories < 0) calories = 0;
             if (calories > 255) calories = 255;
             Calories = calories;

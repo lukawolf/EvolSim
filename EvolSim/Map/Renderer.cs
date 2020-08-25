@@ -1,27 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// The world renderer
+    /// </summary>
     public static class Renderer
     {
+        /// <summary>
+        /// Prepares a buffer to render the world instance, renders into said buffer and then renders the buffer onto the event graphics.
+        /// </summary>
+        /// <param name="world">The world to be rendered</param>
+        /// <param name="paintEventArgs">Paint event arguments of the painting target</param>
+        /// <param name="fill">Whether to fill out the container, thus stretching fields</param>
+        /// <param name="bordered">Whether to paint borders at every world field</param>
         public static void RenderBuffered(World world, PaintEventArgs paintEventArgs, bool fill = false, bool bordered = false)
         {
             Image buffer = new Bitmap(paintEventArgs.ClipRectangle.Width, paintEventArgs.ClipRectangle.Height, PixelFormat.Format32bppArgb);
             Graphics graphics = Graphics.FromImage(buffer);
             var newArgs = new PaintEventArgs(graphics, paintEventArgs.ClipRectangle);
-            Render(world, newArgs, fill, bordered);
+            lock (world)
+            {
+                Render(world, newArgs, fill, bordered);
+            }                  
             graphics.Dispose();
             paintEventArgs.Graphics.DrawImage(buffer, 0, 0);
             buffer.Dispose();
         }
-        public static void Render(World world, PaintEventArgs paintEventArgs, bool fill = false, bool bordered = false)
+        /// <summary>
+        /// Renders the world instance
+        /// </summary>
+        /// <param name="world">The world to be rendered</param>
+        /// <param name="paintEventArgs">Paint event arguments of the painting target</param>
+        /// <param name="fill">Whether to fill out the container, thus stretching fields</param>
+        /// <param name="bordered">Whether to paint borders at every world field</param>
+        private static void Render(World world, PaintEventArgs paintEventArgs, bool fill = false, bool bordered = false)
         {
             if (world == null)
             {
@@ -65,13 +81,21 @@ namespace EvolSim.Map
                 paintEventArgs.Graphics.DrawRectangle(pen, (Rectangle)finalRectangle);
             }
             brush.Color = Color.FromArgb(126, 255, 255, 255);
+            var selectedBrush = new SolidBrush(Color.FromArgb(255, 255, 255, 255));
             foreach (var creature in world.Creatures)
             {
                 //Creature size makes sense between half tile and whole tile size
                 var convertedWidth = (float)creature.SizeInTiles * tileWidth;
                 var convertedHeight = (float)creature.SizeInTiles * tileHeight;
                 //We can accept the double to float truncate here, we still operate in pixels after all and are confined to 0-500, which both cover easily
-                paintEventArgs.Graphics.FillEllipse(brush, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
+                if (creature == world.SelectedCreature)
+                {
+                    paintEventArgs.Graphics.FillEllipse(selectedBrush, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
+                }
+                else
+                {
+                    paintEventArgs.Graphics.FillEllipse(brush, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
+                }                
                 paintEventArgs.Graphics.DrawEllipse(pen, (float)creature.CenterX * tileWidth, (float)creature.CenterY * tileHeight, convertedWidth, convertedHeight);
             }
         }

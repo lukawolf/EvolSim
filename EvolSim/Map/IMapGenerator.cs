@@ -2,8 +2,8 @@
 
 namespace EvolSim.Map
 {
-    interface IMapGenerator
+    public interface IMapGenerator
     {
-        void Generate(World world, ProgressBar progressBar);
+        void Generate(World world, ProgressBar progressBar = null);
     }
 }

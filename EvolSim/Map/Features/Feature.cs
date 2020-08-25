@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvolSim.Map.Features
 {
@@ -11,21 +8,33 @@ namespace EvolSim.Map.Features
     /// </summary>
     abstract class Feature: IMapFeature
     {
+        //Whether the feature spreads in a given direction
         protected bool canMovePlusX;
         protected bool canMoveMinusX;
         protected bool canMovePlusY;
         protected bool canMoveMinusY;
+        //The affected world
         protected World world;
+        //Intensity serves to make larger changes, distance only limits spread
         protected int intensity;
         protected int distance;
+        //The coordinates of the world field being affected
         protected int x;
         protected int y;
+        //Whether the feature is a child
         protected bool isChild = false;
+        /// <summary>
+        /// Allows for construction of the feature to be used for its CreateSelf functionality
+        /// </summary>
         public Feature()
         {
 
         }
 
+        /// <summary>
+        /// Allows for construction of the feature actually affecting the world. The constructed feature is fully randomised 
+        /// </summary>
+        /// <param name="world">The world to be affected</param>
         protected Feature(World world)
         {
             this.world = world;
@@ -35,6 +44,18 @@ namespace EvolSim.Map.Features
             this.distance = RandomThreadSafe.Next(1, (this.world.Height + this.world.Width) / 4);
         }
 
+        /// <summary>
+        /// Constructs a feature based on the instructions from a parent
+        /// </summary>
+        /// <param name="world">The world to be affected</param>
+        /// <param name="x">The affected tile X coordinate</param>
+        /// <param name="y">The affected tile Y coordinate</param>
+        /// <param name="intensity">The effect intensity</param>
+        /// <param name="distance">The leftover distance to spread</param>
+        /// <param name="canMovePlusX">Whether the effect can spread +x</param>
+        /// <param name="canMoveMinusX">Whether the effect can spread -x</param>
+        /// <param name="canMovePlusY">Whether the effect can spread +y</param>
+        /// <param name="canMoveMinusY">Whether the effect can spread -y</param>
         protected Feature(World world, int x, int y, int intensity, int distance, bool canMovePlusX, bool canMoveMinusX, bool canMovePlusY, bool canMoveMinusY)
         {
             this.isChild = true;
@@ -137,7 +158,9 @@ namespace EvolSim.Map.Features
                 child.Effect();
             }
         }
-
+        /// <summary>
+        /// Internal effect on the tile, each feature needs to decide this on its own
+        /// </summary>
         protected abstract void EffectInternal();
     }
 }

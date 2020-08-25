@@ -74,7 +74,32 @@
             this.label15 = new System.Windows.Forms.Label();
             this.GraphicTimer = new System.Windows.Forms.Timer(this.components);
             this.CreatureControlPanel = new System.Windows.Forms.Panel();
+            this.CreatureY = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
+            this.CreatureX = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.CreatureTemperatureAffinity = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
+            this.CreatureHeightAffinity = new System.Windows.Forms.NumericUpDown();
+            this.label28 = new System.Windows.Forms.Label();
+            this.CreatureExcitability = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
+            this.CreatureMutability = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.CreatureVisionAngle = new System.Windows.Forms.NumericUpDown();
+            this.label23 = new System.Windows.Forms.Label();
+            this.CreatureVisionDistance = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.CreatureSize = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.CreatureRotation = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.CreatureBrainPanel = new System.Windows.Forms.Panel();
+            this.CreatureBrainCanvas = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.CreatureAge = new System.Windows.Forms.NumericUpDown();
+            this.label32 = new System.Windows.Forms.Label();
             this.SimulationControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WeatherAmplitude)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CycleSleep)).BeginInit();
@@ -88,6 +113,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.TileHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileTemperatureOffset)).BeginInit();
             this.CreatureControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureTemperatureAffinity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureHeightAffinity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureExcitability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureMutability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureVisionAngle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureVisionDistance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureRotation)).BeginInit();
+            this.CreatureBrainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureAge)).BeginInit();
             this.SuspendLayout();
             // 
             // SimulationPanel
@@ -226,7 +263,7 @@
             this.CycleSleep.Size = new System.Drawing.Size(148, 22);
             this.CycleSleep.TabIndex = 15;
             this.CycleSleep.Value = new decimal(new int[] {
-            8,
+            32,
             0,
             0,
             0});
@@ -260,7 +297,7 @@
             this.WeatherChangePeriod.Size = new System.Drawing.Size(148, 22);
             this.WeatherChangePeriod.TabIndex = 10;
             this.WeatherChangePeriod.Value = new decimal(new int[] {
-            100,
+            10,
             0,
             0,
             0});
@@ -655,33 +692,385 @@
             // 
             // GraphicTimer
             // 
-            this.GraphicTimer.Interval = 8;
+            this.GraphicTimer.Interval = 16;
             this.GraphicTimer.Tick += new System.EventHandler(this.GraphicTimer_Tick);
             // 
             // CreatureControlPanel
             // 
             this.CreatureControlPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CreatureControlPanel.Controls.Add(this.CreatureAge);
+            this.CreatureControlPanel.Controls.Add(this.label32);
+            this.CreatureControlPanel.Controls.Add(this.CreatureY);
+            this.CreatureControlPanel.Controls.Add(this.label29);
+            this.CreatureControlPanel.Controls.Add(this.CreatureX);
+            this.CreatureControlPanel.Controls.Add(this.label30);
+            this.CreatureControlPanel.Controls.Add(this.CreatureTemperatureAffinity);
+            this.CreatureControlPanel.Controls.Add(this.label27);
+            this.CreatureControlPanel.Controls.Add(this.CreatureHeightAffinity);
+            this.CreatureControlPanel.Controls.Add(this.label28);
+            this.CreatureControlPanel.Controls.Add(this.CreatureExcitability);
+            this.CreatureControlPanel.Controls.Add(this.label25);
+            this.CreatureControlPanel.Controls.Add(this.CreatureMutability);
+            this.CreatureControlPanel.Controls.Add(this.label26);
+            this.CreatureControlPanel.Controls.Add(this.CreatureVisionAngle);
+            this.CreatureControlPanel.Controls.Add(this.label23);
+            this.CreatureControlPanel.Controls.Add(this.CreatureVisionDistance);
+            this.CreatureControlPanel.Controls.Add(this.label24);
+            this.CreatureControlPanel.Controls.Add(this.CreatureSize);
+            this.CreatureControlPanel.Controls.Add(this.label22);
+            this.CreatureControlPanel.Controls.Add(this.CreatureRotation);
             this.CreatureControlPanel.Controls.Add(this.label16);
+            this.CreatureControlPanel.Controls.Add(this.label21);
             this.CreatureControlPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CreatureControlPanel.Location = new System.Drawing.Point(12, 518);
             this.CreatureControlPanel.Name = "CreatureControlPanel";
-            this.CreatureControlPanel.Size = new System.Drawing.Size(835, 81);
+            this.CreatureControlPanel.Size = new System.Drawing.Size(415, 200);
             this.CreatureControlPanel.TabIndex = 1;
+            // 
+            // CreatureY
+            // 
+            this.CreatureY.Enabled = false;
+            this.CreatureY.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureY.Location = new System.Drawing.Point(300, 28);
+            this.CreatureY.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.CreatureY.Name = "CreatureY";
+            this.CreatureY.Size = new System.Drawing.Size(110, 22);
+            this.CreatureY.TabIndex = 51;
+            this.CreatureY.ValueChanged += new System.EventHandler(this.CreatureY_ValueChanged);
+            // 
+            // label29
+            // 
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label29.Location = new System.Drawing.Point(214, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(80, 23);
+            this.label29.TabIndex = 50;
+            this.label29.Text = "Y";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureX
+            // 
+            this.CreatureX.Enabled = false;
+            this.CreatureX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureX.Location = new System.Drawing.Point(89, 28);
+            this.CreatureX.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.CreatureX.Name = "CreatureX";
+            this.CreatureX.Size = new System.Drawing.Size(110, 22);
+            this.CreatureX.TabIndex = 49;
+            this.CreatureX.ValueChanged += new System.EventHandler(this.CreatureX_ValueChanged);
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label30.Location = new System.Drawing.Point(3, 27);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(80, 23);
+            this.label30.TabIndex = 48;
+            this.label30.Text = "X";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureTemperatureAffinity
+            // 
+            this.CreatureTemperatureAffinity.Enabled = false;
+            this.CreatureTemperatureAffinity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureTemperatureAffinity.Location = new System.Drawing.Point(300, 140);
+            this.CreatureTemperatureAffinity.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.CreatureTemperatureAffinity.Name = "CreatureTemperatureAffinity";
+            this.CreatureTemperatureAffinity.Size = new System.Drawing.Size(110, 22);
+            this.CreatureTemperatureAffinity.TabIndex = 47;
+            this.CreatureTemperatureAffinity.ValueChanged += new System.EventHandler(this.CreatureTemperatureAffinity_ValueChanged);
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label27.Location = new System.Drawing.Point(214, 139);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(80, 23);
+            this.label27.TabIndex = 46;
+            this.label27.Text = "Temp. aff.";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureHeightAffinity
+            // 
+            this.CreatureHeightAffinity.Enabled = false;
+            this.CreatureHeightAffinity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureHeightAffinity.Location = new System.Drawing.Point(89, 140);
+            this.CreatureHeightAffinity.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.CreatureHeightAffinity.Name = "CreatureHeightAffinity";
+            this.CreatureHeightAffinity.Size = new System.Drawing.Size(110, 22);
+            this.CreatureHeightAffinity.TabIndex = 45;
+            this.CreatureHeightAffinity.ValueChanged += new System.EventHandler(this.CreatureHeightAffinity_ValueChanged);
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label28.Location = new System.Drawing.Point(3, 139);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(80, 23);
+            this.label28.TabIndex = 44;
+            this.label28.Text = "Height aff.";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureExcitability
+            // 
+            this.CreatureExcitability.DecimalPlaces = 2;
+            this.CreatureExcitability.Enabled = false;
+            this.CreatureExcitability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureExcitability.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.CreatureExcitability.Location = new System.Drawing.Point(300, 112);
+            this.CreatureExcitability.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CreatureExcitability.Name = "CreatureExcitability";
+            this.CreatureExcitability.Size = new System.Drawing.Size(110, 22);
+            this.CreatureExcitability.TabIndex = 43;
+            this.CreatureExcitability.ValueChanged += new System.EventHandler(this.CreatureExcitability_ValueChanged);
+            // 
+            // label25
+            // 
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label25.Location = new System.Drawing.Point(214, 111);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(80, 23);
+            this.label25.TabIndex = 42;
+            this.label25.Text = "Excitability";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureMutability
+            // 
+            this.CreatureMutability.DecimalPlaces = 2;
+            this.CreatureMutability.Enabled = false;
+            this.CreatureMutability.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureMutability.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.CreatureMutability.Location = new System.Drawing.Point(89, 112);
+            this.CreatureMutability.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CreatureMutability.Name = "CreatureMutability";
+            this.CreatureMutability.Size = new System.Drawing.Size(110, 22);
+            this.CreatureMutability.TabIndex = 41;
+            this.CreatureMutability.ValueChanged += new System.EventHandler(this.CreatureMutability_ValueChanged);
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label26.Location = new System.Drawing.Point(3, 111);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(80, 23);
+            this.label26.TabIndex = 40;
+            this.label26.Text = "Mutability";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureVisionAngle
+            // 
+            this.CreatureVisionAngle.DecimalPlaces = 2;
+            this.CreatureVisionAngle.Enabled = false;
+            this.CreatureVisionAngle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureVisionAngle.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.CreatureVisionAngle.Location = new System.Drawing.Point(300, 84);
+            this.CreatureVisionAngle.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            65536});
+            this.CreatureVisionAngle.Name = "CreatureVisionAngle";
+            this.CreatureVisionAngle.Size = new System.Drawing.Size(110, 22);
+            this.CreatureVisionAngle.TabIndex = 39;
+            this.CreatureVisionAngle.ValueChanged += new System.EventHandler(this.CreatureVisionAngle_ValueChanged);
+            // 
+            // label23
+            // 
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label23.Location = new System.Drawing.Point(214, 83);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(80, 23);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "V. angle";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureVisionDistance
+            // 
+            this.CreatureVisionDistance.Enabled = false;
+            this.CreatureVisionDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureVisionDistance.Location = new System.Drawing.Point(89, 84);
+            this.CreatureVisionDistance.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.CreatureVisionDistance.Name = "CreatureVisionDistance";
+            this.CreatureVisionDistance.Size = new System.Drawing.Size(110, 22);
+            this.CreatureVisionDistance.TabIndex = 37;
+            this.CreatureVisionDistance.ValueChanged += new System.EventHandler(this.CreatureVisionDistance_ValueChanged);
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label24.Location = new System.Drawing.Point(3, 83);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(80, 23);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "V. distance";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureSize
+            // 
+            this.CreatureSize.Enabled = false;
+            this.CreatureSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureSize.Location = new System.Drawing.Point(300, 56);
+            this.CreatureSize.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.CreatureSize.Name = "CreatureSize";
+            this.CreatureSize.Size = new System.Drawing.Size(110, 22);
+            this.CreatureSize.TabIndex = 35;
+            this.CreatureSize.ValueChanged += new System.EventHandler(this.CreatureSize_ValueChanged);
+            // 
+            // label22
+            // 
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label22.Location = new System.Drawing.Point(214, 55);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(80, 23);
+            this.label22.TabIndex = 34;
+            this.label22.Text = "Size";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureRotation
+            // 
+            this.CreatureRotation.DecimalPlaces = 2;
+            this.CreatureRotation.Enabled = false;
+            this.CreatureRotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureRotation.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.CreatureRotation.Location = new System.Drawing.Point(89, 56);
+            this.CreatureRotation.Maximum = new decimal(new int[] {
+            63,
+            0,
+            0,
+            65536});
+            this.CreatureRotation.Name = "CreatureRotation";
+            this.CreatureRotation.Size = new System.Drawing.Size(110, 22);
+            this.CreatureRotation.TabIndex = 22;
+            this.CreatureRotation.ValueChanged += new System.EventHandler(this.CreatureRotation_ValueChanged);
             // 
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label16.Location = new System.Drawing.Point(3, 0);
+            this.label16.Location = new System.Drawing.Point(3, 1);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(321, 23);
+            this.label16.Size = new System.Drawing.Size(407, 23);
             this.label16.TabIndex = 33;
             this.label16.Text = "Selected creature controls";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label21.Location = new System.Drawing.Point(3, 55);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(80, 23);
+            this.label21.TabIndex = 21;
+            this.label21.Text = "Rotation";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // CreatureBrainPanel
+            // 
+            this.CreatureBrainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CreatureBrainPanel.Controls.Add(this.CreatureBrainCanvas);
+            this.CreatureBrainPanel.Controls.Add(this.label19);
+            this.CreatureBrainPanel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CreatureBrainPanel.Location = new System.Drawing.Point(433, 518);
+            this.CreatureBrainPanel.Name = "CreatureBrainPanel";
+            this.CreatureBrainPanel.Size = new System.Drawing.Size(415, 200);
+            this.CreatureBrainPanel.TabIndex = 34;
+            // 
+            // CreatureBrainCanvas
+            // 
+            this.CreatureBrainCanvas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CreatureBrainCanvas.Location = new System.Drawing.Point(4, 27);
+            this.CreatureBrainCanvas.Name = "CreatureBrainCanvas";
+            this.CreatureBrainCanvas.Size = new System.Drawing.Size(406, 168);
+            this.CreatureBrainCanvas.TabIndex = 34;
+            this.CreatureBrainCanvas.Paint += new System.Windows.Forms.PaintEventHandler(this.CreatureBrainCanvas_Paint);
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label19.Location = new System.Drawing.Point(3, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(405, 23);
+            this.label19.TabIndex = 33;
+            this.label19.Text = "Selected creature brain";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CreatureAge
+            // 
+            this.CreatureAge.Enabled = false;
+            this.CreatureAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CreatureAge.Location = new System.Drawing.Point(89, 168);
+            this.CreatureAge.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.CreatureAge.Name = "CreatureAge";
+            this.CreatureAge.Size = new System.Drawing.Size(110, 22);
+            this.CreatureAge.TabIndex = 53;
+            this.CreatureAge.ValueChanged += new System.EventHandler(this.CreatureAge_ValueChanged);
+            // 
+            // label32
+            // 
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label32.Location = new System.Drawing.Point(3, 167);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(80, 23);
+            this.label32.TabIndex = 52;
+            this.label32.Text = "Age";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(856, 611);
+            this.ClientSize = new System.Drawing.Size(856, 727);
+            this.Controls.Add(this.CreatureBrainPanel);
             this.Controls.Add(this.CreatureControlPanel);
             this.Controls.Add(this.FieldControlPanel);
             this.Controls.Add(this.SimulationControlPanel);
@@ -705,6 +1094,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.TileHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TileTemperatureOffset)).EndInit();
             this.CreatureControlPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureTemperatureAffinity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureHeightAffinity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureExcitability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureMutability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureVisionAngle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureVisionDistance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureRotation)).EndInit();
+            this.CreatureBrainPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CreatureAge)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -757,6 +1158,31 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Panel CreatureControlPanel;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.NumericUpDown CreatureRotation;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel CreatureBrainPanel;
+        private System.Windows.Forms.Panel CreatureBrainCanvas;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown CreatureSize;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.NumericUpDown CreatureTemperatureAffinity;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.NumericUpDown CreatureHeightAffinity;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.NumericUpDown CreatureExcitability;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.NumericUpDown CreatureMutability;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.NumericUpDown CreatureVisionAngle;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.NumericUpDown CreatureVisionDistance;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.NumericUpDown CreatureY;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.NumericUpDown CreatureX;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.NumericUpDown CreatureAge;
+        private System.Windows.Forms.Label label32;
     }
 }
 

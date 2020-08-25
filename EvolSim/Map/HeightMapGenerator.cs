@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
-using EvolSim.Extensions;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// Generates a world starting from a cold depth using drops of temperature and height.
+    /// </summary>
     public class HeightMapGenerator: IMapGenerator
     {
         public const int AgitationRadius = 1;
         public const int AgitationDelta = 10;
-        public void Generate(World world, ProgressBar progressBar)
+        /// <summary>
+        /// Generates the tiles of a world
+        /// </summary>
+        /// <param name="world">The world to affect</param>
+        /// <param name="progressBar">A progress bar to render the progress upon</param>
+        public void Generate(World world, ProgressBar progressBar = null)
         {
             world.BlankMap(0, 0);
             var passes = RandomThreadSafe.Next((world.Width + world.Height) / 2, (world.Width + world.Height));
@@ -37,11 +40,17 @@ namespace EvolSim.Map
                 {
                     AgitateDrop(world, item.x, item.y);
                 }
-                progressBar.Value = (i + 1) * 100 / passes;
+                if (progressBar != null) progressBar.Value = (i + 1) * 100 / passes;
             }
-            progressBar.Value = 100;
+            if (progressBar != null) progressBar.Value = 100;
         }
 
+        /// <summary>
+        /// Agitate a drop in the world at a given coordinates, thus spreading its height and temperature around
+        /// </summary>
+        /// <param name="world">The world</param>
+        /// <param name="x">The drop x coordinate</param>
+        /// <param name="y">The drop y coordinate</param>
         private static void AgitateDrop(World world, int x, int y)
         {
             //We calculate the bounds around the agitated cell and trim them to fit the map

@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 using EvolSim.Map.Features;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// A map generator that uses cellular automata to engrave a gaia world
+    /// </summary>
     class CellularAutomataGenerator: IMapGenerator
     {
         private List<IMapFeature> availableFeatures = new List<IMapFeature>();
 
-        public CellularAutomataGenerator()
+        /// <summary>
+        /// Constructs the generator and registers the base features if not specified otherwise.
+        /// </summary>
+        /// <param name="registerBaseFeatures">Whether to register base features, defaults to true</param>
+        public CellularAutomataGenerator(bool registerBaseFeatures = true)
         {
             availableFeatures.Add(new Desert());
             availableFeatures.Add(new Glacier());
@@ -24,12 +27,21 @@ namespace EvolSim.Map
             availableFeatures.Add(new Volcano());
         }
 
+        /// <summary>
+        /// Used to register new external features
+        /// </summary>
+        /// <param name="feature">The feature to register for subsequent use</param>
         public void RegisterNewFeature(IMapFeature feature)
         {
             availableFeatures.Add(feature);
         }
 
-        public void Generate(World world, ProgressBar progressBar)
+        /// <summary>
+        /// The world generation procedure
+        /// </summary>
+        /// <param name="world">The target world</param>
+        /// <param name="progressBar">A progressBar instance to render progress upon</param>
+        public void Generate(World world, ProgressBar progressBar = null)
         {
             progressBar.Value = 0;
             world.BlankMap(126, 126);
@@ -43,9 +55,9 @@ namespace EvolSim.Map
             for (int i = 0; i < featureCount; i++)
             {
                 features[i].Effect();
-                progressBar.Value = 100 * i / featureCount;
+                if (progressBar != null) progressBar.Value = 100 * i / featureCount;
             }
-            progressBar.Value = 100;
+            if(progressBar != null) progressBar.Value = 100;
         }
     }
 }

@@ -1,22 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvolSim.Creature
 {
+    /// <summary>
+    /// Creature brain class, implements a simple three layer neural network with memory using Neuron and Synapse classes from the same namespace.
+    /// </summary>
     public class Brain
     {
         private double[] memory;
+        /// <summary>
+        /// The amount of inputs expected
+        /// </summary>
         public int InputWidth { get; }
+        /// <summary>
+        /// The amount of thinking neurons used
+        /// </summary>
         public int ThinkingWidth { get; }
+        /// <summary>
+        /// The amount of output neurons
+        /// </summary>
         public int OutputWidth { get; }
+        /// <summary>
+        /// The amount of memory neurons
+        /// </summary>
         public int MemoryWidth { get; }
-        private SensoryNeuron[] inputNeurons;
-        private Neuron[] thinkingNeurons;
-        private Neuron[] outputNeurons;
+        internal SensoryNeuron[] inputNeurons;
+        internal Neuron[] thinkingNeurons;
+        internal Neuron[] outputNeurons;
         private bool generated;
+        /// <summary>
+        /// Creates a brain with given widths.
+        /// </summary>
+        /// <param name="inputWidth">Amount of inputs</param>
+        /// <param name="thinkingWidth">The amount of thinking neurons</param>
+        /// <param name="outputWidth">The amount of outputs</param>
+        /// <param name="memoryWidth">The amount of neurons dedicated to memory</param>
         public Brain(int inputWidth, int thinkingWidth, int outputWidth, int memoryWidth)
         {
             InputWidth = inputWidth;
@@ -26,7 +44,7 @@ namespace EvolSim.Creature
 
             inputNeurons = new SensoryNeuron[InputWidth + MemoryWidth];
             thinkingNeurons = new Neuron[ThinkingWidth];
-            outputNeurons = new Neuron[InputWidth + MemoryWidth];
+            outputNeurons = new Neuron[OutputWidth + MemoryWidth];
             memory = new double[MemoryWidth];
         }
 
@@ -100,7 +118,7 @@ namespace EvolSim.Creature
             }
             for (int i = 0; i < memory.Length; i++)
             {
-                memory[i] = RandomThreadSafe.Next(-255, 255);
+                memory[i] = RandomThreadSafe.NextDouble();
             }
             //Not the true max, as we do not limit multiple synapses between the same neurons, but it is the count of possible unique ones
             var MaxSynapsesBetweenLayers = inputNeurons.Length * thinkingNeurons.Length;
@@ -158,8 +176,6 @@ namespace EvolSim.Creature
                 foreach (var targetParameters in inputNeuronTargetParameters[i])
                 {
                     var copiedSynapse = new Synapse(inputNeurons[i], thinkingNeurons[targetParameters.Item1], targetParameters.Item2);
-                    inputNeurons[i].AddOutput(copiedSynapse);
-                    thinkingNeurons[targetParameters.Item1].AddInput(copiedSynapse);
                     x++;
                 }
                 inputNeurons[i].MutateSynapses(mutability, thinkingNeurons);
@@ -170,8 +186,6 @@ namespace EvolSim.Creature
                 foreach (var targetParameters in thinkingNeuronTargetParameters[i])
                 {
                     var copiedSynapse = new Synapse(inputNeurons[i], thinkingNeurons[targetParameters.Item1], targetParameters.Item2);
-                    thinkingNeurons[i].AddOutput(copiedSynapse);
-                    outputNeurons[targetParameters.Item1].AddInput(copiedSynapse);
                     x++;
                 }
                 thinkingNeurons[i].MutateSynapses(mutability, outputNeurons);

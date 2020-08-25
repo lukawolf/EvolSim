@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EvolSim.Map.Features
+﻿namespace EvolSim.Map.Features
 {
+    /// <summary>
+    /// Creates a volcano using the Feature cellular automata machinery
+    /// </summary>
     class Volcano : Feature
     {
         public Volcano()

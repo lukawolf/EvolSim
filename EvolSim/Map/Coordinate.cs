@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// A coordinate struct for usage in height map generator
+    /// </summary>
     public struct Coordinate
     {
         public readonly int x;

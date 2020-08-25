@@ -7,14 +7,12 @@ using System.Windows.Forms;
 
 namespace EvolSim.Map
 {
+    /// <summary>
+    /// The simulation world representation
+    /// </summary>
     public class World
-    {        
-        public enum GenerationType
-        {
-            CellularAutomata, 
-            HeightMap,
-            Gaia,
-        }
+    {
+        protected const int maxCreatures = 1000;
         public Field[][] Fields { get; private set; }
         //LinkedList because we kill creatures often and also add new ones often. Also we do not seek creatures unless all need to be checked anyway
         public LinkedList<Creature.Creature> Creatures { get; private set; } = new LinkedList<Creature.Creature>();
@@ -28,6 +26,12 @@ namespace EvolSim.Map
         protected List<Creature.Creature> creaturesToDie = new List<Creature.Creature>();
         protected List<Creature.Creature> creaturesToBirth = new List<Creature.Creature>();
 
+        /// <summary>
+        /// Constructs, but does not generate a world
+        /// </summary>
+        /// <param name="width">The wanted width</param>
+        /// <param name="height">The wanted height</param>
+        /// <param name="minCreatures">The minimal creatures that should inhabit this world. If there are less, random ones are added</param>
         public World(int width, int height, int minCreatures)
         {
             if (width < 0) throw new ArgumentException("Width must be greater than 0");
@@ -37,6 +41,11 @@ namespace EvolSim.Map
             MinCreatures = minCreatures;
         }
 
+        /// <summary>
+        /// Blanks out the map and sets all tiles to the given height and temperature
+        /// </summary>
+        /// <param name="height">The height</param>
+        /// <param name="temperature">The temperature</param>
         public void BlankMap(int height = 0, int temperature = 0)
         {
             Fields = new Field[Width][];
@@ -50,28 +59,26 @@ namespace EvolSim.Map
             }
         }
 
-        public void Generate(GenerationType generationType, ProgressBar progressBar)
+
+        /// <summary>
+        /// Generates the world using provided generator
+        /// </summary>
+        /// <param name="generator">The provided generator</param>
+        /// <param name="progressBar">The progressbar to mark progress on</param>
+        public void Generate(IMapGenerator generator, ProgressBar progressBar = null)
         {
-            IMapGenerator generator = null;
-            switch (generationType)
+            if (generator == null)
             {
-                case GenerationType.CellularAutomata:
-                    generator = new CellularAutomataGenerator();
-                    generator.Generate(this, progressBar);
-                    break;
-                case GenerationType.HeightMap:
-                    generator = new HeightMapGenerator();
-                    generator.Generate(this, progressBar);
-                    break;
-                case GenerationType.Gaia:
-                    BlankMap(126, 126);
-                    progressBar.Value = 100;
-                    break;
-                default:
-                    throw new ArgumentException("World generate generationType argument invalid");
+                throw new ArgumentNullException("The generator can not be null!");
             }
+            generator.Generate(this, progressBar);
         }
 
+        /// <summary>
+        /// Selects a field at the given coordinates
+        /// </summary>
+        /// <param name="x">Field X coordinate</param>
+        /// <param name="y">Field Y coordinate</param>
         public void SelectField(int x, int y)
         {
             if (x < 0 || x >= this.Width)
@@ -87,6 +94,10 @@ namespace EvolSim.Map
             SelectedFieldY = y;
         }
 
+        /// <summary>
+        /// Updates the world
+        /// </summary>
+        /// <param name="fractionElapsed">A fraction of the simulation time</param>
         public void Update(double fractionElapsed)
         {
             //All the fields grow
@@ -120,6 +131,10 @@ namespace EvolSim.Map
             foreach (var deadCreature in creaturesToDie)
             {
                 Creatures.Remove(deadCreature);
+                if (deadCreature == SelectedCreature)
+                {
+                    SelectedCreature = null;
+                }
             }
             foreach (var newBorn in creaturesToBirth)
             {
@@ -133,20 +148,39 @@ namespace EvolSim.Map
                     AddCreature(new Creature.Creature(this));
                 }
             }
+            //Old creatures over the max die
+            for (int i = 0; i < Creatures.Count - maxCreatures; i++)
+            {
+                if (Creatures.Last.Value == SelectedCreature)
+                {
+                    SelectedCreature = null;
+                }
+                Creatures.RemoveLast();
+            }
         }
 
+        /// <summary>
+        /// Registers a creature into the world
+        /// </summary>
+        /// <param name="creature">The creature</param>
         public void AddCreature(Creature.Creature creature)
         {
             Creatures.AddFirst(creature);
         }
 
+        /// <summary>
+        /// Selects a creature centered at a given set of coordinates
+        /// </summary>
+        /// <param name="x">The creature X</param>
+        /// <param name="y">The creature Y</param>
         public void SelectCreature(int x, int y)
         {
             foreach(var creature in Creatures)
             {
-                if (Math.Ceiling(creature.X) >= x && Math.Floor(creature.X) <= x)
+                //We use hyper "extreme rounding" to catch the creature
+                if (creature.CenterX >= x - 1 && creature.CenterX <= x + 1)
                 {
-                    if (Math.Ceiling(creature.Y) >= y && Math.Floor(creature.Y) <= y)
+                    if (creature.CenterY >= y - 1 && creature.CenterY <= y + 1)
                     {
                         SelectedCreature = creature;
                         return;
